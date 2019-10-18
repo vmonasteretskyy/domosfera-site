@@ -566,7 +566,7 @@
     }
 }
 
-@media(max-width: 768.8px) and (orientation: landscape) {
+@media(max-width: 812.8px) and (orientation: landscape) {
     .news .slick-next.slick-arrow {
         right: 10px !important;
     }
