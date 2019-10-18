@@ -117,8 +117,11 @@
         height: 250px;
     }
 
+    .mainslider__bottlink a {
+        padding-left: 45px;
+    }
 
-    /* -- */
+    /* --1300 */
     .news,
     .aboutus,
     .ourservices,
