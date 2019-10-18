@@ -26,6 +26,10 @@ a {
     outline: none;
 }
 
+a {
+    color: #323335;
+}
+
 /* header  */
 
 header.header {
@@ -932,10 +936,10 @@ footer .footer__subscribe>div {
 
 .mainslider__slideload span {
     -webkit-animation-name: change;
-    -webkit-animation-duration: 3.5s;
+    -webkit-animation-duration: 6s;
     /* -webkit-animation-iteration-count: infinite; */
     animation-name: change;
-    animation-duration: 3.5s;
+    animation-duration: 6s;
     /* animation-iteration-count: infinite; */
 }
 
@@ -1097,6 +1101,64 @@ footer .footer__subscribe>div {
 .header__searchbtn form button span {
     color: #fff;
 }
+
+/* SMAK RESTAURANT */
+.sm-restaurant {
+    padding-top: 40px;
+}
+
+.sm-restaurant__leftsect {
+    position: relative;
+}
+
+.sm-restaurant__greybox {
+    max-width: 100%;
+    width: 285px;
+    height: 350px;
+    background-color: #eeeeee;
+    padding: 25px 0 0 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.sm-restaurant__greybox a {
+    font-weight: bold;
+    letter-spacing: 0.35px;
+
+}
+
+.sm-restaurant__greybox a:hover {
+    text-decoration: none;
+    color: #323335;
+}
+
+.sm-restaurant__greybox a img {
+    display: inline-block;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    margin-right: 5px;
+    vertical-align: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

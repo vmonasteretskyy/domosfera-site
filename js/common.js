@@ -13,7 +13,7 @@ $(document).ready(function () {
         fade: true,
         asNavFor: '.mainsliderlittle__sect',
         autoplay: true,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 6000,
     });
 
     // main slider (little)
