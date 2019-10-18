@@ -113,7 +113,10 @@ $(document).ready(function () {
         $('.news .slick-next.slick-arrow').css('right', leftmarg - 0);
         $('.news .slick-prev.slick-arrow').css('right', leftmarg + 30);
     }
-
+    if ($(window).width() < 576) {
+        var leftmarg = (($(window).width() - $('.container').width()) / 2);
+        $('.news-slider').css('padding-left', leftmarg);
+    }
 
 
 
@@ -127,6 +130,10 @@ $(document).ready(function () {
         if ($(window).width() < 1300) {
             $('.news .slick-next.slick-arrow').css('right', leftmarg - 0);
             $('.news .slick-prev.slick-arrow').css('right', leftmarg + 30);
+        }
+        if ($(window).width() < 576) {
+            var leftmarg = (($(window).width() - $('.container').width()) / 2);
+            $('.news-slider').css('padding-left', leftmarg);
         }
 
     });

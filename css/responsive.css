@@ -574,6 +574,10 @@
     .news .slick-prev.slick-arrow {
         right: 40px !important;
     }
+
+    .news-slider {
+    padding-left: 15px !important;
+}
 }
 
 @media(max-height:770.8px) {
@@ -597,7 +601,5 @@
         padding-left: 0;
     }
 
-    .news-slider {
-        padding-left: 15px;
-    }
+
 }
