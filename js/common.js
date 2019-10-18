@@ -117,6 +117,10 @@ $(document).ready(function () {
         var leftmarg = (($(window).width() - $('.container').width()) / 2);
         $('.news-slider').css('padding-left', leftmarg);
     }
+    if ($(window).height() < 501) {
+        var leftmarg = (($(window).width() - $('.container').width()) / 2);
+        $('.news-slider').css('padding-left', leftmarg);
+    }
 
 
 
@@ -132,6 +136,15 @@ $(document).ready(function () {
             $('.news .slick-prev.slick-arrow').css('right', leftmarg + 30);
         }
         if ($(window).width() < 576) {
+            var leftmarg = (($(window).width() - $('.container').width()) / 2);
+            $('.news-slider').css('padding-left', leftmarg);
+        }
+
+        if ($(window).width() < 576) {
+            var leftmarg = (($(window).width() - $('.container').width()) / 2);
+            $('.news-slider').css('padding-left', leftmarg);
+        }
+        if ($(window).height() < 501) {
             var leftmarg = (($(window).width() - $('.container').width()) / 2);
             $('.news-slider').css('padding-left', leftmarg);
         }
