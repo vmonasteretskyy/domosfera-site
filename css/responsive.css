@@ -419,6 +419,21 @@
     .footer__listsect1 ul li:last-child {
         padding-left: 25px;
     }
+
+
+
+
+
+}
+
+@media(max-width: 600.8px) {
+    .news .slick-next.slick-arrow {
+        right: 10px !important;
+    }
+
+    .news .slick-prev.slick-arrow {
+        right: 40px !important;
+    }
 }
 
 @media(max-width: 575.8px) {

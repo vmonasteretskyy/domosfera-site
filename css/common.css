@@ -3,6 +3,7 @@ body {
     font-family: 'Gilroy';
     font-size: 14px;
     color: #323335;
+    overflow-x: hidden;
 }
 
 ul.no-style {
@@ -591,9 +592,9 @@ main {
     font-size: 30px;
 }
 
-.news .slick-prev.slick-arrow {
+/* .news .slick-prev.slick-arrow {
     right: 40px;
-}
+} */
 
 .aboutus {
     padding: 90px 0;
