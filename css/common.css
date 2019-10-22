@@ -1,3 +1,5 @@
+@import "main.css"screen;
+
 /* general */
 body {
     font-family: 'Gilroy';
@@ -1963,32 +1965,24 @@ section {
 }
 
 
-.salons-section .salons__content-blocks .salon-sect__picbox a>span,
-.salons__content-blocks .whitehoverborder {
+
+.salons__content-blocks .whitehoverborder,
+.salons-section .salons__content-blocks .salon-sect__picbox .flornumber span,
+.salons__content-blocks .salon-sect__contbox,
+.show-hover-catblock {
     display: none;
 }
 
-.salons__content-blocks .salon-sect__contbox {
-    /* display: none; */
-}
+
 
 .salons-section .salons__content-blocks .salon-sect__picbox .flornumber {
     height: auto;
     width: auto;
 }
 
-.salons-section .salons__content-blocks .salon-sect__picbox .flornumber span {
-    writing-mode: initial;
-    -webkit-writing-mode: initial;
-    -ms-writing-mode: initial;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-}
 
-.shadow-blockcat {
+.shadow-blockcat,
+.salons-section .salons__content-blocks .salon-sect__picbox a>span {
     display: none;
 }
 
@@ -1997,12 +1991,177 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
-    /* background-image: linear-gradient(to top, rgba(36, 37, 38, 0.85), #242526); */
-    background-image: url(../image/category/bg-shadow.png);
+    z-index: 1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
     width: 100%;
     height: 100%;
 }
+
+.pagination ul li a,
+.pagination ul li span {
+    width: 30px;
+    height: 30px;
+}
+
+.salons__content-blocks .show-hover-catblock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 35px 0;
+    z-index: 2;
+}
+
+.show-hover-catblock ul {
+    margin-bottom: 27px;
+    padding-left: 30px;
+}
+
+.show-hover-catblock ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.show-hover-catblock .title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.65px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 19px;
+    padding-top: 12px;
+}
+
+.show-hover-catblock .title:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+}
+
+.show-hover-catblock .flor {
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 4.8px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.hovershowdescr p {
+    height: 165px;
+    overflow: hidden;
+    line-height: 1.75;
+    letter-spacing: 0.35px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hovershowdescr__link {
+    height: 33px;
+    display: block;
+    padding: 4px 0;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+}
+
+.hovershowdescr__link a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: #fff;
+    margin-left: -10px;
+}
+
+.hovershowdescr__link a:hover {
+    text-decoration: none;
+}
+
+.hovershowdescr__link {
+    margin-bottom: 23px;
+}
+
+.hovershowdescr {
+    /*display: none;
+    */
+    height: 0;
+    overflow-y: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+}
+
+.salons__content-blocks .show-hover-catblock {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.salons__content-blocks .show-hover-catblock:hover {
+    background-color: rgba(36, 37, 38, .9);
+}
+
+.salons__content-blocks .show-hover-catblock:hover .hovershowdescr {
+    height: 228px;
+    margin-bottom: 24px;
+}
+
+.salons__content-blocks .show-hover-catblock:hover ul {
+    display: none;
+}
+
+.show-hover-catblock p.title,
+.show-hover-catblock .flor,
+.hovershowdescr p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.salons__content-blocks .show-morebtn {
+    margin: 0;
+    height: 400px;
+}
+
+.salons__content-blocks .show-morebtn a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+.salons__content-blocks .show-morebtn a span {
+    display: block;
+    font-size: 72px;
+}
+
+.salons__content-blocks .show-morebtn a text {
+    padding: 0 22%;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+
+
 
 
 
