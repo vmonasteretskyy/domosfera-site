@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    <div id="toppage"></div>
     <header class="header">
         <div class="header__logo">
             <a href="#"><img src="image/logo.svg" alt="logo"></a>
@@ -50,6 +50,7 @@
     </header>
 
     <main>
+
         <div class="fixed-leftsocial">
             <ul class="no-style">
                 <li><a href="#">Facebook</a></li>
@@ -57,9 +58,11 @@
                 <li><a href="#">YouTube</a></li>
             </ul>
             <div class="arrowfix">
-                <span class="mdi mdi-18px mdi-arrow-down-drop-circle"></span>
+                <a href="#scrollto" class="tobott"><span class="mdi mdi-18px mdi-arrow-down-drop-circle"></span></a>
+                <a href="#toppage" class="toup"><span class="mdi mdi-18px mdi-arrow-down-drop-circle"></span></a>
             </div>
         </div>
+
         <section class="mainslider">
             <div class="row no-gutters">
                 <div class="col mainslider__nav">
@@ -91,13 +94,21 @@
                                             tempor incididunt ut labore et dolore magna
                                         </p>
                                     </div>
-                                    <p class="title">ТЦ «Domosfera»</p>
+                                    <p class="title">ТЦ «Test Center»</p>
                                 </div>
-                                <div class="mainslider__bottlink">
-                                    <a href="#">
+                                <!-- <div class="mainslider__bottlink"> -->
+                                <!-- <a href="#">
                                         Подробиці<span><img src="image/icons/arrow-white.svg" alt=""></span>
+                                    </a> -->
+                                <div class="flip mainslider-link">
+                                    <a href="#" target="_blank">
+                                        <div class="front">Подробиці<span><img src="image/icons/arrow-white.svg"
+                                                    alt=""></span></div>
+                                        <div class="back">Подробиці<span><img src="image/news-arrow.svg" alt=""></span>
+                                        </div>
                                     </a>
                                 </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                         <div>
@@ -114,9 +125,17 @@
                                     </div>
                                     <p class="title">ТЦ «Domosfera»</p>
                                 </div>
-                                <div class="mainslider__bottlink">
+                                <!-- <div class="mainslider__bottlink">
                                     <a href="#">
                                         Подробиці<span><img src="image/icons/arrow-white.svg" alt=""></span>
+                                    </a>
+                                </div> -->
+                                <div class="flip mainslider-link">
+                                    <a href="#" target="_blank">
+                                        <div class="front">Подробиці<span><img src="image/icons/arrow-white.svg"
+                                                    alt=""></span></div>
+                                        <div class="back">Подробиці<span><img src="image/news-arrow.svg" alt=""></span>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -133,11 +152,19 @@
                                             tempor incididunt ut labore et dolore magna
                                         </p>
                                     </div>
-                                    <p class="title">ТЦ «Domosfera»</p>
+                                    <p class="title">ТЦ «Lorem ipsum»</p>
                                 </div>
-                                <div class="mainslider__bottlink">
+                                <!-- <div class="mainslider__bottlink">
                                     <a href="#">
                                         Подробиці<span><img src="image/icons/arrow-white.svg" alt=""></span>
+                                    </a>
+                                </div> -->
+                                <div class="flip mainslider-link">
+                                    <a href="#" target="_blank">
+                                        <div class="front">Подробиці<span><img src="image/icons/arrow-white.svg"
+                                                    alt=""></span></div>
+                                        <div class="back">Подробиці<span><img src="image/news-arrow.svg" alt=""></span>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -149,7 +176,7 @@
                             <span class="numslide">02</span>
                             <div class="mainsliderlittle__cont">
                                 <div class="picbox">
-                                    <img src="image/littslide2.png" alt="slide">
+                                    <img src="image/slide2.jpg" alt="slide">
                                 </div>
                                 <div class="textbox">
                                     <a href="#">Monet Home Collection:
@@ -163,12 +190,12 @@
                             <span class="numslide">03</span>
                             <div class="mainsliderlittle__cont">
                                 <div class="picbox">
-                                    <img src="image/littslide3.png" alt="slide">
+                                    <img src="image/slide3.jpg" alt="slide">
                                 </div>
                                 <div class="textbox">
                                     <a href="#">Monet Home Collection:
                                         новый бутик в ТЦ
-                                        Домосфера</a>
+                                        Lorem ipsum</a>
                                 </div>
                             </div>
                         </div>
@@ -177,12 +204,12 @@
                             <span class="numslide">01</span>
                             <div class="mainsliderlittle__cont">
                                 <div class="picbox">
-                                    <img src="image/littslide.png" alt="slide">
+                                    <img src="image/slide1.png" alt="slide">
                                 </div>
                                 <div class="textbox">
                                     <a href="#">Monet Home Collection:
                                         новый бутик в ТЦ
-                                        Домосфера</a>
+                                        Test Center</a>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +499,16 @@
                         <form action="#">
                             <div class="footer__inpfield">
                                 <input type="email" placeholder="Ваш email">
-                                <button><span class="mdi mdi-telegram"></span></button>
+                                <!-- <button>
+                                    <span class="mdi mdi-telegram"></span>
+                                </button> -->
+                                <div class="flip footerbtn">
+                                    <a href="#" target="_blank">
+                                        <div class="front"><span class="mdi mdi-telegram"></span></div>
+                                        <div class="back"><span class="mdi mdi-telegram"></span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="footer__checkfield">
                                 <input type="checkbox" id="footcheck">

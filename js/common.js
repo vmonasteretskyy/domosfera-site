@@ -12,8 +12,8 @@ $(document).ready(function () {
         dots: true,
         fade: true,
         asNavFor: '.mainsliderlittle__sect',
-        autoplay: true,
-        autoplaySpeed: 6000,
+        // autoplay: true,
+        autoplaySpeed: 8000,
     });
 
     // main slider (little)
@@ -27,8 +27,15 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"></button>',
         fade: true,
         dotsClass: 'custom_paging',
+        focusOnSelect: true,
     });
 
+    $('.mainsliderlittle__sect .slick-next.slick-arrow').mouseover(function () {
+        $('.mainsliderlittle__cont .picbox').css('margin-left', '20px');
+    });
+    $('.mainsliderlittle__sect .slick-next.slick-arrow').mouseleave(function () {
+        $('.mainsliderlittle__cont .picbox').css('margin-left', '0px');
+    });
 
 
     // news slider
@@ -67,20 +74,46 @@ $(document).ready(function () {
     });
 
 
+    // salons page
+
+    $('.salons-section .salons__select-choosen').click(function () {
+        $('.salons-section .salons__select ul').slideToggle();
+        $(this).children('span').toggleClass('rotatearr')
+    });
+
+    $(document).click(function (event) {
+        if (!$(event.target).is(".salons-section .salons__select-choosen,.salons__select-choosen text, .salons__select, .salons-section .salons__select ul, .salons-section .salons__select ul li")) {
+            $(".salons-section .salons__select ul").slideUp();
+            $('.salons__select-choosen span').removeClass('rotatearr');
+        }
+    });
+    $(document).on('click', '.salons-section .salons__select ul li', function (e) {
+        var name = $(this).text();
+        $(".salons-section .salons__select-choosen text").text(name);
+    });
+
+    $('.salons-section .salons__select ul li').click(function () {
+        $('.salons-section .salons__select ul').slideUp();
+        $('.salons__select-choosen span').removeClass('rotatearr');
+    });
 
 
+    // scroll to
 
 
+    $(".fixed-leftsocial").on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
 
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
 
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
 
-
-
-
-
-
-
-
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({ scrollTop: top }, 1000);
+    });
 
 
 
@@ -92,9 +125,11 @@ $(document).ready(function () {
 // fix left arrow
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('.arrowfix').addClass('rotatearrow');
+        $('.tobott').hide();
+        $('.toup').show();
     } else {
-        $('.arrowfix').removeClass('rotatearrow');
+        $('.tobott').show();
+        $('.toup').hide();
     }
 });
 
