@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.restoran-sliders').slick({
         arrows: true,
         dots: false,
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         variableWidth: true,
         prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-chevron-left"></span></button>',
@@ -74,4 +74,33 @@ $(document).ready(function () {
         }
 
     });
+
+    // filter category 
+	$(".filter-my").click(function() {
+		let category = $(this).attr("id");
+		console.log(category);
+		if (category === "all") {
+			$(".filter-this")
+				.fadeOut(400)
+				.addClass("hide")
+				.removeClass("flex-auto");
+			setTimeout(function() {
+				$(".filter-this")
+					.fadeIn(400)
+					.removeClass("hide");
+			}, 500);
+		} else {
+			$(".filter-this")
+				.fadeOut(400)
+				.addClass("hide")
+				.removeClass("flex-auto");
+			setTimeout(function() {
+				$("." + category)
+					.fadeIn(400)
+					.removeClass("hide")
+					.addClass("flex-auto");
+			}, 500);
+		}
+    });
+
 });
