@@ -1338,7 +1338,7 @@ section {
 /* salons */
 
 .salons-section {
-    padding: 50px 0 0 0;
+    padding-top: 50px;
     position: relative;
 }
 
@@ -1391,7 +1391,7 @@ section {
     background-color: #fff;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     border-radius: 0 0 5px 5px;
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
@@ -1936,6 +1936,72 @@ section {
 .show-morebtn a:hover {
     color: #fff;
     background-color: #323335;
+    border-color: #323335;
+}
+
+.salons__content-blocks>.row>.col-lg-12 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.salons__content-blocks .salon-sect .col-lg-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.salons-section .salons__content-blocks .salon-sect__picbox-img {
+    width: 100%;
+    height: 400px;
+}
+
+.salons__content-blocks .salon-sect {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.salons-section .salons__content-blocks .salon-sect__picbox a>span,
+.salons__content-blocks .whitehoverborder {
+    display: none;
+}
+
+.salons__content-blocks .salon-sect__contbox {
+    /* display: none; */
+}
+
+.salons-section .salons__content-blocks .salon-sect__picbox .flornumber {
+    height: auto;
+    width: auto;
+}
+
+.salons-section .salons__content-blocks .salon-sect__picbox .flornumber span {
+    writing-mode: initial;
+    -webkit-writing-mode: initial;
+    -ms-writing-mode: initial;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
+.shadow-blockcat {
+    display: none;
+}
+
+.salons__content-blocks .shadow-blockcat {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* background-image: linear-gradient(to top, rgba(36, 37, 38, 0.85), #242526); */
+    background-image: url(../image/category/bg-shadow.png);
+    width: 100%;
+    height: 100%;
 }
 
 

@@ -139,6 +139,30 @@
     }
 }
 
+@media(max-width:1199.8px) {
+    .bigtitle-page {
+        font-size: 140px;
+    }
+
+    .salons-section .salon-sect__contbox a.title {
+        margin-bottom: 10px;
+    }
+
+    .salon-sect__contbox {
+        padding-top: 15px;
+    }
+
+
+
+
+
+
+    /* 1199 */
+    .salons-section .salon-sect__contbox a.title {
+        font-size: 32px;
+    }
+}
+
 @media(max-width:1140px) {
     .mainslider .slick-dots {
         display: none !important;
@@ -178,6 +202,13 @@
 
     .header__worktime .weekend-text {
         white-space: nowrap;
+    }
+
+
+
+    /* 1024 */
+    .salons__topsect .col-xl-7 {
+        display: none;
     }
 }
 
@@ -334,6 +365,28 @@
     .footer__listsect2 ul li:nth-child(2),
     .footer__listsect1 ul li:nth-child(2) {
         margin-bottom: 30px;
+    }
+
+    .salon-sect__contbox {
+        padding-left: 0;
+    }
+
+    .salons-section .salon-sect__contbox .descr {
+        margin-bottom: 20px;
+    }
+
+    /* 991 */
+
+    .salons-section .bigtitle-page {
+        left: 40px;
+    }
+
+    .salons-section {
+        padding-top: 30px;
+    }
+
+    .bigtitle-page {
+        font-size: 100px;
     }
 }
 
@@ -510,17 +563,40 @@
         text-align: center;
     }
 
+    .salons-section .salon-sect__picbox-img {
+        height: 200px;
+    }
+
+    .salons-section .salons__select ul {
+        top: 48px;
+    }
+
+    .salons-section .salon-sect__picbox .flornumber {
+        justify-content: flex-end;
+    }
+
+    .salons-section .salon-sect__contbox .phone-list {
+        flex-wrap: wrap;
+    }
+
+    .salons-section .salon-sect__contbox .phonebox {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .salons-section .salon-sect__picbox .flornumber span {
+        letter-spacing: 5px;
+    }
 
 
 
 
 
-
-
-
-
-
-
+    /* 575 */
+    .salons-section .salons__select-choosen {
+        font-size: 18px;
+    }
 
     .news,
     .aboutus,
@@ -531,6 +607,11 @@
     }
 }
 
+@media(max-width: 375.8px) {
+    .bigtitle-page {
+        font-size: 65px;
+    }
+}
 
 @media(max-width:360.8px) {
     .news .col-md-6 {
