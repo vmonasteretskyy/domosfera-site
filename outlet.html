@@ -21,7 +21,7 @@
 </head>
 
 <body>
-
+    <div id="toppage"></div>
     <header class="header">
         <div class="header__logo">
             <a href="#"><img src="image/logo.svg" alt="logo"></a>
@@ -43,8 +43,11 @@
         <div class="header__searchbtn">
             <span class="mdi mdi-18px mdi-magnify"></span>
             <form action="#">
-                <input type="text" placeholder="Пошук">
-                <button><span class="mdi mdi-18px mdi-magnify"></span></button>
+                <input type="text" placeholder="Що шукати?">
+                <button>Пошук <img src="image/news-arrow.svg" alt="arrow"></button>
+                <div class="close-headsearch">
+                    <span class="mdi mdi-window-close"></span>
+                </div>
             </form>
         </div>
         <div class="header__navbtn">
@@ -247,16 +250,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="outlet-item">
-                            <div class="outlet-img">
-                                <img src="img/outlet1.png" alt="">
-                            </div>
-                            <div class="outlet-item-bot">
-                                <a href="#">Aplomb</a>
-                                <ul>
-                                    <li>4 400 грн</li>
-                                </ul>
-                            </div>
+                        <div class="outlet-item show-more">
+                            <a href="#"><span class="mdi mdi-sync"></span><span>Показати ще 12</span></a>
                         </div>
                     </div>
  
