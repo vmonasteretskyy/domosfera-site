@@ -220,9 +220,39 @@
         width: 39vw;
     }
 
-    /* 1024 */
-    .salons__topsect .col-xl-7 {
+    .salons__content-blocks .show-hover-catblock:hover .hovershowdescr {
         display: none;
+    }
+
+    .salons__content-blocks .show-hover-catblock:hover {
+        background-color: transparent;
+    }
+
+    .salons__content-blocks .show-hover-catblock:hover ul {
+        display: block;
+    }
+
+    .salons__content-blocks .show-hover-catblock .tablet-genlink {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .show-hover-catblock ul {
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+
+    /* 1024 */
+    .salons-section .salons__select-choosen {
+        font-size: 22px;
     }
 }
 
@@ -391,6 +421,12 @@
 
     .header__searchbtn form.openheadsearch {
         width: 63vw;
+    }
+
+    .salons__content-blocks>.row>.col-lg-12 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     /* 991 */
@@ -607,6 +643,9 @@
         letter-spacing: 5px;
     }
 
+    .bigtitle-page {
+        font-size: 65px;
+    }
 
 
 
@@ -625,9 +664,26 @@
     }
 }
 
+@media(max-width:480.8px) {
+    .salons__content-blocks>.row>.col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .salons__content>.row .col-lg-12:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
 @media(max-width: 375.8px) {
     .bigtitle-page {
         font-size: 65px;
+    }
+
+    .salons__content-blocks .salon-sect,
+    .salons-section .salons__content-blocks .salon-sect__picbox-img {
+        height: 300px;
     }
 }
 

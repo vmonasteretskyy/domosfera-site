@@ -79,9 +79,9 @@ $(document).ready(function () {
 
     // salons page
 
-    $('.salons-section .salons__select-choosen').click(function () {
+    $('.salons-section .salons__select-choosen text').click(function () {
         $('.salons-section .salons__select ul').slideToggle();
-        $(this).children('span').toggleClass('rotatearr')
+        $(this).next('span').toggleClass('rotatearr')
     });
 
     $(document).click(function (event) {
