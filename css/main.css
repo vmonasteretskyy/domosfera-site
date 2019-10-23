@@ -299,8 +299,8 @@
     text-align: center;
     color: #323335;
     text-decoration: none;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,6 +316,353 @@
     -o-transition: 0.5s;
 }
 
+/* ===============================================================outlet-single======================================================== */
+
+.outlet-single.salons-section{
+    padding: 0;
+}
+.outlet-single .container{
+    padding-top: 50px;
+}
+.outlet-single .bredcrambs{
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #323335;
+}
+.outlet-single .bredcrambs ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: 40px;
+}
+.outlet-single .bredcrambs ul li{
+    padding-right: 5px;
+}
+.outlet-single .bredcrambs ul li:last-child{
+    color: #afb0b3;
+}
+.outlet-single .gray-block{
+    top: -20px;
+    left: -25px;
+    z-index: -1;
+    width: 285px;
+    height: 350px;
+    background-color: #eeeeee;
+    position: absolute;
+}
+.outlet-single .left-block{
+    width: 86.5%;
+}
+.outlet-single .outlet-sliders .outlet-slider{
+    overflow: hidden;
+    height: 480px;
+}
+.outlet-single .outlet-sliders .outlet-slider img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.outlet-single .outlet-min-sliders{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.outlet-single .outlet-min-sliders .outlet-slider{
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+}
+.outlet-single .outlet-min-sliders .outlet-slider img{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.outlet-single .warrior{
+    background: #ffe8e8;
+    padding: 10px 35px 10px 20px;
+    margin-top: 80px;
+}
+.outlet-single .warrior h4{
+    font-family: Gilroy;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #b73434;
+    margin: 0;
+}
+.outlet-single .warrior p{
+    font-family: Gilroy;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #b73434;
+    margin: 0;
+}
+.outlet-single  .left-section{
+    display: flex;
+}
+.outlet-single  .left-section .slider{
+    width: 100%;
+}
+.outlet-single  .vertical-word{
+    padding-right: 20px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #afb0b3;
+    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    transform: rotate(180deg);
+    letter-spacing: 7px;
+}
+
+.outlet-single .right-block .price-block{
+    display: flex;
+    padding-left: 30px;
+}
+.outlet-single .right-block .price-block ul:first-child{
+    width: 40%;
+}
+.outlet-single .right-block .price-block ul li.red{
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #b73434;
+}
+.outlet-single .right-block .price-block ul li.line{
+    text-decoration: line-through;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #afb0b3;
+}
+.outlet-single .right-block .price-block ul:nth-child(2) li{
+    padding: 3px 0;
+    
+}
+.outlet-single .right-block .price-block ul li.discount{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #b73434;
+}
+.outlet-single .right-block .price-block ul li.discount span{
+    font-weight: bold;
+    color: #323335;
+}
+.outlet-single .right-block .price-block ul li.term{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #323335;
+}
+.outlet-single .right-block .price-block ul li.term span{
+    font-weight: bold;
+}
+.outlet-single .right-block .price-block ul{
+    padding-left: 0;
+    width: 60%;
+    list-style: none;
+}
+
+.outlet-single .right-block .seller{
+    margin-top: 30px;
+    background: #eeeeee;
+    padding: 30px;
+}
+.outlet-single .right-block .seller h4{
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 8.4px;
+    text-align: left;
+    color: #afb0b3;
+    margin-bottom: 15px;
+}
+.outlet-single .right-block .seller .seller-block{
+    display: flex;
+}
+.outlet-single .right-block .seller .seller-block .seller-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.outlet-single .right-block .seller .seller-block .seller-info ul{
+    list-style: none;
+    padding-left: 0;
+    width: 50%;
+    padding-left: 15px;
+}
+.outlet-single .right-block .seller .seller-block .seller-info ul li{
+    text-transform: uppercase;
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #afb0b3;
+}
+.outlet-single .right-block .seller .seller-block .seller-info ul li a{
+    text-transform: none;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #323335;
+}
+.outlet-single .right-block .seller .seller-contact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outlet-single .right-block .seller .seller-contact a{
+    text-decoration: none;
+    border: 1px solid #242526;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #242526;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-align: center;
+}
+.outlet-single .right-block .seller .seller-contact a:hover{
+    color: #242526;
+    background-color: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.outlet-single .right-block .block-text ul{
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+.outlet-single .right-block .block-text ul li{
+    cursor: pointer;
+    padding: 0 30px 15px 30px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #afb0b3;
+    border-bottom: 2px solid #afb0b3;
+    margin-right: 1px;
+}
+.outlet-single .right-block .block-text ul li.active{
+    color: #323335;
+    border-bottom: 2px solid #323335;
+    margin-right: 1px;
+}
+.outlet-single .right-block .outlet-single-text{
+    display: none;
+    animation: fadeEffect 2s;
+	-webkit-animation: fadeEffect 2s;
+}
+.outlet-single .right-block #tab1{
+	display: block;
+}
+
+.outlet-single .right-block .outlet-single-text .more-text{
+    display: none;
+}
+
+.outlet-single .right-block .outlet-single-text .show-btn{
+    width: 100%;
+    text-align: center;
+}
+.outlet-single .right-block .outlet-single-text .show-btn a{
+    position: absolute;
+    z-index: 20;
+    margin-top: -10px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.outlet-single .right-block .outlet-single-text .shadow-text{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to top, #fff, transparent);
+    height: 10%;
+    width: 100%;
+    display: block;
+}
+
+  
+  
 
 @media (max-width: 1300px) {
     .smak-word {
