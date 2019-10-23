@@ -1373,6 +1373,7 @@ section {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    z-index: -1;
 }
 
 .salons-section .salons__select-choosen>span.rotatearr {
@@ -2235,7 +2236,7 @@ header.header {
 }
 
 .salons__select-choosen text {
-    width: calc(100% - 33px);
+    /* width: calc(100% - 33px); */
     display: block;
 }
 
@@ -2322,7 +2323,9 @@ header.header {
     opacity: 1;
 }
 
-
+.restoran-body .new_slidelink a:hover {
+    text-decoration: none;
+}
 
 
 
