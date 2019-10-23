@@ -1,6 +1,9 @@
 .filter-area{
     margin-top: 50px;
 }
+.restoran .smak-pad{
+    padding-left: 70px;
+}
 .restoran.salons-section{
     padding: 0;
 }
@@ -169,6 +172,10 @@
 }
 
 /* ============================================================outlet======================================================================= */
+.outlet-top,
+.outlet-items{
+    padding-left: 90px;
+}
 .outlet.salons-section{
     padding: 0;
 }
@@ -217,16 +224,34 @@
     width: 100%;
     margin-bottom: 40px;
 }
+.outlet-item a{
+    text-decoration: none;
+}
+.outlet-item a:hover ul li{
+    color: #242526;
+}
 .outlet-item .outlet-img{
     overflow: hidden;
     height: 270px;
 }
 .outlet-item .outlet-img img{
+    transition: 0.5s;
     max-width: 100%;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.outlet-item a:hover .outlet-img img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .outlet-item .outlet-item-bot{
     display: block;
@@ -234,8 +259,8 @@
     padding: 10px 15px;
     background-color: #eeeeee;
 }
-.outlet-item .outlet-item-bot a{
-    padding: 10px 0;
+.outlet-item .outlet-item-bot h4{
+    padding: 5px 0;
     font-family: Gilroy;
     font-size: 18px;
     font-weight: bold;
@@ -244,6 +269,7 @@
     line-height: 1.33;
     letter-spacing: 0.45px;
     color: #323335;
+    margin-bottom: 0;
 }
 .outlet-item .outlet-item-bot ul{
     list-style: none;
@@ -707,7 +733,7 @@
 
 @media (max-width: 1300px) {
     .smak-word {
-        margin-left: 0px;
+        margin-left: -120px;
     }
 
     /* outlet */
@@ -716,10 +742,12 @@
     }
     .outlet-top,
     .outlet-items{
-        padding-left: 50px;
+        padding-left: 70px;
     }
     .outlet-search input{
-        width: 210px;
+        width: 100%;
+        padding-right: 50px;
+
     }
     .outlet-word {
         margin-left: -600px;
@@ -736,7 +764,7 @@
     .smak-word {
         font-size: 150px;
         margin-left: -140px;
-        top: 5px;
+        top: -55px;
     }
 
     /* outlet */
@@ -755,11 +783,21 @@
     .smak-word {
         font-size: 100px;
         margin-left: -240px;
-        top: 50px;
+        top: -3px;
+    }
+    .restoran .slick-prev{
+        right: 40px!important;
+    }
+    .restoran .slick-next{
+        right: 10px!important;
     }
 }
 
 @media (max-width: 575px){
+    .restoran .smak-pad{
+        padding-left: 0;
+    }
+
     .outlet-top,
     .outlet-items{
         padding-left: 0px;
@@ -787,7 +825,6 @@
     .smak-word {
         font-size: 100px;
         margin-left: -150px;
-        top: 50px;
     }
     .outlet-word {
         margin-left: -370px;
@@ -804,5 +841,11 @@
         margin-left: -320px;
         font-size: 100px;
         top: 75px;
+    }
+}
+
+@media (max-height: 500.8px) {
+    .outlet-top, .outlet-items {
+        padding-left: 0px;
     }
 }

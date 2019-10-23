@@ -23,19 +23,19 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-chevron-right"></span></button>',
     });
 
-    var leftmarg = (($(window).width() - $('.container').width()) / 2) - (-15);
+    var leftmarg = (($(window).width() - $('.container').width()) / 2) - 45;
     $('.restoran-sliders').css('padding-left', leftmarg);
 
     // news slider arrow
-    $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 150);
-    $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 125);
+    $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 100);
+    $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 75);
     if ($(window).width() < 1300) {
-        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 100);
-        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 80);
+        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 80);
+        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 60);
     }
     if ($(window).width() < 992) {
-        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 100);
-        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 80);
+        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 60);
+        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 40);
     }
     if ($(window).width() < 576) {
         var leftmarg = (($(window).width() - $('.container').width()) / 2);
@@ -47,7 +47,7 @@ $(document).ready(function () {
     }
 
     $(window).resize(function () {
-        var leftmarg = (($(window).width() - $('.container').width()) / 2) - 5;
+        var leftmarg = (($(window).width() - $('.container').width()) / 2) - 45;
         $('.restoran-sliders').css('padding-left', leftmarg);
 
         // news slider arrow
