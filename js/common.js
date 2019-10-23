@@ -62,23 +62,26 @@ $(document).ready(function () {
     });
 
     // header search
-    $('.header__searchbtn').click(function () {
+    $('.header__searchbtn > span').click(function () {
         $('.header__searchbtn form').addClass('openheadsearch');
     });
-    $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $(".header__searchbtn form"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            div.removeClass('openheadsearch'); // скрываем его
-        }
-    });
+    $('.header__searchbtn form .close-headsearch').click(function () {
+        $('.header__searchbtn form').removeClass('openheadsearch');
+    })
+    // $(document).mouseup(function (e) { // событие клика по веб-документу
+    //     var div = $(".header__searchbtn form"); // тут указываем ID элемента
+    //     if (!div.is(e.target) // если клик был не по нашему блоку
+    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    //         div.removeClass('openheadsearch'); // скрываем его
+    //     }
+    // });
 
 
     // salons page
 
-    $('.salons-section .salons__select-choosen').click(function () {
+    $('.salons-section .salons__select-choosen text').click(function () {
         $('.salons-section .salons__select ul').slideToggle();
-        $(this).children('span').toggleClass('rotatearr')
+        $(this).next('span').toggleClass('rotatearr')
     });
 
     $(document).click(function (event) {
@@ -99,23 +102,32 @@ $(document).ready(function () {
 
 
     // scroll to
-    if ($('*').is('#scrollto')) {
-        $(".fixed-leftsocial").on("click", "a", function (event) {
-            //отменяем стандартную обработку нажатия по ссылке
-            event.preventDefault();
 
-            //забираем идентификатор бока с атрибута href
-            var id = $(this).attr('href'),
+    $(".fixed-leftsocial").on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
 
-                //узнаем высоту от начала страницы до блока на который ссылается якорь
-                top = $(id).offset().top;
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
 
-            //анимируем переход на расстояние - top за 1500 мс
-            $('body,html').animate({ scrollTop: top }, 1000);
-        });
-    }
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
 
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({ scrollTop: top }, 1000);
+    });
 
+    // category list - block 
+    $('.blocks-structure-list').click(function () {
+        $('.blocks-structure > div').removeClass('active');
+        $(this).addClass('active');
+        $('.salons__content').removeClass('salons__content-blocks');
+    });
+    $('.blocks-structure-block').click(function () {
+        $('.blocks-structure > div').removeClass('active');
+        $(this).addClass('active');
+        $('.salons__content').addClass('salons__content-blocks');
+    });
 
 
 

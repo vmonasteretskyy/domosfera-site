@@ -139,9 +139,45 @@
     }
 }
 
+@media(max-width:1199.8px) {
+    .bigtitle-page {
+        font-size: 140px;
+    }
+
+    .salons-section .salon-sect__contbox a.title {
+        margin-bottom: 10px;
+    }
+
+    .salon-sect__contbox {
+        padding-top: 15px;
+    }
+
+    .header__searchbtn form button {
+        font-size: 12px;
+    }
+
+    .header__searchbtn form input[type="text"] {
+        font-size: 16px;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 46vw;
+    }
+
+
+    /* 1199 */
+    .salons-section .salon-sect__contbox a.title {
+        font-size: 32px;
+    }
+}
+
 @media(max-width:1140px) {
     .mainslider .slick-dots {
         display: none !important;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 44vw;
     }
 }
 
@@ -178,6 +214,45 @@
 
     .header__worktime .weekend-text {
         white-space: nowrap;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 39vw;
+    }
+
+    .salons__content-blocks .show-hover-catblock:hover .hovershowdescr {
+        display: none;
+    }
+
+    .salons__content-blocks .show-hover-catblock:hover {
+        background-color: transparent;
+    }
+
+    .salons__content-blocks .show-hover-catblock:hover ul {
+        display: block;
+    }
+
+    .salons__content-blocks .show-hover-catblock .tablet-genlink {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .show-hover-catblock ul {
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+
+    /* 1024 */
+    .salons-section .salons__select-choosen {
+        font-size: 22px;
     }
 }
 
@@ -334,6 +409,38 @@
     .footer__listsect2 ul li:nth-child(2),
     .footer__listsect1 ul li:nth-child(2) {
         margin-bottom: 30px;
+    }
+
+    .salon-sect__contbox {
+        padding-left: 0;
+    }
+
+    .salons-section .salon-sect__contbox .descr {
+        margin-bottom: 20px;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 63vw;
+    }
+
+    .salons__content-blocks>.row>.col-lg-12 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* 991 */
+
+    .salons-section .bigtitle-page {
+        left: 40px;
+    }
+
+    .salons-section {
+        padding-top: 30px;
+    }
+
+    .bigtitle-page {
+        font-size: 100px;
     }
 }
 
@@ -510,17 +617,43 @@
         text-align: center;
     }
 
+    .salons-section .salon-sect__picbox-img {
+        height: 200px;
+    }
+
+    .salons-section .salons__select ul {
+        top: 48px;
+    }
+
+    .salons-section .salon-sect__picbox .flornumber {
+        justify-content: flex-end;
+    }
+
+    .salons-section .salon-sect__contbox .phone-list {
+        flex-wrap: wrap;
+    }
+
+    .salons-section .salon-sect__contbox .phonebox {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .salons-section .salon-sect__picbox .flornumber span {
+        letter-spacing: 5px;
+    }
+
+    .bigtitle-page {
+        font-size: 65px;
+    }
 
 
 
 
-
-
-
-
-
-
-
+    /* 575 */
+    .salons-section .salons__select-choosen {
+        font-size: 18px;
+    }
 
     .news,
     .aboutus,
@@ -531,6 +664,28 @@
     }
 }
 
+@media(max-width:480.8px) {
+    .salons__content-blocks>.row>.col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .salons__content>.row .col-lg-12:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 375.8px) {
+    .bigtitle-page {
+        font-size: 65px;
+    }
+
+    .salons__content-blocks .salon-sect,
+    .salons-section .salons__content-blocks .salon-sect__picbox-img {
+        height: 300px;
+    }
+}
 
 @media(max-width:360.8px) {
     .news .col-md-6 {
