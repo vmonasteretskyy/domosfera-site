@@ -129,7 +129,11 @@ $(document).ready(function () {
         $('.salons__content').addClass('salons__content-blocks');
     });
 
-
+    // brands
+    $('.brands-section .brands__filter ul li').click(function () {
+        $('.brands-section .brands__filter ul li').not($(this)).removeClass('active');
+        $(this).addClass('active');
+    });
 
 });
 
