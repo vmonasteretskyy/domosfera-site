@@ -46,8 +46,6 @@ $(document).ready(function () {
         $('.restoran-slider').css('padding-left', leftmarg);
     }
 
-
-
     $(window).resize(function () {
         var leftmarg = (($(window).width() - $('.container').width()) / 2) - 5;
         $('.restoran-sliders').css('padding-left', leftmarg);
@@ -103,4 +101,52 @@ $(document).ready(function () {
 		}
     });
 
+    $('.outlet-sliders').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.outlet-min-sliders'
+      });
+      $('.outlet-min-sliders').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.outlet-sliders',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        // centerMode: true,
+        variableWidth: true,
+        focusOnSelect: true
+      });
+
+
+      $('.show-btn a').click(function(){
+        $('.more-text').slideToggle(300);
+        $('.shadow-text').slideToggle(300);
+      });
+
 });
+
+
+
+function openDesc(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("outlet-single-text");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
