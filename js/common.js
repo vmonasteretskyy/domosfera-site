@@ -117,8 +117,17 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 1000);
     });
 
-
-
+    // category list - block 
+    $('.blocks-structure-list').click(function () {
+        $('.blocks-structure > div').removeClass('active');
+        $(this).addClass('active');
+        $('.salons__content').removeClass('salons__content-blocks');
+    });
+    $('.blocks-structure-block').click(function () {
+        $('.blocks-structure > div').removeClass('active');
+        $(this).addClass('active');
+        $('.salons__content').addClass('salons__content-blocks');
+    });
 
 
 
