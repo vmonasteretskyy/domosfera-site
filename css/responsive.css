@@ -152,9 +152,17 @@
         padding-top: 15px;
     }
 
+    .header__searchbtn form button {
+        font-size: 12px;
+    }
 
+    .header__searchbtn form input[type="text"] {
+        font-size: 16px;
+    }
 
-
+    .header__searchbtn form.openheadsearch {
+        width: 46vw;
+    }
 
 
     /* 1199 */
@@ -166,6 +174,10 @@
 @media(max-width:1140px) {
     .mainslider .slick-dots {
         display: none !important;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 44vw;
     }
 }
 
@@ -204,7 +216,9 @@
         white-space: nowrap;
     }
 
-
+    .header__searchbtn form.openheadsearch {
+        width: 39vw;
+    }
 
     /* 1024 */
     .salons__topsect .col-xl-7 {
@@ -373,6 +387,10 @@
 
     .salons-section .salon-sect__contbox .descr {
         margin-bottom: 20px;
+    }
+
+    .header__searchbtn form.openheadsearch {
+        width: 63vw;
     }
 
     /* 991 */

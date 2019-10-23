@@ -62,16 +62,19 @@ $(document).ready(function () {
     });
 
     // header search
-    $('.header__searchbtn').click(function () {
+    $('.header__searchbtn > span').click(function () {
         $('.header__searchbtn form').addClass('openheadsearch');
     });
-    $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $(".header__searchbtn form"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            div.removeClass('openheadsearch'); // скрываем его
-        }
-    });
+    $('.header__searchbtn form .close-headsearch').click(function () {
+        $('.header__searchbtn form').removeClass('openheadsearch');
+    })
+    // $(document).mouseup(function (e) { // событие клика по веб-документу
+    //     var div = $(".header__searchbtn form"); // тут указываем ID элемента
+    //     if (!div.is(e.target) // если клик был не по нашему блоку
+    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    //         div.removeClass('openheadsearch'); // скрываем его
+    //     }
+    // });
 
 
     // salons page
