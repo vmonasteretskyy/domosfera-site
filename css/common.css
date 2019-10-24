@@ -2247,7 +2247,7 @@ header.header {
 /* BRANDS */
 .brands-section {
     position: relative;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .brands-section>.container {
@@ -2265,6 +2265,7 @@ header.header {
     padding-top: 47px;
     position: relative;
     z-index: 1;
+    margin-bottom: 110px;
 }
 
 .brands-section .brands__filter ul li {
@@ -2326,6 +2327,89 @@ header.header {
 .restoran-body .new_slidelink a:hover {
     text-decoration: none;
 }
+
+.brands-section .brands__filter ul {
+    margin-bottom: 0;
+}
+
+.brands-section .brands__filter .lat-filter ul {
+    margin-bottom: 28px;
+    padding-left: 0;
+}
+
+.brands-section .brand-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eeeeee;
+    height: 150px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.brands-section .brand-pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.brands-section .brand__box p {
+    line-height: 1.72;
+    letter-spacing: 0.45px;
+    text-align: center;
+    color: #323335;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.brands-section .brand__box:hover {
+    cursor: pointer;
+}
+
+.brands-section .brand__box:hover .brand-pic {
+    border-color: #242526;
+}
+
+.brands-section .brand__box:hover p {
+    text-decoration: underline;
+}
+
+.brands-section .brand__box {
+    margin-bottom: 30px;
+}
+
+.modal .close {
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+#brand-modal .modal-body {
+    padding: 20px 30px 20px 20px;
+}
+
+.modalbrand-list li {
+    margin-bottom: 5px;
+}
+
+.modalbrand-list li a {
+    font-size: 16px;
+}
+
+.modalbrand-list li a:hover {
+    color: #323335;
+}
+
+
+
+
+
+
+
 
 
 

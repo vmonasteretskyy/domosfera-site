@@ -164,6 +164,26 @@
         width: 46vw;
     }
 
+    .brands__filter ul {
+        text-align: center;
+    }
+
+    .brands-section .brands__filter ul li {
+        margin-bottom: 10px;
+    }
+
+    .brands-section {
+        padding-top: 50px;
+    }
+
+    .brands-section .brands__topsect {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .brands-section .brands__filter ul {
+        padding-left: 0;
+    }
 
     /* 1199 */
     .salons-section .salon-sect__contbox a.title {
@@ -647,6 +667,9 @@
         font-size: 65px;
     }
 
+    .brands-section .brand-pic {
+        box-sizing: content-box;
+    }
 
 
 
