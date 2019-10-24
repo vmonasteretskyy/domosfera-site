@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="toppage"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="image/logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__phone">
+            <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+        </div>
+        <div class="header__worktime">
+            <p><span class="mdi mdi-18px mdi-clock"></span>10:00 - 20:00</p>
+            <div class="weekend-text">28-29 квітня 2019 року - вихідні дні</div>
+        </div>
+        <div class="header__language">
+            <ul>
+                <li class="active"><a href="#">ua</a></li>
+                <li><a href="#">ru</a></li>
+                <li><a href="#">en</a></li>
+            </ul>
+        </div>
+        <div class="header__searchbtn">
+            <span class="mdi mdi-18px mdi-magnify"></span>
+            <form action="#">
+                <input type="text" placeholder="Що шукати?">
+                <button>Пошук <img src="image/news-arrow.svg" alt="arrow"></button>
+                <div class="close-headsearch">
+                    <span class="mdi mdi-window-close"></span>
+                </div>
+            </form>
+        </div>
+        <div class="header__navbtn">
+            <span>меню</span>
+            <img src="image/menu-icon.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-page">
+            <h1 class="bigtitle-page">Контакти</h1>
+            <section class="map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="mapbox">
+                                <div class="mapshadow"></div>
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1">
+                            <ul class="no-style righttlist">
+                                <li>
+                                    <span class="mdi mdi-home-outline"></span><span class="title">Адреса</span>
+                                    <p>м.Київ, Столичне шосе, 101, Україна, 03045</p>
+                                </li>
+                                <li>
+                                    <span class="mdi mdi-map-marker-circle"></span><span class="title">Як
+                                        дістатися</span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, vocibus fierent te est.
+                                        Agam scripserit sit ut. At aeterno officiis tacimates.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="mdi mdi-clock"></span><span class="title">Графік роботи</span>
+                                    <p>Пн-Нд : 10:00 - 20:00</p>
+                                    <p class="red-text">28-29 квітня 2019 року - вихідні дні</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="adress-sect">
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="footer__leftsect">
+                    <div class="footer__logo">
+                        <a href="#"><img src="image/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer__phone">
+                        <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+                    </div>
+                </div>
+                <div class="footer__listsect1">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Оренда</a>
+                        </li>
+                        <li>
+                            <a href="#">Domosgera Hub</a>
+                        </li>
+                        <li>
+                            Україна, Київ,<br>
+                            Столичне шосе 101
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__listsect2">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Outlet</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                        <li>
+                            10:00 - 20:00
+                            <span>28-29 квітня 2019 року - вихідні дні</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <div>
+                        <p class="title">Підписка на новини</p>
+                        <form action="#">
+                            <div class="footer__inpfield">
+                                <input type="email" placeholder="Ваш email">
+                                <!-- <button>
+                                    <span class="mdi mdi-telegram"></span>
+                                </button> -->
+                                <div class="flip footerbtn">
+                                    <a href="#" target="_blank">
+                                        <div class="front"><span class="mdi mdi-telegram"></span></div>
+                                        <div class="back"><span class="mdi mdi-telegram"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__checkfield">
+                                <input type="checkbox" id="footcheck">
+                                <label for="footcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                        даних</a></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/common.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyIGCxQA7HNcmtuAie-F_7IPR4l280zYE&callback=initMap">
+        </script>
+</body>
+
+</html>

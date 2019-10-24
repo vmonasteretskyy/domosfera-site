@@ -160,7 +160,8 @@
         font-size: 16px;
     }
 
-    .header__searchbtn form.openheadsearch {
+    .header__searchbtn form.openheadsearch,
+    .header__searchbtn form {
         width: 46vw;
     }
 
@@ -196,7 +197,8 @@
         display: none !important;
     }
 
-    .header__searchbtn form.openheadsearch {
+    .header__searchbtn form.openheadsearch,
+    .header__searchbtn form {
         width: 44vw;
     }
 }
@@ -236,7 +238,8 @@
         white-space: nowrap;
     }
 
-    .header__searchbtn form.openheadsearch {
+    .header__searchbtn form.openheadsearch,
+    .header__searchbtn form {
         width: 39vw;
     }
 
@@ -439,7 +442,8 @@
         margin-bottom: 20px;
     }
 
-    .header__searchbtn form.openheadsearch {
+    .header__searchbtn form.openheadsearch,
+    .header__searchbtn form {
         width: 63vw;
     }
 

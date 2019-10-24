@@ -2184,23 +2184,71 @@ header.header {
 .header__searchbtn form {
     top: -37px;
     height: 101px;
-    width: 0;
+    display: flex;
+    width: 48vw;
+    background-color: #e7e7e7;
     display: flex;
     align-items: center;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .header__searchbtn form.openheadsearch {
     width: 48vw;
+    height: 101px;
     background-color: #e7e7e7;
-
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
 }
+
+/* @-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        -moz-transform: perspective(400px);
+        -ms-transform: perspective(400px);
+        -o-transform: perspective(400px);
+    }
+} */
 
 .header__searchbtn form input[type="text"] {
     background-color: transparent;
     border: none;
     height: 38px;
     font-size: 18px;
-    border-bottom: 2px solid #c3c3c4;
+    border-bottom: 1px solid #c3c3c4;
     width: calc(100% - 130px);
     margin-left: 30px;
 }
@@ -2228,6 +2276,8 @@ header.header {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .5px;
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .header__searchbtn form button img {
@@ -2402,6 +2452,135 @@ header.header {
 
 .modalbrand-list li a:hover {
     color: #323335;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+    padding-top: 130px;
+    position: relative;
+}
+
+.contact-page .mapbox {
+    height: 392px;
+    position: relative;
+}
+
+.contact-page .mapbox .mapshadow {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 84.8%;
+    box-shadow: 0px 20px 50px 0 rgba(0, 0, 0, 0.15);
+    height: 100%;
+}
+
+.contact-page #map {
+    height: 100%;
+
+}
+
+.contact-page .bigtitle-page {
+    text-align: center;
+    left: 22.4%;
+    top: 13px;
+}
+
+.contact-page .righttlist li span.mdi {
+    font-size: 30px;
+}
+
+.contact-page .righttlist li span.title {
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    margin-left: 25px;
+}
+
+.contact-page .righttlist li p {
+    margin: 15px 0 0 0;
+    letter-spacing: 0.35px;
+}
+
+.contact-page .righttlist li:not(:last-child) {
+    margin-bottom: 55px;
+}
+
+.contact-page .righttlist li p.red-text {
+    margin-top: 0;
+    font-size: 11px;
+    letter-spacing: 0.55px;
+    color: #d85656;
+}
+
+.contact-page .map {
+    margin-bottom: 100px;
+}
+
+.contact-page .adress-sect {}
+
+
+
+
+
+.burgermenu {
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    position: relative;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.burgermenu span,
+.burgermenu span::before,
+.burgermenu span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #222;
+    margin-right: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.burgermenu span::before {
+    width: 21px;
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+}
+
+.burgermenu span::after {
+    width: 14px;
+    transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    -o-transform: translateY(7px);
+}
+
+.burgermenu.openburger span {
+    width: 10px;
+}
+
+.burgermenu.openburger span::before {
+    width: 14px;
+}
+
+.burgermenu.openburger span::after {
+    width: 25px;
 }
 
 

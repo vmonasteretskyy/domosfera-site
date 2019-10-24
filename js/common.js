@@ -135,6 +135,14 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+
+
+
+    // burger
+
+    $('.burgermenu').click(function () {
+        $(this).toggleClass('openburger');
+    });
 });
 
 // fix left arrow
