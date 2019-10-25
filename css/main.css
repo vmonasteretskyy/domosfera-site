@@ -1059,6 +1059,8 @@ button.slick-next:focus{
 }
 .video-page .modal .close{
     opacity: 1;
+    position: relative;
+    top: 0;
 }
 .video-page .modal .close span{
     font-size: 30px;
