@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Відео</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="toppage"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="image/logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__phone">
+            <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+        </div>
+        <div class="header__worktime">
+            <p><span class="mdi mdi-18px mdi-clock"></span>10:00 - 20:00</p>
+            <div class="weekend-text">28-29 квітня 2019 року - вихідні дні</div>
+        </div>
+        <div class="header__language">
+            <ul>
+                <li class="active"><a href="#">ua</a></li>
+                <li><a href="#">ru</a></li>
+                <li><a href="#">en</a></li>
+            </ul>
+        </div>
+        <div class="header__searchbtn">
+            <span class="mdi mdi-18px mdi-magnify"></span>
+            <form action="#">
+                <input type="text" placeholder="Що шукати?">
+                <button>Пошук <img src="image/news-arrow.svg" alt="arrow"></button>
+                <div class="close-headsearch">
+                    <span class="mdi mdi-window-close"></span>
+                </div>
+            </form>
+        </div>
+        <div class="header__navbtn">
+            <span>меню</span>
+            <img src="image/menu-icon.svg" alt="">
+        </div>
+    </header>
+
+    <main class="video-page salons-section">
+        <div class="fixed-leftsocial">
+            <ul class="no-style">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+            <div class="arrowfix">
+                <span class="mdi mdi-18px mdi-arrow-down-drop-circle"></span>
+            </div>
+        </div>
+        <section class="salons__topsect">
+            <div class="container">
+                <div class="top-videos">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <h3>Відео архів</h3>
+                        </div>
+                        <div class="video-word">
+                            Media
+                        </div>
+                        <div class="col-lg-4 offset-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="salons__select">
+                                <p class="salons__select-title">Категорія</p>
+                                <p class="salons__select-choosen"><text>Усі відео</text> <span class="mdi mdi-chevron-down"></span></p>
+                                <ul class="no-style">
+                                    <li class="filter-my" id="all">Всі</li>
+                                    <li class="filter-my" id="restoran">Outlet 1</li>
+                                    <li class="filter-my" id="cafe">Outlet 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-video">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video1.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video2.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video3.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video4.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video5.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video6.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video7.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video8.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="video-item">
+                                <div class="video-img">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter"><div class="bg-video" style="background-image: url(img/video9.png)"><span class="play-stl mdi mdi-play"></span></div></a>
+                                </div>
+                                <div class="video-item-bot">
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Nam ut utroque posidonium. Pri cu antiopam conclusionemque. Mel te eros nobis dissentiunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="show-morebtn">
+                            <a href="#"><text><span class="mdi mdi-sync"></span>Показати ще 12</text></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pagination">
+                            <ul>
+                                <li>&#171;</li>
+                                <li><span>1</span></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li>...</li>
+                                <li><a href="">99</a></li>
+                                <li>&#187;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="mdi mdi-close"></span>
+                </button>
+                <div class="modal-body video-body">
+                    <iframe width="480" height="360" src="https://www.youtube.com/embed/xFa2_PVMeDQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="footer__leftsect">
+                    <div class="footer__logo">
+                        <a href="#"><img src="image/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer__phone">
+                        <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+                    </div>
+                </div>
+                <div class="footer__listsect1">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Оренда</a>
+                        </li>
+                        <li>
+                            <a href="#">Domosgera Hub</a>
+                        </li>
+                        <li>
+                            Україна, Київ,<br>
+                            Столичне шосе 101
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__listsect2">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Outlet</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                        <li>
+                            10:00 - 20:00
+                            <span>28-29 квітня 2019 року - вихідні дні</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <div>
+                        <p class="title">Підписка на новини</p>
+                        <form action="#">
+                            <div class="footer__inpfield">
+                                <input type="email" placeholder="Ваш email">
+                                <!-- <button>
+                                    <span class="mdi mdi-telegram"></span>
+                                </button> -->
+                                <div class="flip footerbtn">
+                                    <a href="#" target="_blank">
+                                        <div class="front"><span class="mdi mdi-telegram"></span></div>
+                                        <div class="back"><span class="mdi mdi-telegram"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__checkfield">
+                                <input type="checkbox" id="footcheck">
+                                <label for="footcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                        даних</a></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyIGCxQA7HNcmtuAie-F_7IPR4l280zYE&callback=initMap">
+        </script>
+</body>
+
+</html>
