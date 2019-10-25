@@ -125,6 +125,14 @@
         height: calc(100vh - 75px);
     }
 
+    .aboutus-page .aboutus-slider__slide {
+        height: calc(100vh - 75px);
+    }
+
+
+
+
+
     /* --1300 */
     .news,
     .aboutus,
@@ -189,6 +197,18 @@
     .brands-section .brands__filter ul {
         padding-left: 0;
     }
+
+    .aboutus-page .bigtext-slide {
+        font-size: 100px;
+    }
+
+
+
+
+
+
+
+
 
     /* 1199 */
     .salons-section .salon-sect__contbox a.title {
@@ -521,6 +541,9 @@
         height: 100px;
     }
 
+    .aboutus-page .bigtext-slide {
+        top: 28vh;
+    }
 
 
     /* 991 */
@@ -820,6 +843,23 @@
         font-size: 16px;
     }
 
+    .aboutus-slider__slide .text-box {
+        left: 30px;
+        top: 40px;
+    }
+
+    .aboutus-slider__slide a {
+        left: 30px;
+    }
+
+    .aboutus-slider .slick-next.slick-arrow {
+        right: 10px;
+    }
+
+    .aboutus-slider .slick-prev.slick-arrow {
+        left: 10px;
+    }
+
     /* 575 */
     .salons-section .salons__select-choosen {
         font-size: 18px;
@@ -842,6 +882,17 @@
     }
 
     .salons__content>.row .col-lg-12:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .aboutus-slider .slick-prev.slick-arrow,
+    .aboutus-slider .slick-next.slick-arrow {
+        height: 40px;
+        width: 30px;
+    }
+
+    .aboutus-slider__slide .text-box .title {
+        font-size: 28px;
         margin-bottom: 20px;
     }
 }
@@ -922,6 +973,17 @@
         height: 15vh;
         max-height: 150px;
         min-height: 95px;
+    }
+
+
+
+}
+
+@media(max-height:775.8px) {
+
+    .aboutus-slider .slick-prev.slick-arrow,
+    .aboutus-slider .slick-next.slick-arrow {
+        margin-top: -5px;
     }
 }
 
