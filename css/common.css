@@ -3008,7 +3008,8 @@ header.header {
 
 .video-page .body-video .video-img a .bg-video,
 .news-page .body-news .news-item a span,
-.outlet-single .right-block .seller .seller-contact a {
+.outlet-single .right-block .seller .seller-contact a,
+.outlet-item.show-more a {
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
