@@ -117,8 +117,12 @@
         height: 250px;
     }
 
-    .mainslider__bottlink a {
-        /* padding-left: 45px; */
+    .contact-page .bigtitle-page {
+        font-size: 150px;
+    }
+
+    .fixed-leftsocial {
+        height: calc(100vh - 75px);
     }
 
     /* --1300 */
@@ -453,7 +457,77 @@
         max-width: 50%;
     }
 
+    .contact-page .bigtitle-page {
+        right: 0;
+        left: 0;
+        font-size: 100px;
+    }
+
+    .contact-page .mapbox {
+        margin-bottom: 30px;
+    }
+
+    .contact-page .righttlist li p {
+        margin: 0;
+    }
+
+    .contact-page .righttlist li:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .contact-page {
+        padding-top: 100px;
+    }
+
+    .contact-page .bigtitle-page {
+        top: -5px;
+    }
+
+    .adress-sect {
+        height: auto;
+    }
+
+    .adress-sect .row .col-md-6:first-child {
+        order: 3;
+    }
+
+    .adress-sect .row .col-md-6:nth-child(2) {
+        order: 2;
+    }
+
+    .adress-sect .row .col-md-6:nth-child(3) {
+        order: 1;
+    }
+
+    .contact-page .adress__subtitle {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .adress-sect .row .col-md-6:first-child .adress__box {
+        margin-top: 30px;
+    }
+
+    .controls label {
+        font-size: 10px;
+        top: 14px;
+    }
+
+    .contact-form {
+        padding-top: 60px;
+    }
+
+    .contact-page .bottom-buttons a {
+        height: 100px;
+    }
+
+
+
     /* 991 */
+    .contact-page .adress__title,
+    .tabform-cont .title {
+        font-size: 32px;
+    }
 
     .salons-section .bigtitle-page {
         left: 40px;
@@ -465,6 +539,10 @@
 
     .bigtitle-page {
         font-size: 100px;
+    }
+
+    .contact-page .map {
+        margin-bottom: 60px;
     }
 }
 
@@ -554,10 +632,19 @@
         padding-left: 25px;
     }
 
+    .contact-page .bigtitle-page {
+        left: 70px;
+    }
 
+    .contact-page .righttlist li span.title {
+        font-size: 24px;
+    }
 
+    .contact-form .tabform {
+        padding: 10px;
+    }
 
-
+    /* 767 */
 }
 
 @media(max-width: 575.8px) {
@@ -675,7 +762,63 @@
         box-sizing: content-box;
     }
 
+    .contact-page .bigtitle-page {
+        left: 0;
+        right: 0;
+        font-size: 60px;
+        line-height: 60px;
+    }
 
+    .contact-page {
+        padding-top: 44px;
+    }
+
+    .contact-page .map {
+        margin-bottom: 30px;
+    }
+
+    .adress-sect,
+    .contact-form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .adress-sect .row .col-md-6:nth-child(2) .adress__box {
+        margin-top: 30px;
+    }
+
+    .contact-form .tabform {
+        width: 49%;
+        display: inline-block;
+        padding: 10px 25px;
+        text-align: center;
+    }
+
+    .contact-form .tabform-cont {
+        padding-top: 10px;
+    }
+
+    .tabform-cont .title {
+        font-size: 22px;
+    }
+
+    .contact-page .bottom-buttons .row .col-sm-6 a {
+        border: 2px solid #242526 !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .contact-page .bottom-buttons .row .col-sm-6:first-child a {
+        margin-bottom: 10px;
+    }
+
+    .contact-page .bottom-buttons a {
+        height: 70px;
+    }
+
+    .contact-page .bottom-buttons a {
+        font-size: 16px;
+    }
 
     /* 575 */
     .salons-section .salons__select-choosen {
@@ -729,7 +872,18 @@
         margin-bottom: 10px;
     }
 
+    .contact-page .mapbox {
+        height: 300px;
+    }
 
+    .contact-form .tabform {
+        width: 100%;
+    }
+
+    .contform-check label {
+        width: calc(100% - 40px);
+        vertical-align: top;
+    }
 }
 
 

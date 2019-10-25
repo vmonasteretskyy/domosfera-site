@@ -3,7 +3,7 @@ $(document).ready(function () {
     new WOW().init();
     // formstyler
     $(function () {
-        $('.footer__checkfield input, select').styler();
+        $('.footer__checkfield input, select, .contform-check input').styler();
     });
     // main slider
     $('.mainslider__sect').slick({
@@ -135,14 +135,61 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-
-
-
     // burger
 
-    $('.burgermenu').click(function () {
-        $(this).toggleClass('openburger');
+    // $('.burgermenu').click(function () {
+    //     $(this).toggleClass('openburger');
+    // });
+
+    // contact fotm tab
+    $('.tabform').click(function () {
+        $('.tabform').removeClass('active');
+        $(this).addClass('active');
     });
+
+    $('.tabform.tabbtn1').click(function () {
+        $('.tabform-content1').show();
+        $('.tabform-content2').hide();
+    });
+    $('.tabform.tabbtn2').click(function () {
+        $('.tabform-content2').show();
+        $('.tabform-content1').hide();
+    });
+    // form
+    (function ($) {
+        function floatLabel(inputType) {
+            $(inputType).each(function () {
+                var $this = $(this);
+                // on focus add cladd active to label
+                $this.focus(function () {
+                    $this.next().addClass("active");
+                });
+                //on blur check field and remove class if needed
+                $this.blur(function () {
+                    if ($this.val() === '' || $this.val() === 'blank') {
+                        $this.next().removeClass();
+                    }
+                });
+            });
+        }
+        // just add a class of "floatLabel to the input field!"
+        floatLabel(".floatLabel");
+    })(jQuery);
+
+    // about us slider
+
+    $('.aboutus-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+
+
+
+
+
 });
 
 // fix left arrow
@@ -246,3 +293,6 @@ if ($('*').is('#map')) {
         });
     }
 }
+
+
+
