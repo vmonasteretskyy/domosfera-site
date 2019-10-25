@@ -2262,7 +2262,17 @@ header.header {
 
 .header__searchbtn form button img {
     margin-left: 6px;
-    vertical-align: 1px;
+    /* vertical-align: 1px; */
+}
+
+.header__searchbtn form button {
+    width: 79px;
+    background-image: url(../image/news-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: left;
+    line-height: 14px;
+    /* line-height: 10px; */
 }
 
 .salons__select-choosen text {
