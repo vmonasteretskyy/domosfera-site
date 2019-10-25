@@ -117,13 +117,23 @@ $(document).ready(function () {
         infinite: true,
         // centerMode: true,
         variableWidth: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-trending-neutral"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-trending-neutral"></span></button>',
       });
-
+      
 
       $('.show-btn a').click(function(){
-        $('.more-text').slideToggle(300);
-        $('.shadow-text').slideToggle(300);
+        $('.more-text').show(300);
+        $('.shadow-text').hide(300);
+        $('.show-btn').css("display", "none");
+        $('.hide-btn').css("display", "block");
+      });
+      $('.hide-btn a').click(function(){
+        $('.more-text').hide(300);
+        $('.shadow-text').show(300);
+        $('.show-btn').css("display", "block");
+        $('.hide-btn').css("display", "none");
       });
 
 });
