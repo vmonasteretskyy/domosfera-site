@@ -3006,7 +3006,13 @@ header.header {
     z-index: -1;
 }
 
-
+.video-page .body-video .video-img a .bg-video {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
 
 
 
