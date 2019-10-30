@@ -3006,12 +3006,408 @@ header.header {
     z-index: -1;
 }
 
+.video-page .body-video .video-img a .bg-video,
+.news-page .body-news .news-item a span,
+.outlet-single .right-block .seller .seller-contact a,
+.outlet-item.show-more a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
 
+.header__searchbtn form input[type="text"] {
+    padding-right: 100px;
+}
 
+/* about us */
+.abus-ooiu {
+    padding-top: 70px;
+}
 
+.abus-ooiu .abus-textsect .abus-pic {
+    max-width: 100%;
+}
 
+.abus-textsect p:not(.title) {
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    margin-bottom: 25px;
+}
 
+.abus-textsect p.title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    margin-bottom: 35px;
+}
 
+.abus-ooiu .abus-descr {
+    padding-top: 23px;
+}
+
+.abus-ooiu .abus-textsect {
+    margin-bottom: 70px;
+}
+
+.abus-ooiu .preference__box-pic {
+    width: 86px;
+    height: 60px;
+    margin: 0 auto 23px;
+}
+
+.abus-ooiu .preference__box-pic img {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.abus-ooiu .preference-sect h3 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    color: #323335;
+    margin: 0 0 65px 0;
+}
+
+.abus-ooiu .preference__box .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.abus-ooiu .preference__box .descr {
+    text-align: center;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+}
+
+.abus-ooiu .preference__box {
+    margin-bottom: 65px;
+}
+
+.big-bottpage-links a {
+    display: flex;
+    height: 134px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    border: solid 2px #242526;
+    background-color: #ffffff;
+}
+
+.big-bottpage-links a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #242526;
+}
+
+.big-bottpage-links .row .col-sm-6:first-child a {
+    border-right: 1px solid #242526;
+}
+
+.big-bottpage-links .row .col-sm-6:nth-child(2) a {
+    border-left: 1px solid #242526;
+}
+
+/* smak restaurant */
+.sm-restaurant .sm-restaurant__lpic {
+    max-width: 320px;
+    position: relative;
+    z-index: 2;
+}
+
+.sm-restaurant .sm-restaurant__lpic img {
+    width: 100%;
+}
+
+.sm-restaurant .sm-restaurant__greybox {
+    left: -35px;
+}
+
+.sm-restaurant .sm-restaurant__leftsect {
+    padding-top: 90px;
+}
+
+.sm-restaurant .vert-text {
+    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    margin: 0;
+    letter-spacing: 7px;
+}
+
+.sm-restaurant .vert-text {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.sm-restaurant .vertflor-sect {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sm-restaurant__info-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #323335;
+    margin-bottom: 58px;
+}
+
+.sm-restaurant__info-section .cont-box p {
+    letter-spacing: 2px;
+    color: #afb0b3;
+    line-height: normal;
+    font-size: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.sm-restaurant__info-section .cont-box {
+    margin-bottom: 20px;
+}
+
+.sm-restaurant__info-section .cont-box a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: #323335;
+}
+
+.sm-restaurant__info-section {
+    padding-top: 18px;
+}
+
+.sm-restaurant__info-section .cont-box ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+.sm-restaurant__info-section .cont-box ul li:last-child {
+    margin-right: 0;
+}
+
+.sm-restaurant__info-section .cont-box ul li a {
+    text-emphasis: none;
+}
+
+.sm-restaurant__info-section .cont-box ul li a span {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #323335;
+}
+
+.sm-restaurant__info-section .text-block {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    margin-top: 40px;
+
+}
+
+.sm-restaurant__info-section .text-block.havt {
+    height: auto;
+}
+
+.sm-restaurant__info-section .text-block p {
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    margin-bottom: 25px;
+}
+
+.sm-restaurant__info-section .white-shadow {
+    height: 85px;
+    /* background-image: linear-gradient(to top, #ffffff, transparent); */
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to top, #fff, #fff 30%, transparent 95%);
+}
+
+.sm-restaurant__info-section .showhide-btns {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    height: 20px;
+}
+
+.sm-restaurant__info-section .showhide-btns>span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+}
+
+.sm-restaurant__info-section .showhide-btns>span i {
+    display: inline-block;
+}
+
+.sm-restaurant__info-section .showhide-btns>span.hide-moretext i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.sm-restaurant__info-section .hide-moretext {
+    display: none;
+}
+
+.sm-restaurant__info-section .cont-box a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.sm-restaurant__info-section .cont-box a:hover {
+    opacity: .6;
+}
+
+.sm-restaurant__greybox a:hover img {
+    margin-right: 15px;
+}
+
+.sm-restaurant__greybox a img {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.bands-bottslidersect.news .flip,
+.bands-bottslidersect.news .flip .front,
+.bands-bottslidersect.news .flip .back {
+    width: 160px;
+}
+
+.bands-bottslidersect.news .flip {
+    top: -7px;
+}
+
+.bands-bottslidersect.news .allnews-link {
+    padding-right: 70px;
+}
+
+.bands-bottslidersect .bands-bottslider__slide {
+    width: 212px;
+    margin-right: 20px;
+}
+
+.bands-bottslidersect .bands-bottslider__slide .pic-box {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #eeeeee;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    padding: 5px;
+}
+
+.bands-bottslidersect .bands-bottslider__slide .pic-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bands-bottslidersect .bands-bottslider__slide p {
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    margin: 0;
+    text-align: center;
+}
+
+.bands-bottslidersect.news h3 {
+    font-size: 36px;
+    letter-spacing: 0.9px;
+}
+
+.bands-bottslider__slide.slick-slide a:hover {
+    color: #323335;
+    text-decoration: none;
+}
+
+.bands-bottslidersect .bands-bottslider__slide a:hover p {
+    color: #323335;
+}
+
+.bands-bottslider__slide.slick-slide a:hover .pic-box {
+    border: solid 2px #323235;
+}
+
+.bands-bottslider .slick-dots {
+    list-style-type: none;
+    margin: 35px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bands-bottslider .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.bands-bottslider .slick-dots li button {
+    padding: 0;
+    color: transparent;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+    border: none;
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    background-color: #e4e4e4;
+}
+
+.bands-bottslider .slick-dots .slick-active button {
+    background-color: #242526;
+}
+
+footer {
+    border-top: 1px solid #e8e8e8;
+}
 
 
 

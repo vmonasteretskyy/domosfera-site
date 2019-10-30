@@ -204,11 +204,43 @@ $(document).ready(function () {
         ]
     });
 
+    // show more text (smak restaurant)
+    $('.sm-restaurant__info-section .showhide-btns>span.show-moretext').click(function () {
+        $(this).hide();
+        $('.sm-restaurant__info-section .showhide-btns>span.hide-moretext').show();
+        $('.sm-restaurant__info-section .white-shadow').hide();
+        $('.sm-restaurant__info-section .text-block').addClass('havt');
+    });
 
+    $('.sm-restaurant__info-section .showhide-btns>span.hide-moretext').click(function () {
+        $(this).hide();
+        $('.sm-restaurant__info-section .showhide-btns>span.show-moretext').show();
+        $('.sm-restaurant__info-section .white-shadow').show();
+        $('.sm-restaurant__info-section .text-block').removeClass('havt');
+    })
+    // brands img slider
 
-
-
-
+    $('.bands-bottslider').slick({
+        // slidesToShow: 3,
+        variableWidth: true,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        centerMode: true,
+        infinite: true,
+        dots: true,
+        initialSlide: 1,
+        prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-chevron-left"></span></button>',
+        nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-chevron-right"></span></button>',
+        // responsive: [
+        //     {
+        //         breakpoint: 576,
+        //         settings: {
+        //             variableWidth: false,
+        //         }
+        //     }
+        // ]
+    });
 });
 
 // fix left arrow
