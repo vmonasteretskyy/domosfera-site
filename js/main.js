@@ -7,7 +7,7 @@ $(document).ready(function () {
     function(){
         $(this).children('.restoran-dark').children('.restoran-desc').css({"height": "0"});
         $(this).children('.restoran-dark').children('.new_slidelink').css({"height": "0"});
-        $(this).children('.restoran-dark').css({"background": "rgba(0, 0, 0, 0.0)"});          
+        $(this).children('.restoran-dark').css({"background": "rgba(0, 0, 0, 0.3)"});          
     });
 });
 

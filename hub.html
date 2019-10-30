@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-lg-3 offset-lg-3 col-md-3 col-sm-3 col-12">
                                 <div class="play-button">
-                                    <a href="#">
+                                    <a data-toggle="modal" data-target="#exampleModalCenter">
                                         <span class="play-stl mdi mdi-play"></span>
                                     </a>
                                     <div class="vertical-word">
@@ -416,12 +416,18 @@
             </div>
         </section>
     </main>
-
-
-
-
-
-
+    <div class="video-page">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="mdi mdi-close"></span>
+                </button>
+                <div class="modal-body video-body">
+                    <iframe width="480" height="360" src="https://www.youtube.com/embed/xFa2_PVMeDQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">

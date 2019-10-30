@@ -1249,6 +1249,7 @@ button.slick-next:focus{
     align-items: center;
 }
 .hub-page .play-button a .play-stl{
+    cursor: pointer;
     position: relative;
     display: block;
     z-index: 1;
@@ -1495,6 +1496,7 @@ button.slick-next:focus{
     padding: 50px 0 50px 105px;
 }
 .hub-page .card-header button{
+    width: 100%;
     padding: 0;
     font-size: 36px;
     font-weight: bold;
@@ -1515,8 +1517,7 @@ button.slick-next:focus{
     color: #323335;
 }
 .hub-page .card-header button .mdi{
-    /*width: 1px;
-    */transition: 0.5s;
+    transition: 0.5s;
     writing-mode: tb-rl;
     transform: rotateX(0deg);
     -webkit-transition: 0.5s;
