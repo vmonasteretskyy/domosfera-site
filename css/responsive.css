@@ -83,10 +83,6 @@
         font-size: 36px;
     }
 
-    .mainslider__bottlink a {
-        /* height: 60px; */
-    }
-
     .footer__phone a {
         font-size: 25px;
     }
@@ -141,6 +137,9 @@
         top: 3px;
     }
 
+    .mainslider__slideload {
+        max-height: 200px;
+    }
 
     /* --1300 */
     .news,
@@ -241,10 +240,9 @@
         margin-top: 10px;
     }
 
-
-
-
-
+    .cosmiss-slidersect .slick-dots li button {
+        width: 32px;
+    }
 
     .sm-restaurant__info-section h1 {
         margin-bottom: 30px;
@@ -367,8 +365,9 @@
         z-index: 2;
     }
 
-
-
+    .carousel-gallery {
+        display: none;
+    }
 
     /* 1024 */
     .salons-section .salons__select-choosen {
@@ -660,9 +659,54 @@
         margin-bottom: 30px !important;
     }
 
+    .social-missions-boxes {
+        padding-top: 50px;
+    }
 
+    .cosmiss-slidersect {
+        width: 100%;
+    }
+
+    .cosmiss-slidersect .slideshow .slick-slide,
+    .cosmiss-slidersect .slideshow1 .slick-slide,
+    .cosmiss-slidersect .slideshow2 .slick-slide {
+        height: auto;
+    }
+
+    .soc-mission .soc-calproj-arrow {
+        height: auto;
+    }
+
+    .soc-mission .soc-calproj-arrow {
+        padding: 30px 0 5px 0;
+    }
+
+    .cosmiss-textsect {
+        margin-top: 20px;
+    }
+
+    .cosmiss-textsect .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-missions-boxes .socmiss__rightpic>.row .col-lg-6:first-child {
+        order: 2;
+    }
+
+    .social-missions-boxes .socmiss__rightpic>.row .col-lg-6:nth-child(2) {
+        order: 1;
+    }
+
+    .cosmiss-slidersect .slide-shadow {
+        height: calc(100% - 60px);
+    }
 
     /* 991 */
+    .soc-mission .soc-calproj-arrow p {
+        font-size: 24px;
+    }
+
     .contact-page .adress__title,
     .tabform-cont .title {
         font-size: 32px;
@@ -836,10 +880,9 @@
         top: -60px;
     }
 
-
-
-
-
+    .absbox-title h1 {
+        font-size: 36px;
+    }
 
     /* 767 */
 }
@@ -1072,9 +1115,14 @@
         -o-transform: rotate(0deg);
     }
 
+    .cosmiss-slidersect .slick-dots li button {
+        width: 25px;
+    }
 
-
-
+    .social-missions-boxes .socmiss__leftpic,
+    .social-missions-boxes .socmiss__rightpic {
+        margin-bottom: 40px;
+    }
 
     /* 575 */
     .salons-section .salons__select-choosen {
@@ -1092,6 +1140,10 @@
     .abus-textsect p.title,
     .abus-ooiu .preference-sect h3 {
         font-size: 24px;
+    }
+
+    .cosmiss-textsect .title {
+        font-size: 28px;
     }
 }
 
@@ -1156,6 +1208,10 @@
         width: calc(100% - 40px);
         vertical-align: top;
     }
+
+    .cosmiss-slidersect .slick-dots li button {
+        width: 20px;
+    }
 }
 
 
@@ -1183,10 +1239,6 @@
     .news .slick-prev.slick-arrow {
         right: 40px !important;
     }
-
-    /* .news-slider {
-    padding-left: 15px !important;
-} */
 }
 
 @media(max-height:770.8px) {
@@ -1195,9 +1247,6 @@
         max-height: 150px;
         min-height: 95px;
     }
-
-
-
 }
 
 @media(max-height:775.8px) {
@@ -1220,6 +1269,4 @@
     footer.footer {
         padding-left: 0;
     }
-
-
 }
