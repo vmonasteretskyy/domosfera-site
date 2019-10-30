@@ -116,6 +116,12 @@ $(document).ready(function () {
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({ scrollTop: top }, 1000);
     });
+    $(".soc-calproj-link").on("click", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 30;
+        $('body,html').animate({ scrollTop: top }, 1000);
+    });
 
     // category list - block 
     $('.blocks-structure-list').click(function () {
@@ -224,23 +230,122 @@ $(document).ready(function () {
         // slidesToShow: 3,
         variableWidth: true,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         centerMode: true,
         infinite: true,
         dots: true,
         initialSlide: 1,
         prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-chevron-left"></span></button>',
         nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-chevron-right"></span></button>',
-        // responsive: [
-        //     {
-        //         breakpoint: 576,
-        //         settings: {
-        //             variableWidth: false,
-        //         }
-        //     }
-        // ]
     });
+
+    // about us social mission - hide show more
+    $('.cosmiss-textsect .showhide-text .showmore').click(function () {
+        $(this).hide();
+        $(this).next().show();
+        $(this).parent().prev().hide();
+        $(this).parent().prev().prev().show(300);
+    });
+    $('.cosmiss-textsect .showhide-text .hidemore').click(function () {
+        $(this).hide();
+        $(this).prev().show();
+        $(this).parent().prev().show();
+        $(this).parent().prev().prev().hide(300);
+
+    });
+
+    // social mission slider
+    var $status = $('.pagingInfo-slider');
+    var $slickElement = $('.slideshow');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+        autoplay: false,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        asNavFor: '.socmiss-slider-nav',
+    });
+    // nav slider text
+    $('.socmiss-slider-nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        speed: 700,
+    });
+
+    // ---2----
+    var $status1 = $('.pagingInfo-slider1');
+    var $slickElement1 = $('.slideshow1');
+
+    $slickElement1.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status1.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement1.slick({
+        autoplay: false,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        asNavFor: '.socmiss-slider-nav1',
+    });
+    // nav slider text
+    $('.socmiss-slider-nav1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        speed: 700,
+    });
+    // ---3----
+    var $status2 = $('.pagingInfo-slider2');
+    var $slickElement2 = $('.slideshow2');
+
+    $slickElement2.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status2.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement2.slick({
+        autoplay: false,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        asNavFor: '.socmiss-slider-nav2',
+    });
+    // nav slider text
+    $('.socmiss-slider-nav2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        speed: 700,
+    });
+
+
+    // CAROUSEL GALLERY
+
+    var carousel = $("#carousel").featureCarousel({
+        autoPlay: 0,
+        topPadding: 0,
+        smallFeatureOffset: 22,
+        carouselSpeed: 500,
+        smallFeatureHeight: .9,
+        sidePadding: 0,
+        trackerIndividual: true,
+        animationEasing: 'linear',
+    });
+
 });
 
 // fix left arrow
