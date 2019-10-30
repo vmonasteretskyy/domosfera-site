@@ -1300,7 +1300,7 @@ button.slick-next:focus{
     background-color: #ffffff;
     align-items: center;
     justify-content: space-between;
-    height: 57px;
+    height: 57.3px;
 }
 .hub-page .top-head .download-button a p{
     text-decoration: none;
@@ -1493,7 +1493,7 @@ button.slick-next:focus{
 .hub-page .card-header{
     background-color: #f5f5f5;
     border: none;
-    padding: 50px 0 50px 105px;
+    padding: 50px 0 50px 0px;
 }
 .hub-page .card-header button{
     width: 100%;
@@ -1538,7 +1538,7 @@ button.slick-next:focus{
 }
 .hub-page .card-body{
     background-color: #ebebeb;
-    padding: 0px 0 50px 105px;
+    padding: 0px 0 50px 0px;
 }
 .hub-page .card{
     border-radius: 0;
@@ -1547,7 +1547,7 @@ button.slick-next:focus{
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-.hub-page .card-body{
+.hub-page .card-body .container{
     display: flex;
     justify-content: space-between;
 }
@@ -1591,7 +1591,6 @@ button.slick-next:focus{
     text-align: left;
     color: #323335;
     margin-bottom: 30px;
-    padding-left: 100px;
 }
 .hub-page .hub-meneger{
     background: #323335;
@@ -2103,7 +2102,7 @@ button.slick-next:focus{
     .hub-page .top-head .download-button a{
         width: 100%;
     }
-    .hub-page .card-body{
+    .hub-page .card-body .container{
         flex-wrap: wrap;
     }
     .hub-page .card-body ul{
@@ -2234,7 +2233,6 @@ button.slick-next:focus{
     }
     .hub-page .hub-long-slider .title{
         font-size: 25px;
-        padding-left: 20px;
     }
     .hub-page .card-body{
         padding: 0px 0 50px 0px;
