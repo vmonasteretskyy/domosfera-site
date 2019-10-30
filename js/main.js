@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.restoran-sliders').slick({
         arrows: true,
         dots: false,
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         variableWidth: true,
         prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-chevron-left"></span></button>',
@@ -73,34 +73,6 @@ $(document).ready(function () {
 
     });
 
-    // filter category 
-	$(".filter-my").click(function() {
-		let category = $(this).attr("id");
-		console.log(category);
-		if (category === "all") {
-			$(".filter-this")
-				.fadeOut(400)
-				.addClass("hide")
-				.removeClass("flex-auto");
-			setTimeout(function() {
-				$(".filter-this")
-					.fadeIn(400)
-					.removeClass("hide");
-			}, 500);
-		} else {
-			$(".filter-this")
-				.fadeOut(400)
-				.addClass("hide")
-				.removeClass("flex-auto");
-			setTimeout(function() {
-				$("." + category)
-					.fadeIn(400)
-					.removeClass("hide")
-					.addClass("flex-auto");
-			}, 500);
-		}
-    });
-
     $('.outlet-sliders').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -138,6 +110,14 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    $('.card-header button').click(function(){
+        $('.card-header').removeClass('active');
+        $(this).parents().addClass('active');
+
+    });
+});
+
 
 
 function openDesc(evt, cityName) {
@@ -152,6 +132,27 @@ function openDesc(evt, cityName) {
   
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function openFloor(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("floor-block");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("floorlink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
