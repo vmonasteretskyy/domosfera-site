@@ -884,6 +884,36 @@
         font-size: 36px;
     }
 
+    .rent-page .about-tab {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .rent-page .brends,
+    .rent-page .info h3,
+    .legend-page .legends-item {
+        margin-bottom: 30px;
+    }
+
+    .rent-page .info .item {
+        margin-bottom: 20px;
+    }
+
+    .legend-page .legend-team {
+        margin-top: 30px;
+    }
+
+    .legend-page .legends-img,
+    .legend-page .legends-item h5 {
+        margin-bottom: 10px;
+    }
+
+    .legend-page .legends-item p {
+        margin-bottom: 0;
+    }
+
+
+
     /* 767 */
 }
 
@@ -1122,6 +1152,17 @@
     .social-missions-boxes .socmiss__leftpic,
     .social-missions-boxes .socmiss__rightpic {
         margin-bottom: 40px;
+    }
+
+    section.bottom-buttons .row .col-sm-6:first-child a {
+        margin-bottom: 10px;
+
+    }
+
+    section.bottom-buttons .row .col-sm-6 a {
+        font-size: 16px;
+        height: 70px;
+        border: 2px solid #323235 !important;
     }
 
     /* 575 */

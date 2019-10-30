@@ -3631,7 +3631,32 @@ footer {
     text-decoration: none;
 }
 
+.pagination ul li a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.rent-page .info img {
+    max-width: 60px;
+}
+
 /* CAROUSEL */
+.carousel-gallery {
+    position: relative;
+    padding-top: 120px;
+}
+
+.carousel-gallery .galltitle {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    max-width: 819px;
+    margin: 0 auto 15px;
+}
+
 .carousel-gallery .carousel-container {
     width: 100%;
     max-width: 1600px;
@@ -3701,7 +3726,21 @@ footer {
     z-index: 1;
 }
 
+.carousel-gallery #carousel-left {
+    bottom: initial;
+    left: 13%;
+    top: 50%;
+    z-index: 2;
+    margin-top: -25px;
+}
 
+.carousel-gallery #carousel-right {
+    bottom: initial;
+    right: 13%;
+    top: 50%;
+    z-index: 2;
+    margin-top: -25px;
+}
 
 
 

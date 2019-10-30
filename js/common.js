@@ -334,17 +334,19 @@ $(document).ready(function () {
 
 
     // CAROUSEL GALLERY
+    if ($('*').is('#carousel')) {
+        var carousel = $("#carousel").featureCarousel({
+            autoPlay: 0,
+            topPadding: 0,
+            smallFeatureOffset: 22,
+            carouselSpeed: 500,
+            smallFeatureHeight: .9,
+            sidePadding: 0,
+            trackerIndividual: true,
+            animationEasing: 'linear',
+        });
 
-    var carousel = $("#carousel").featureCarousel({
-        autoPlay: 0,
-        topPadding: 0,
-        smallFeatureOffset: 22,
-        carouselSpeed: 500,
-        smallFeatureHeight: .9,
-        sidePadding: 0,
-        trackerIndividual: true,
-        animationEasing: 'linear',
-    });
+    }
 
 });
 
