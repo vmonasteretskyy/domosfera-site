@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rent</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="toppage"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="image/logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__phone">
+            <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+        </div>
+        <div class="header__worktime">
+            <p><span class="mdi mdi-18px mdi-clock"></span>10:00 - 20:00</p>
+            <div class="weekend-text">28-29 квітня 2019 року - вихідні дні</div>
+        </div>
+        <div class="header__language">
+            <ul>
+                <li class="active"><a href="#">ua</a></li>
+                <li><a href="#">ru</a></li>
+                <li><a href="#">en</a></li>
+            </ul>
+        </div>
+        <div class="header__searchbtn">
+            <span class="mdi mdi-18px mdi-magnify"></span>
+            <form action="#">
+                <input type="text" placeholder="Що шукати?">
+                <button>
+                    Пошук
+                    <!-- <img src="image/news-arrow.svg" alt="arrow"> -->
+                </button>
+                <div class="close-headsearch">
+                    <span class="mdi mdi-window-close"></span>
+                </div>
+            </form>
+        </div>
+        <div class="header__navbtn">
+            <span>меню</span>
+            <!-- <img src="image/menu-icon.svg" alt=""> -->
+            <div class="burgermenu">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="hub-page rent-page salons-section">
+        <div class="fixed-leftsocial">
+            <ul class="no-style">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+            <div class="arrowfix">
+                <span class="mdi mdi-18px mdi-arrow-down-drop-circle"></span>
+            </div>
+        </div>
+        <section>
+            <div class="top-rent" style="background-image: url(img/rent-bg.png)" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="top-head">
+                                <h3>Оренда площ в ТЦ Домосфера</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <ul>
+                                <li class="tablink active" onclick="openDesc(event, 'tab1')">Про ТЦ Домосфера</li>
+                                <li class="tablink" onclick="openDesc(event, 'tab2')">Особливості місця розташування</li>
+                                <li class="tablink" onclick="openDesc(event, 'tab3')">Цільова аудиторія</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="outlet-single-text" id="tab1">
+                                <p>1ТЦ Домосфера – перший і єдиний в Україні спеціалізований торгівельний центр premium-сегменту із продажу меблів та товарів для дому та сім'ї. Працює з 2009 року.</p>
+
+                                <p>2\3 орендарів ТЦ Домосфера працюють в сегменті продажу інтер'єрних рішень, меблів, декору, текстилю, аксесуарів для дому та подарунків, оздоблювальних матеріалів, освітлення, сантехніки, кераміки, посуду, побутової техніки та акустики.</p>
+                                    
+                                <p>Інші площі займають: конференц- та виставковий простір (2000 кв.м), кафе, ресторан, салон краси, маркет продуктів, бутик вина, fashion-бутики та бутик нішової парфумерії, салон з догляду за домашніми тваринами.</p>
+                                    
+                                <p> З метою залучення креативного та дизайн-співтовариства, об’єднання професійного комьюніті в ТЦ створено конференц- та виставковий простір для проведення лекцій, семінарів, майстер-класів, показів кінофільмів, воршопів, дискусій та ін. за участю провідних архітекторів, дизайнерів, декораторів, істориків дизайну, культурних та громадських діячів з різних країн світу.</p>
+                            </div>
+
+                            <div class="outlet-single-text" id="tab2">
+                                <p>2ТЦ Домосфера – перший і єдиний в Україні спеціалізований торгівельний центр premium-сегменту із продажу меблів та товарів для дому та сім'ї. Працює з 2009 року.</p>
+
+                                <p>2\3 орендарів ТЦ Домосфера працюють в сегменті продажу інтер'єрних рішень, меблів, декору, текстилю, аксесуарів для дому та подарунків, оздоблювальних матеріалів, освітлення, сантехніки, кераміки, посуду, побутової техніки та акустики.</p>
+                                    
+                                <p>Інші площі займають: конференц- та виставковий простір (2000 кв.м), кафе, ресторан, салон краси, маркет продуктів, бутик вина, fashion-бутики та бутик нішової парфумерії, салон з догляду за домашніми тваринами.</p>
+                                    
+                                <p> З метою залучення креативного та дизайн-співтовариства, об’єднання професійного комьюніті в ТЦ створено конференц- та виставковий простір для проведення лекцій, семінарів, майстер-класів, показів кінофільмів, воршопів, дискусій та ін. за участю провідних архітекторів, дизайнерів, декораторів, істориків дизайну, культурних та громадських діячів з різних країн світу.</p>
+                            </div>
+
+                            <div class="outlet-single-text" id="tab3">
+                                <p>3ТЦ Домосфера – перший і єдиний в Україні спеціалізований торгівельний центр premium-сегменту із продажу меблів та товарів для дому та сім'ї. Працює з 2009 року.</p>
+
+                                <p>2\3 орендарів ТЦ Домосфера працюють в сегменті продажу інтер'єрних рішень, меблів, декору, текстилю, аксесуарів для дому та подарунків, оздоблювальних матеріалів, освітлення, сантехніки, кераміки, посуду, побутової техніки та акустики.</p>
+                                    
+                                <p>Інші площі займають: конференц- та виставковий простір (2000 кв.м), кафе, ресторан, салон краси, маркет продуктів, бутик вина, fashion-бутики та бутик нішової парфумерії, салон з догляду за домашніми тваринами.</p>
+                                    
+                                <p> З метою залучення креативного та дизайн-співтовариства, об’єднання професійного комьюніті в ТЦ створено конференц- та виставковий простір для проведення лекцій, семінарів, майстер-класів, показів кінофільмів, воршопів, дискусій та ін. за участю провідних архітекторів, дизайнерів, декораторів, істориків дизайну, культурних та громадських діячів з різних країн світу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brends">
+                <div class="container">
+                    <div class="bg-brend" style="background-image: url(img/rent-brands.png)">
+                        <div class="word-brends">BRENDS</div>
+                        <div class="left">
+                            <p>
+                                Серед
+                                найкращих
+                                світових
+                                брендів:
+                            </p>
+                        </div>
+                        <div class="right">
+                            <p>APAVISA, Armani Dada, Cassina, Cornelio Cappellini, Driade, Eggersmann, Flexform, Fritz Hansen, Gaggenau, GESSI, Gianfranco Ferre Home, Gubi, Hermès, Hulsta, Imola ceramica, Ipe Cavalli, La Perla, Lalique, La Perla Home, Leicht, Loewe, Longhi, Marazzi, Masiero, Miele, Missoni Home, Molteni & C, next125, Nobilia, Poltrona Frau, Porada, Rimadesio, Robbe&Berking, Roche Bobois, Rolf Benz, Rosenthal, Rugiano, Savio Firmino, Siemens, Smania, St Dupont, Staub, TEAM 7, Tom Dixon, Trussardi, Villeroy&Boch, Vissionaire, Vitra, V-Zug, Walter Knoll та інші.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="container">
+                    <h3>Площа, інженерні та технологічні системи ТЦ</h3>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="item">
+                                <h4>30 000 м2</h4>
+                                <p>Загальна торговельна площа (GBA)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-center">
+                            <div class="item">
+                                <h4>2000 м2, <span>500 л/місць</span></h4>
+                                <p>Конференц та виставковий DOMOSFERA HUB</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-end">
+                            <div class="item">
+                                <h4>3</h4>
+                                <p>Кількість поверхів</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="item">
+                                <h4>20 400 м2</h4>
+                                <p>Корисна торговельна площа (GLA)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-center">
+                            <div class="item">
+                                <h4>350 м/місць</h4>
+                                <p>Парковка</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-end">
+                            <div class="item">
+                                <h4>3</h4>
+                                <p>К-ть вантажно-розвантажувальних рамп</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="item">
+                                <img src="img/rent-lift.png" alt="">
+                                <p>Ліфти для габаритних вантажів, ескалатори, панорамний ліфт для відвідувачів</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-center">
+                            <div class="item">
+                                <img src="img/rent-fan.png" alt="">
+                                <p>Центральна система вентиляції, кондиціювання, димовидалення та опалення</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-end">
+                            <div class="item">
+                                <img src="img/rent-fire.png" alt="">
+                                <p>Система пожежної сигналізації та пожежогасіння</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="item">
+                                <img src="img/rent-water.png" alt="">
+                                <p>Система каналізації та водопостачання</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-center">
+                            <div class="item">
+                                <img src="img/rent-energy.png" alt="">
+                                <p>Безперебійне енергозбереження</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 flex-end">
+                            <div class="item">
+                                <img src="img/rent-tel.png" alt="">
+                                <p>WI-FI, телефонізація, аудіо-трансляції</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="planing">
+                <div class="word-plan">PLANING</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-12">
+                            <h3>Планування поверхів</h3>
+                        </div>
+                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                            <div class="top-floor">
+                                <ul>
+                                    <li class="floorlink active" onclick="openFloor(event, 'floor1')"><div class="big">1</div> <span>поверх</span></li>
+                                    <li class="floorlink" onclick="openFloor(event, 'floor2')">2 <span>поверх</span></li>
+                                    <li class="floorlink" onclick="openFloor(event, 'floor3')">3 <span>поверх</span></li>
+                                </ul>
+                            </div>
+                            <div class="floor-img floor-block" id="floor1">
+                               <img src="img/rent1.png" alt="">
+                            </div>
+                            <div class="floor-img floor-block" id="floor2">
+                                <img src="img/rent1.png" alt="">
+                            </div>
+                            <div class="floor-img floor-block" id="floor3">
+                               <img src="img/rent1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hub-meneger">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Відділ оренди</h4>
+                            <ul>
+                                <li><span class="mdi mdi-phone"></span> <a href="tel:+38 (044) 252 70 94">+38 (044) 252 70 94</a></li>
+                                <li><span class="mdi mdi-email"></span> loshkareva@v-d.com.ua</li>
+                                <li><span class="mdi mdi-calendar"></span> Пн-Чт: 9:00-18:00, Пт: 9:00-16:45</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Адміністратори</h4>
+                            <ul>
+                                <li><span class="mdi mdi-phone"></span> <a href="tel:+38 (044) 252 70 94">+38 (044) 252 70 94</a></li>
+                                <li><span class="mdi mdi-email"></span> admin-domosfera@v-d.com.ua</li>
+                                <li><span class="mdi mdi-calendar"></span> Пн-Нд: 10:00-19:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rent-form contact-form">
+                <div class="container">
+                    <div class="tabform-cont">
+                        <p class="title">Відправити запит на оренду площі</p>
+                        <form action="" id="contform" class="contform">
+                            <div class="row form-group">
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <input type="text" id="name-company" class="floatLabel" name="name-company">
+                                        <label for="name-company">Назва компанії *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="phone" class="floatLabel" name="phone">
+                                        <label for="phone">Номер телефону контактної особи *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="area" class="floatLabel" name="area">
+                                        <label for="area">Розмір площі *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="brand" class="floatLabel" name="brand">
+                                        <label for="brand">Бренди та країни виробники *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="shop" class="floatLabel" name="shop">
+                                        <label for="shop">Інші магазини компанії (вказати місцезнаходження) *</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <input type="text" id="kont-osoba" class="floatLabel" name="kont-osoba">
+                                        <label for="kont-osoba">Контактна особа *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="email" id="email" class="floatLabel" name="email">
+                                        <label for="email">Електронна адреса *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="prodgroup" class="floatLabel" name="prodgroup">
+                                        <label for="prodgroup">Товарна група (меблі, декор, освітлення тощо) *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="price" class="floatLabel" name="price">
+                                        <label for="price">Цінова категорія товарів *</label>
+                                    </div>
+                                    <div class="controls">
+                                        <input type="text" id="link" class="floatLabel" name="link">
+                                        <label for="link">Посилання на сайт компанії *</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="controls">
+                                        <textarea id="text" class="floatLabel" name="text"></textarea>
+                                        <label for="text">Додаткова інформація</label>
+                                    </div>
+                                    <div class="contform-check">
+                                        <input type="checkbox" id="contfcheck">
+                                        <label for="contfcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                                даних</a></label>
+                                    </div>
+                                    <div class="cont-formsbm">
+                                        <div class="flip">
+                                            <div>
+                                                <input type="submit" value="Відправити запит" class="front">
+                                                <input type="submit" value="Відправити запит" class="back">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section class="bottom-buttons">
+            <div class="row no-gutters">
+                <div class="col-sm-4">
+                    <a href="#" class="transit03">Про нас</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="transit03">Контакти</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" class="transit03">Відео</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="footer__leftsect">
+                    <div class="footer__logo">
+                        <a href="#"><img src="image/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer__phone">
+                        <a href="tel:+380442527094">+38 (044) 252 70 94</a>
+                    </div>
+                </div>
+                <div class="footer__listsect1">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Оренда</a>
+                        </li>
+                        <li>
+                            <a href="#">Domosgera Hub</a>
+                        </li>
+                        <li>
+                            Україна, Київ,<br>
+                            Столичне шосе 101
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__listsect2">
+                    <ul class="no-style">
+                        <li>
+                            <a href="#">Outlet</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                        <li>
+                            10:00 - 20:00
+                            <span>28-29 квітня 2019 року - вихідні дні</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <div>
+                        <p class="title">Підписка на новини</p>
+                        <form action="#">
+                            <div class="footer__inpfield">
+                                <input type="email" placeholder="Ваш email">
+                                <!-- <button>
+                                    <span class="mdi mdi-telegram"></span>
+                                </button> -->
+                                <div class="flip footerbtn">
+                                    <a href="#" target="_blank">
+                                        <div class="front"><span class="mdi mdi-telegram"></span></div>
+                                        <div class="back"><span class="mdi mdi-telegram"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__checkfield">
+                                <input type="checkbox" id="footcheck">
+                                <label for="footcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                        даних</a></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyIGCxQA7HNcmtuAie-F_7IPR4l280zYE&callback=initMap">
+        </script>
+</body>
+
+</html>
