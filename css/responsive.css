@@ -4,6 +4,71 @@
     }
 }
 
+/* FIXED */
+@media (max-width: 1400.8px) {
+
+    .mainslider-slide .pagingInfo,
+    .mainslider .mainslider-slide .mainslider__slideload,
+    .mainsliderlittle__slide .numslide {
+        display: none;
+    }
+
+    .mainsliderlittle__cont {
+        margin-top: 40px;
+    }
+
+    .mainslider__sect,
+    .mainslider__sidebarsect,
+    .mainslider {
+        min-height: 500px;
+    }
+
+    .mainsliderlittle__slide {
+        height: 350px;
+    }
+
+    header.header {
+        height: 75px;
+    }
+
+    main {
+        margin-top: 75px;
+    }
+
+    .fixed-leftsocial {
+        width: 80px;
+    }
+
+    .mainslider,
+    section {
+        padding-left: 80px;
+    }
+
+    .fixed-leftsocial ul li:nth-child(3) a {
+        left: 6px;
+    }
+
+    .fixed-leftsocial ul li:nth-child(2) a {
+        left: -1px;
+    }
+
+    .fixed-leftsocial ul li:first-child a {
+        left: 0;
+    }
+
+    .fixed-leftsocial,
+    .mainslider,
+    .mainslider__sidebarsect,
+    .mainslider__sect {
+        height: calc(100vh - 75px);
+    }
+
+    .mainslider__sidebarsect ul li a {
+        padding: 14px 50px 14px 100px;
+    }
+}
+
+/* --- */
 @media (max-width: 1300.8px) {
     header.header {
         height: 75px;
@@ -139,6 +204,14 @@
 
     .mainslider__slideload {
         max-height: 200px;
+    }
+
+    .carousel-gallery #carousel-right {
+        right: 5%;
+    }
+
+    .carousel-gallery #carousel-left {
+        left: 5%;
     }
 
     /* --1300 */
@@ -296,6 +369,14 @@
     .sm-restaurant .sm-restaurant__leftsect {
         padding-top: 70px;
     }
+
+    .carousel-gallery #carousel-right {
+        right: 2%;
+    }
+
+    .carousel-gallery #carousel-left {
+        left: 2%;
+    }
 }
 
 @media(max-width:1024.8px) {
@@ -365,13 +446,74 @@
         z-index: 2;
     }
 
-    .carousel-gallery {
+    .carousel-gallery .carousel-container {
         display: none;
+    }
+
+    /* carousel */
+    .carousel-gallery-adaptive.slick-slider {
+        display: block;
+    }
+
+    .carousel-gallery-adaptive .slick-slide img {
+        width: 100%;
+    }
+
+    .carousel-gallery-adaptive .slick-arrow {
+        top: 50%;
+        margin-top: -25px;
+        width: 39px;
+        height: 50px;
+        position: absolute;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .carousel-gallery-adaptive .slick-next.slick-arrow {
+        right: 20px;
+        background-image: url(../image/carousel-arrowright.png);
+
+    }
+
+    .carousel-gallery-adaptive .slick-prev.slick-arrow {
+        left: 20px;
+        background-image: url(../image/carousel-arrowleft.png);
+    }
+
+    .carousel-gallery .abstoptitle {
+        font-size: 200px;
+        line-height: 200px;
+    }
+
+    .carousel-gallery {
+        padding-top: 55px;
     }
 
     /* 1024 */
     .salons-section .salons__select-choosen {
         font-size: 22px;
+    }
+}
+
+/* FIXED  */
+@media(max-width:1024.8px) {
+/* .mainslider,
+section,
+.aboutus,
+.ourservices,
+footer.footer {
+    padding-left: 0;
+} */
+}
+
+/* --- */
+@media (max-width: 992.8px) {
+
+    .news-page .salons__select-choosen,
+    .news-page .body-news .news-item {
+        max-width: 320px;
+        width: initial;
     }
 }
 
@@ -918,6 +1060,18 @@
 
 
     /* 767 */
+    .carousel-gallery .abstoptitle {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .carousel-gallery .galltitle {
+        font-size: 24px;
+    }
+
+    .carousel-gallery {
+        padding-top: 55px;
+    }
 }
 
 @media(max-width: 575.8px) {
@@ -1175,6 +1329,16 @@
         height: auto;
     }
 
+    .news-page .salons__select-choosen,
+    .news-page .body-news .news-item {
+        max-width: initial;
+        width: 100%;
+    }
+
+    p.aftcarous-text {
+        margin-top: 30px;
+    }
+
     /* 575 */
     .salons-section .salons__select-choosen {
         font-size: 18px;
@@ -1198,6 +1362,23 @@
     }
 }
 
+/* FIXED */
+
+@media(max-width: 575.8px) {
+    .mainslider__sidebarsect {
+        display: none;
+    }
+
+    .news,
+    .aboutus,
+    .ourservices,
+    footer.footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* ---- */
 @media(max-width:480.8px) {
     .salons__content-blocks>.row>.col-lg-12 {
         -ms-flex: 0 0 100%;

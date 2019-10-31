@@ -12,8 +12,10 @@ $(document).ready(function () {
         dots: true,
         fade: true,
         asNavFor: '.mainsliderlittle__sect',
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 8000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
     // main slider (little)
@@ -348,6 +350,26 @@ $(document).ready(function () {
 
     }
 
+
+    $('.carousel-gallery-adaptive').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
+    });
+
+    $('#carousel .carousel-feature, .carousel-gallery-adaptive .slick-slide img').click(function () {
+        $('#gallery').fadeIn();
+    });
+    $('#gallery span.mdi').click(function () {
+        $('#gallery').fadeOut();
+    });
+
+    // preloader
+    setTimeout(function () {
+        $('.preloader-section').fadeOut('slow');
+    }, 5000);
 });
 
 // fix left arrow
@@ -452,5 +474,89 @@ if ($('*').is('#map')) {
     }
 }
 
+// gallery
+if ($('*').is('#gallery')) {
+    $(document).ready(function () {
+        document.querySelector('#gallery').appendChild(JGallery.create([{
+            title: 'Images',
+            items: [
+                {
+                    url: 'image/gallery/socmission-pic1.png',
+                    thumbUrl: 'image/gallery/carousel-pic.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide1.png',
+                    thumbUrl: 'image/gallery/slide1.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide2.png',
+                    thumbUrl: 'image/gallery/slide2.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/socmission-pic1.png',
+                    thumbUrl: 'image/gallery/socmission-pic1.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide2.jpg',
+                    thumbUrl: 'image/gallery/slide2.jpg',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide3.jpg',
+                    thumbUrl: 'image/gallery/slide3.jpg',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/carousel-pic.png',
+                    thumbUrl: 'image/gallery/carousel-pic.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide1.png',
+                    thumbUrl: 'image/gallery/slide1.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide2.png',
+                    thumbUrl: 'image/gallery/slide2.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/socmission-pic1.png',
+                    thumbUrl: 'image/gallery/socmission-pic1.png',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide2.jpg',
+                    thumbUrl: 'image/gallery/slide2.jpg',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+                {
+                    url: 'image/gallery/slide3.jpg',
+                    thumbUrl: 'image/gallery/slide3.jpg',
+                    title: 'Title',
+                    hash: 'Description: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+                },
+            ]
+        }]).getElement());
+    });
+}
 
-
+window.addEventListener("orientationchange", function () {
+    location.reload();
+}, false);
