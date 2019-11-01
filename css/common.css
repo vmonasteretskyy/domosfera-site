@@ -727,7 +727,12 @@ footer .footer__subscribe {
 }
 
 .footer__logo a img {
-    max-width: 100%;
+    max-width: 263px;
+    width: 100%;
+}
+
+.pagination ul {
+    margin-bottom: 0;
 }
 
 .footer__logo {
@@ -2177,7 +2182,7 @@ section {
 }
 
 header.header {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header__searchbtn form {
@@ -4083,7 +4088,7 @@ padding-top: 5px; */
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #000;
+    background-color: rgb(50, 50, 53);
     width: 100%;
     height: 100vh;
     z-index: 99;
@@ -4131,9 +4136,13 @@ padding-top: 5px; */
     text-decoration: none;
 }
 
+footer.footer {
+    border-top: 1px solid #e8e8e8;
+}
 
-
-
+.salons-section {
+    padding-bottom: 70px;
+}
 
 
 

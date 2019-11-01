@@ -5,9 +5,9 @@
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#transparent;}
 	#logosvg {
+		fill:  rgb(50, 50, 53);
 		stroke:#fff;
 		stroke-dasharray: 418;
-		<!-- opacity:.3; -->
 		animation: draw;
 		animation-duration: 2s;
 		animation-iteration-count: 1;
@@ -57,7 +57,7 @@
 		C380.4,11,378.9,12,378.1,12.2z"/>
 		
 </g>
-<animate id="p1" attributeName="stroke-dashoffset"  values="460; 0" dur="5s" repeatCount="1" fill="freeze" calcMode="linear">
+<animate id="p1" attributeName="stroke-dashoffset"  values="460; 0" dur="5s" repeatCount="" fill="freeze" calcMode="linear">
 		</animate>
 </svg>
 
