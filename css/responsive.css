@@ -535,25 +535,26 @@
     padding-left: 0;
 }
 
-.menu-section .nav-col ul li a:hover:before,
-.menu-section {
-    display: none;
-}
+*/
+    .menu-section .nav-col ul li a:hover:before,
+    .menu-section {
+        /* display: none; */
+    }
 
-.menu-section {
-    transition: initial;
-    -webkit-transition: initial;
-    -moz-transition: initial;
-    -ms-transition: initial;
-    -o-transition: initial;
-    width: 100%;
-    min-height: 100vh;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-} */
+    /* .menu-section {
+        transition: initial;
+        -webkit-transition: initial;
+        -moz-transition: initial;
+        -ms-transition: initial;
+        -o-transition: initial;
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    } */
 
 }
 
@@ -1112,6 +1113,13 @@
         height: 65px;
     }
 
+    .menu-section {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
 
     /* 767 */
     .carousel-gallery .abstoptitle {
