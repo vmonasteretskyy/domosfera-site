@@ -369,8 +369,13 @@ $(document).ready(function () {
     // preloader
     setTimeout(function () {
         $('.preloader-section').fadeOut('slow');
-    }, 5000);
-
+    }, 5100);
+    setTimeout(function () {
+        $('.preloader-section img').fadeIn('300');
+    }, 100);
+    setTimeout(function () {
+        $('.preloader-section img').hide();
+    }, 5300);
     // burger  
 
     $('header > .header__navbtn .burgermenu').click(function () {
@@ -380,17 +385,7 @@ $(document).ready(function () {
         $('.menu-section').removeClass('showmenu');
     });
 
-    // if ($(window).width() < 1025) {
-    //     $('header > .header__navbtn .burgermenu').click(function () {
 
-    //         $('body').css('overflow', 'hidden');
-    //     });
-    //     $('.burgermenuopen').click(function () {
-
-    //         $('body').css('overflow', 'initial');
-    //     });
-
-    // }
 
 });
 
