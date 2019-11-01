@@ -389,7 +389,10 @@ $(window).scroll(function () {
 $(document).ready(function () {
     var leftmarg = (($(window).width() - $('.container').width()) / 2) - 45;
     $('.news-slider').css('padding-left', leftmarg);
-
+    if ($(window).width() < 1025) {
+        var leftmarg = (($(window).width() - $('.container').width()) / 2);
+        $('.news-slider').css('padding-left', leftmarg);
+    }
 
     // news slider arrow
     $('.news .slick-next.slick-arrow').css('right', leftmarg - 10);
@@ -412,7 +415,10 @@ $(document).ready(function () {
     $(window).resize(function () {
         var leftmarg = (($(window).width() - $('.container').width()) / 2) - 35;
         $('.news-slider').css('padding-left', leftmarg);
-
+        if ($(window).width() < 1025) {
+            var leftmarg = (($(window).width() - $('.container').width()) / 2);
+            $('.news-slider').css('padding-left', leftmarg);
+        }
         // news slider arrow
         $('.news .slick-next.slick-arrow').css('right', leftmarg - 10);
         $('.news .slick-prev.slick-arrow').css('right', leftmarg + 25);

@@ -498,13 +498,18 @@
 
 /* FIXED  */
 @media(max-width:1024.8px) {
-/* .mainslider,
-section,
-.aboutus,
-.ourservices,
-footer.footer {
-    padding-left: 0;
-} */
+
+    .mainslider,
+    section,
+    .aboutus,
+    .ourservices,
+    footer.footer {
+        padding-left: 0;
+    }
+
+    .fixed-leftsocial {
+        display: none;
+    }
 }
 
 /* --- */
