@@ -12,7 +12,7 @@
 		animation-duration: 2s;
 		animation-iteration-count: 1;
 		animation-delay: 2.6s;
-		<!-- animation-fill-mode: forwards; -->
+		animation-fill-mode: forwards;
 		
 	}
 	@keyframes draw {
