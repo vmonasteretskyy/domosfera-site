@@ -369,13 +369,8 @@ $(document).ready(function () {
     // preloader
     setTimeout(function () {
         $('.preloader-section').fadeOut('slow');
-    }, 5100);
-    setTimeout(function () {
-        $('.preloader-section img').fadeIn('300');
-    }, 100);
-    setTimeout(function () {
-        $('.preloader-section img').hide();
-    }, 5300);
+    }, 5000);
+
     // burger  
 
     $('header > .header__navbtn .burgermenu').click(function () {
