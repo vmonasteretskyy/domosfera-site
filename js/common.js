@@ -370,7 +370,9 @@ $(document).ready(function () {
     setTimeout(function () {
         $('.preloader-section').fadeOut('slow');
     }, 5000);
-
+    // setTimeout(function () {
+    //     $('.preloader-section svg').fadeIn('slow');
+    // }, 200);
     // burger  
 
     $('header > .header__navbtn .burgermenu').click(function () {

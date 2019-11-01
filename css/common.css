@@ -4098,13 +4098,14 @@ padding-top: 5px; */
     flex-direction: column;
 }
 
-.preloader-section img {
+.preloader-section svg {
     width: 50%;
     animation: draw-zoom;
     -webkit-animation: draw-zoom;
     animation-duration: 3s;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
+    height: auto;
 
 }
 

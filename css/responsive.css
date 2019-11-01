@@ -1483,7 +1483,7 @@
         padding-left: 15px !important;
     }
 
-    .preloader-section img {
+    .preloader-section svg {
         width: 70%;
     }
 }
