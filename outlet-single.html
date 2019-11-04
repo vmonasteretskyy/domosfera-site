@@ -80,12 +80,13 @@
                         <div class="gray-block"></div>
                         <div class="bredcrambs">
                             <ul>
-                                <li>Outlet /</li>
-                                <li>Вітальні, гардеробні /</li>
+                                <li><a href="#">Outlet /</a></li>
+                                <li><a href="#">Вітальні, гардеробні /</a></li>
                                 <li>Self (Rimadesio)</li>
                             </ul>
                         </div>
                         <div class="left-block">
+                            <h3>Self (Rimadesio)</h3>
                             <div class="left-section">
                                 <div class="slider">
                                     <div class="outlet-sliders">
@@ -107,6 +108,9 @@
                                         <div class="outlet-slider">
                                             <img src="img/outlet2.png" alt="">
                                         </div>
+                                    </div>
+                                    <div id="gallery">
+                                        <span class="mdi mdi-close"></span>
                                     </div>
             
                                     <div class="outlet-min-sliders">
@@ -157,7 +161,7 @@
                                 <h4>Продавець</h4>
                                 <div class="seller-block">
                                     <div class="seller-img">
-                                        <img src="img/outlet-sale.png" alt="">
+                                        <a href="#"><img src="img/outlet-sale.png" alt=""></a>
                                     </div>
                                     <div class="seller-info">
                                         <ul>
@@ -175,8 +179,12 @@
                                     </div>
                                 </div>
                                 <div class="seller-contact">
-                                    <a href="#">Зв'язатися з продавцем</a>
+                                    <a data-toggle="modal" data-target="#outl-modal">Зв'язатися з продавцем</a>
                                 </div>
+                            </div>
+                            <div class="warrior">
+                                <h4>Будьте уважні!</h4>
+                                <p>За актуальність інформації про товар ТЦ Домосфера відповідальності не несе. Про всі подробиці стосовно товару, його замовлення, наявності, доставки тощо питайте, будь ласка, у продавця за вказаними контактами.</p>
                             </div>
                             <div class="block-text">
                                 <ul>
@@ -219,6 +227,65 @@
         </section>
 
     </main>
+
+
+    <div class="modal fade outlet-modal" id="outl-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="mdi mdi-close"></span>
+                </button>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Задайте питання продавцеві</h3>
+                        <div class="warrior">
+                            <p><strong>Будьте уважні!</strong>За актуальність інформації про товар ТЦ Домосфера відповідальності не несе. Про всі подробиці стосовно товару, його замовлення, наявності, доставки тощо питайте, будь ласка, у продавця за вказаними контактами.</p>
+                        </div>
+                    </div>
+                    <div class="rent-form contact-form">
+                        <div class="container">
+                            <div class="tabform-cont">
+                                <form action="" id="contform" class="contform">
+                                    <div class="row form-group">
+                                        <div class="col-md-12">
+                                            <div class="controls">
+                                                <input type="text" id="name-company" class="floatLabel" name="name-company">
+                                                <label for="name-company">Назва компанії *</label>
+                                            </div>
+                                            <div class="controls">
+                                                <input type="text" id="phone" class="floatLabel" name="phone">
+                                                <label for="phone">Номер телефону контактної особи *</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="controls">
+                                                <textarea id="text" class="floatLabel" name="text"></textarea>
+                                                <label for="text">Додаткова інформація</label>
+                                            </div>
+                                            <div class="contform-check">
+                                                <input type="checkbox" id="contfcheck">
+                                                <label for="contfcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                                        даних</a></label>
+                                            </div>
+                                            <div class="cont-formsbm">
+                                                <div class="flip">
+                                                    <div>
+                                                        <input type="submit" value="Відправити запит" class="front">
+                                                        <input type="submit" value="Відправити запит" class="back">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -301,6 +368,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jgallery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
     <script async defer
