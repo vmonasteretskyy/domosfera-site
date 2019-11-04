@@ -1121,6 +1121,11 @@
         -o-border-radius: 0;
     }
 
+    .aboutus__boxpic {
+        max-width: 60px;
+        max-height: 45px;
+    }
+
     /* 767 */
     .carousel-gallery .abstoptitle {
         font-size: 120px;

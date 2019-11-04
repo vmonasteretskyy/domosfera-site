@@ -375,10 +375,10 @@ $(document).ready(function () {
     // }, 200);
     // burger  
 
-    $('header > .header__navbtn .burgermenu').click(function () {
+    $('header > .header__navbtn').click(function () {
         $('.menu-section').addClass('showmenu');
     });
-    $('.burgermenuopen').click(function () {
+    $('.menu-section .header__navbtn').click(function () {
         $('.menu-section').removeClass('showmenu');
     });
 

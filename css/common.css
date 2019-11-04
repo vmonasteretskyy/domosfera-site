@@ -4131,9 +4131,14 @@ padding-top: 5px; */
     font-weight: normal;
 }
 
-.aboutus__box .title:hover {
+.aboutus__box a:hover .title {
     color: #323235;
     opacity: .7;
+    text-decoration: none;
+
+}
+
+.aboutus__box a:hover {
     text-decoration: none;
 }
 
@@ -4144,6 +4149,29 @@ footer.footer {
 .salons-section {
     padding-bottom: 70px;
 }
+
+.header__navbtn {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
