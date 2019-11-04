@@ -289,13 +289,13 @@
                                 </ul>
                             </div>
                             <div class="floor-img floor-block" id="floor1">
-                                <img src="img/rent1.png" alt="">
+                                <a data-toggle="modal" data-target="#img-modal"><img src="img/rent1.png" alt=""></a>
                             </div>
                             <div class="floor-img floor-block" id="floor2">
-                                <img src="img/rent1.png" alt="">
+                                <a data-toggle="modal" data-target="#img-modal"><img src="img/rent1.png" alt=""></a>
                             </div>
                             <div class="floor-img floor-block" id="floor3">
-                                <img src="img/rent1.png" alt="">
+                                <a data-toggle="modal" data-target="#img-modal"><img src="img/rent1.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -420,11 +420,24 @@
 
     </main>
 
-
-
-
-
-
+    <div class="video-page">
+        <div class="modal fade" id="img-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="mdi mdi-close"></span>
+                    </button>
+                    
+                    <div class="modal-body video-body">
+                        <div class="container">
+                            <img src="img/rent1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
