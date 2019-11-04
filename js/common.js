@@ -370,16 +370,30 @@ $(document).ready(function () {
     setTimeout(function () {
         $('.preloader-section').fadeOut('slow');
     }, 5000);
+    // setTimeout(function () {
+    //     $('.preloader-section svg').fadeIn('slow');
+    // }, 200);
+    // burger  
+
+    $('header > .header__navbtn').click(function () {
+        $('.menu-section').addClass('showmenu');
+    });
+    $('.menu-section .header__navbtn').click(function () {
+        $('.menu-section').removeClass('showmenu');
+    });
+
+
+
 });
 
 // fix left arrow
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-        $('.tobott').hide();
-        $('.toup').show();
+        $('.tobott span').addClass('dis');
+        $('.toup span').addClass('enab');
     } else {
-        $('.tobott').show();
-        $('.toup').hide();
+        $('.tobott span').removeClass('dis');
+        $('.toup span').removeClass('enab');
     }
 });
 
@@ -458,7 +472,13 @@ if ($('*').is('#map')) {
             }
             , zoom: 15, mapTypeId: "roadmap", panControl: !1, zoomControl: !1, scaleControl: !1, disableDefaultUI: !0, styles: [
 
-            ]
+            ],
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: true,
+            streetViewControl: true,
+            rotateControl: true,
+            fullscreenControl: true
         }
         );
 

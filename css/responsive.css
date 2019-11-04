@@ -66,6 +66,10 @@
     .mainslider__sidebarsect ul li a {
         padding: 14px 50px 14px 100px;
     }
+
+    .menu-section .header__navbtn {
+        top: 27px;
+    }
 }
 
 /* --- */
@@ -510,6 +514,48 @@
     .fixed-leftsocial {
         display: none;
     }
+
+    .menu-section.showmenu {
+        padding-left: 0;
+    }
+
+    .menu-section .nav-col ul li a:hover {
+        padding-left: 0;
+    }
+
+    /* .menu-section .nav-col ul li .submenu {
+    height: auto;
+}
+
+.menu-section.showmenu {
+    padding-left: 0;
+}
+
+.menu-section .nav-col ul li a:hover {
+    padding-left: 0;
+}
+
+*/
+    .menu-section .nav-col ul li a:hover:before,
+    .menu-section {
+        /* display: none; */
+    }
+
+    /* .menu-section {
+        transition: initial;
+        -webkit-transition: initial;
+        -moz-transition: initial;
+        -ms-transition: initial;
+        -o-transition: initial;
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    } */
+
 }
 
 /* --- */
@@ -744,7 +790,7 @@
     }
 
     .adress-sect .row .col-md-6:first-child .adress__box {
-        margin-top: 30px;
+        margin-top: 55px;
     }
 
     .controls label {
@@ -847,6 +893,10 @@
 
     .cosmiss-slidersect .slide-shadow {
         height: calc(100% - 60px);
+    }
+
+    .menu-section .header__navbtn {
+        right: 20px;
     }
 
     /* 991 */
@@ -1063,6 +1113,26 @@
         height: 65px;
     }
 
+    .menu-section {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .aboutus__boxpic {
+        max-width: 60px;
+        max-height: 45px;
+    }
+
+    .brands-section .bigtitle-page {
+        margin-top: -85px;
+    }
+
+    .adress-sect .row .col-md-6:nth-child(2) {
+        margin-top: 55px;
+    }
 
     /* 767 */
     .carousel-gallery .abstoptitle {
@@ -1076,6 +1146,10 @@
 
     .carousel-gallery {
         padding-top: 55px;
+    }
+
+    .menu-section .nav-col ul li a {
+        font-size: 20px;
     }
 }
 
@@ -1344,6 +1418,37 @@
         margin-top: 30px;
     }
 
+    .menu-section .col-lg-4,
+    .menu-section .nav-col ul {
+        height: auto;
+    }
+
+    .menu-section .nav-col ul li:not(:last-child),
+    .menu-section .nav-col ul li:last-child {
+        margin-bottom: 5px;
+    }
+
+    .menu-section.showmenu {
+        overflow: scroll;
+    }
+
+    .menu-section>div {
+        height: auto;
+        padding: 70px 0 50px 0;
+    }
+
+    .menu-section .nav-col ul li .submenu li a {
+        padding-left: 0;
+    }
+
+    .menu-section .nav-col {
+        width: 100%;
+    }
+
+    .menu-section .nav-col ul {
+        text-align: center;
+    }
+
     /* 575 */
     .salons-section .salons__select-choosen {
         font-size: 18px;
@@ -1365,6 +1470,11 @@
     .cosmiss-textsect .title {
         font-size: 28px;
     }
+
+    .preloader-section img {
+        animation: none;
+        -webkit-animation: none;
+    }
 }
 
 /* FIXED */
@@ -1381,6 +1491,104 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .news-slider {
+        padding-left: 15px !important;
+    }
+
+    .preloader-section svg {
+        width: 70%;
+    }
+
+    .salons-section .salon-sect__picbox a>span {
+        display: none;
+    }
+
+    .salons-section .salons__select {
+        z-index: 3;
+    }
+
+    .salons-section .bigtitle-page {
+        top: -70px;
+    }
+
+    .salons-section .salons__topsect {
+        padding-top: 60px;
+    }
+
+    .salons__content>.row .col-lg-12:not(:last-child) {
+        margin-bottom: 70px;
+    }
+
+    .footer__listsect2 ul li:last-child,
+    .footer__listsect1 ul li:last-child {
+        display: none;
+    }
+
+    .footer__listsect2 ul li:nth-child(2),
+    .footer__listsect1 ul li:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .footer__listsect1.fullwphone ul li:last-child,
+    .footer__listsect2.fullwphone ul li:last-child {
+        display: block;
+    }
+
+    .footer__listsect1.fullwphone,
+    .footer__listsect2.fullwphone {
+        display: block;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer__listsect1.fullwphone br,
+    .footer__listsect2.fullwphone br {
+        display: none;
+    }
+
+    .footer__listsect1.fullwphone {
+        order: 5;
+    }
+
+    .footer__listsect2.fullwphone {
+        order: 6;
+    }
+
+    .brands-section .bigtitle-page {
+        margin-top: -95px;
+    }
+
+    .controls input#format-hub+label {
+        max-width: 90%;
+    }
+
+    .controls input#format-hub+label.active {
+        top: -15px;
+    }
+
+    .adress-sect .row .col-md-6:nth-child(2) .adress__box {
+        margin-top: 0;
+    }
+
+    .adress-sect,
+    .contact-form {
+        padding: 60px 0;
+    }
+
+    .contact-page .map,
+    .bottom-buttons {
+        margin-bottom: 60px;
+    }
+
+    .contact-page .adress__subtitle {
+        margin-top: 60px;
+    }
+
+    .contact-form .tabform-cont {
+        margin-top: 60px;
+    }
 }
 
 /* ---- */
@@ -1391,9 +1599,7 @@
         max-width: 100%;
     }
 
-    .salons__content>.row .col-lg-12:not(:last-child) {
-        margin-bottom: 20px;
-    }
+
 
     .aboutus-slider .slick-prev.slick-arrow,
     .aboutus-slider .slick-next.slick-arrow {
@@ -1404,6 +1610,25 @@
     .aboutus-slider__slide .text-box .title {
         font-size: 28px;
         margin-bottom: 20px;
+    }
+
+    /* FIX */
+    .salons__content-blocks .show-morebtn {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .salons__content-blocks .show-morebtn a span {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .salons__content-blocks .show-morebtn a text {
+        font-size: 20px;
+    }
+
+    .salons__content-blocks .show-morebtn a {
+        height: 66px;
     }
 }
 
@@ -1453,6 +1678,12 @@
     .cosmiss-slidersect .slick-dots li button {
         width: 20px;
     }
+
+    .controls label {
+        font-size: 9px;
+    }
+
+
 }
 
 
@@ -1509,5 +1740,28 @@
     .ourservices,
     footer.footer {
         padding-left: 0;
+    }
+
+    .menu-section .col-lg-4 {
+        height: auto;
+    }
+
+    .menu-section>div {
+        height: 500px;
+        padding: 80px 0;
+    }
+
+    .menu-section.showmenu {
+        overflow: scroll;
+    }
+
+    .menu-section.showmenu {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        width: 100%;
+ height: 100vh;
     }
 }
