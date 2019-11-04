@@ -2740,7 +2740,7 @@ header.header {
 .controls label {
     position: absolute;
     left: 10px;
-    top: 9px;
+    top: 11px;
     width: 90%;
     letter-spacing: 0.35px;
     color: #afb0b3;
@@ -2863,7 +2863,7 @@ header.header {
     min-height: 500px;
 }
 
-.aboutus-slider__slide>img {
+.aboutus-slider__slide>a>img {
     object-fit: cover;
     object-position: 50% 50%;
     height: 100%;
@@ -2876,8 +2876,9 @@ header.header {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(42, 43, 45, .7);
+    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6));
     z-index: 1;
+    background-size: 100% 100%;
 }
 
 .aboutus-slider__slide .text-box {
@@ -2903,7 +2904,7 @@ header.header {
     max-width: 253px;
 }
 
-.aboutus-slider__slide a {
+.aboutus-slider__slide a.vertabus-link {
     position: absolute;
     left: 50px;
     bottom: 69px;
@@ -4154,15 +4155,32 @@ footer.footer {
     cursor: pointer;
 }
 
+.hovershowdescr__link a:hover {
+    margin-left: 0;
+}
 
+.footer__listsect1.fullwphone,
+.footer__listsect2.fullwphone {
+    display: none;
+}
 
+.brands-section .brands__filter ul li:after,
+.brands-section .brands__filter ul li:after {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
 
+.controls input#format-hub+label {
+    top: 6px;
+}
 
-
-
-
-
-
+.controls input#format-hub+label.active {
+    top: -9px;
+}
 
 
 
@@ -4181,7 +4199,8 @@ footer.footer {
 
 .header__phone a,
 .header__searchbtn span,
-.aboutus__box .title {
+.aboutus__box .title,
+.hovershowdescr__link a {
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;

@@ -44,7 +44,6 @@
                 <input type="text" placeholder="Що шукати?">
                 <button>
                     Пошук
-                    <!-- <img src="image/news-arrow.svg" alt="arrow"> -->
                 </button>
                 <div class="close-headsearch">
                     <span class="mdi mdi-window-close"></span>
@@ -53,9 +52,59 @@
         </div>
         <div class="header__navbtn">
             <span>меню</span>
-            <!-- <img src="image/menu-icon.svg" alt=""> -->
             <div class="burgermenu">
                 <span></span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <div>
+                <div class="container">
+                    <nav>
+                        <div class="header__navbtn">
+                            <span>меню</span>
+                            <div class="burgermenuopen">
+                                <span class="mdi mdi-close"></span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="nav-col">
+                                    <ul>
+                                        <li><a href="#">Салони</a></li>
+                                        <li><a href="#">Смак</a></li>
+                                        <li><a href="#">Бренди</a></li>
+                                        <li><a href="#">Outlet</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="nav-col">
+                                    <ul>
+                                        <li><a href="#">Відео</a></li>
+                                        <li><a href="#">Оренда</a></li>
+                                        <li><a href="#">Domosfera HUB</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="nav-col">
+                                    <ul>
+                                        <li><a href="#">Новини</a></li>
+                                        <li>
+                                            <a href="#">Про нас</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Єдиний в Україні</a></li>
+                                                <li><a href="#">Легенди інтер'єрного дизайну</a></li>
+                                                <li><a href="#">Соціальні проекти</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Контакти</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -308,61 +357,64 @@
                     </div>
                     <div class="tabform-cont tabform-content2">
                         <p class="title">Запит на оренду Domosfera HUB</p>
-                        <form action="" id="contform" class="contform">
+                        <form action="" id="contform2" class="contform">
                             <div class="row form-group">
                                 <div class="col-md-6">
                                     <div class="controls">
-                                        <input type="text" id="name-company1" class="floatLabel" name="name-company1">
-                                        <label for="name-company1">Назва компанії *</label>
+                                        <input type="text" id="name-company-hub" class="floatLabel" name="name-company">
+                                        <label for="name-company-hub">Контактна особа *</label>
                                     </div>
                                     <div class="controls">
-                                        <input type="text" id="phone1" class="floatLabel" name="phone1">
-                                        <label for="phone1">Номер телефону контактної особи *</label>
+                                        <input type="text" id="phone-hub" class="floatLabel" name="phone">
+                                        <label for="phone-hub">Номер телефону контактної особи *</label>
                                     </div>
-                                    <div class="controls">
-                                        <input type="text" id="area1" class="floatLabel" name="area1">
-                                        <label for="area1">Розмір площі *</label>
-                                    </div>
-                                    <div class="controls">
-                                        <input type="text" id="brand1" class="floatLabel" name="brand1">
-                                        <label for="brand1">Бренди та країни виробники *</label>
-                                    </div>
-                                    <div class="controls">
-                                        <input type="text" id="shop1" class="floatLabel" name="shop1">
-                                        <label for="shop1">Інші магазини компанії (вказати місцезнаходження) *</label>
-                                    </div>
-
                                 </div>
                                 <div class="col-md-6">
                                     <div class="controls">
-                                        <input type="text" id="kont-osoba1" class="floatLabel" name="kont-osoba1">
-                                        <label for="kont-osoba1">Контактна особа *</label>
+                                        <input type="text" id="brand-hub" class="floatLabel" name="brand">
+                                        <label for="brand-hub">Назва компанії *</label>
                                     </div>
                                     <div class="controls">
-                                        <input type="email" id="email1" class="floatLabel" name="email1">
-                                        <label for="email1">Електронна адреса *</label>
+                                        <input type="text" id="shop-hub" class="floatLabel" name="shop">
+                                        <label for="shop-hub">Електронна адреса *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="controls">
+                                        <input type="text" id="format-hub" class="floatLabel" name="format">
+                                        <label for="format-hub">Формат події (конференція, семінар, фуршет, банкет,
+                                            виставка, кулінарний майстер-клас т.ін) *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <input type="text" id="kont-osoba-hub" class="floatLabel" name="kont-osoba">
+                                        <label for="kont-osoba-hub">Кількість учасників *</label>
                                     </div>
                                     <div class="controls">
-                                        <input type="text" id="prodgroup1" class="floatLabel" name="prodgroup1">
-                                        <label for="prodgroup1">Товарна група (меблі, декор, освітлення тощо) *</label>
+                                        <input type="email" id="email-hub" class="floatLabel" name="email">
+                                        <label for="email-hub">Кількість годин/час *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <input type="text" id="price-hub" class="floatLabel" name="price">
+                                        <label for="price-hub">Дата події *</label>
                                     </div>
                                     <div class="controls">
-                                        <input type="text" id="price1" class="floatLabel" name="price1">
-                                        <label for="price1">Цінова категорія товарів *</label>
-                                    </div>
-                                    <div class="controls">
-                                        <input type="text" id="link1" class="floatLabel" name="link1">
-                                        <label for="link1">Посилання на сайт компанії *</label>
+                                        <input type="text" id="link-hub" class="floatLabel" name="link">
+                                        <label for="link-hub">Послуги кейтерінгу *</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="controls">
-                                        <textarea id="text1" class="floatLabel" name="text1"></textarea>
-                                        <label for="text1">Додаткова інформація</label>
+                                        <textarea id="text-hub" class="floatLabel" name="text"></textarea>
+                                        <label for="text-hub">Додаткова інформація</label>
                                     </div>
                                     <div class="contform-check">
-                                        <input type="checkbox" id="contfcheck">
-                                        <label for="contfcheck"><span></span>Я погоджуюся з <a href="#">умовами обробки
+                                        <input type="checkbox" id="contfcheck-hub">
+                                        <label for="contfcheck-hub"><span></span>Я погоджуюся з <a href="#">умовами
+                                                обробки
                                                 даних</a></label>
                                     </div>
                                     <div class="cont-formsbm">
@@ -427,6 +479,22 @@
                         <li>
                             <a href="#">Контакти</a>
                         </li>
+                        <li>
+                            10:00 - 20:00
+                            <span>28-29 квітня 2019 року - вихідні дні</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__listsect1 fullwphone">
+                    <ul class="no-style">
+                        <li>
+                            Україна, Київ,<br>
+                            Столичне шосе 101
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__listsect2 fullwphone">
+                    <ul class="no-style">
                         <li>
                             10:00 - 20:00
                             <span>28-29 квітня 2019 року - вихідні дні</span>

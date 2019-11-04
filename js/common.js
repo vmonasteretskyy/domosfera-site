@@ -472,7 +472,13 @@ if ($('*').is('#map')) {
             }
             , zoom: 15, mapTypeId: "roadmap", panControl: !1, zoomControl: !1, scaleControl: !1, disableDefaultUI: !0, styles: [
 
-            ]
+            ],
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: true,
+            streetViewControl: true,
+            rotateControl: true,
+            fullscreenControl: true
         }
         );
 
