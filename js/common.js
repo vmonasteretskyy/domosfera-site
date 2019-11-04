@@ -217,14 +217,16 @@ $(document).ready(function () {
         $(this).hide();
         $('.sm-restaurant__info-section .showhide-btns>span.hide-moretext').show();
         $('.sm-restaurant__info-section .white-shadow').hide();
-        $('.sm-restaurant__info-section .text-block').addClass('havt');
+        // $('.sm-restaurant__info-section .text-block').addClass('havt');
+        $('.more-text').show(300);
     });
 
     $('.sm-restaurant__info-section .showhide-btns>span.hide-moretext').click(function () {
         $(this).hide();
         $('.sm-restaurant__info-section .showhide-btns>span.show-moretext').show();
         $('.sm-restaurant__info-section .white-shadow').show();
-        $('.sm-restaurant__info-section .text-block').removeClass('havt');
+        // $('.sm-restaurant__info-section .text-block').removeClass('havt');
+        $('.more-text').hide(300);
     })
     // brands img slider
 
@@ -382,8 +384,17 @@ $(document).ready(function () {
         $('.menu-section').removeClass('showmenu');
     });
 
-
-
+    // in one line
+    // function topicLining(heiLine) {
+    //     var highest = 0;
+    //     jQuery(heiLine).each(function () {
+    //         var currentHei = jQuery(this).height();
+    //         if (currentHei > highest) {
+    //             highest = currentHei;
+    //         }
+    //     });
+    //     jQuery(heiLine).height(highest);
+    // }
 });
 
 // fix left arrow

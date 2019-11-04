@@ -325,6 +325,10 @@
         margin-bottom: 30px;
     }
 
+    .sm-restaurant .vert-text {
+        margin-top: 10px;
+    }
+
     /* 1199 */
     .salons-section .salon-sect__contbox a.title,
     .abus-textsect p.title {
@@ -380,6 +384,10 @@
 
     .carousel-gallery #carousel-left {
         left: 2%;
+    }
+
+    .sm-restaurant .vert-text {
+        margin-top: 4px;
     }
 }
 
@@ -836,7 +844,7 @@
     }
 
     .sm-restaurant__info-section .white-shadow {
-        background: linear-gradient(to top, #fff, #fff 30%, transparent 95%);
+        background: linear-gradient(to top, #fff, #fff 30%, rgba(255, 255, 255, 0) 95%);
     }
 
     .bands-bottslidersect.news h3 {
@@ -1132,6 +1140,18 @@
 
     .adress-sect .row .col-md-6:nth-child(2) {
         margin-top: 55px;
+    }
+
+    .sm-restaurant .vert-text {
+        margin-top: 20px;
+    }
+
+    .sm-restaurant .phone-titlepage {
+        display: block;
+    }
+
+    .sm-restaurant__info-section h1 {
+        display: none;
     }
 
     /* 767 */
@@ -1589,6 +1609,10 @@
     .contact-form .tabform-cont {
         margin-top: 60px;
     }
+
+    .sm-restaurant .vert-text {
+        margin-top: 5px;
+    }
 }
 
 /* ---- */
@@ -1762,6 +1786,6 @@
         -ms-border-radius: 0;
         -o-border-radius: 0;
         width: 100%;
- height: 100vh;
+        height: 100vh;
     }
 }

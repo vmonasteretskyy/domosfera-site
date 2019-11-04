@@ -3239,7 +3239,15 @@ header.header {
     z-index: 1;
     position: absolute;
     width: 100%;
-    background: linear-gradient(to top, #fff, #fff 30%, transparent 95%);
+    background: linear-gradient(to top, #fff, #fff 30%, rgba(255, 255, 255, 0) 95%);
+}
+
+.sm-restaurant__info-section .text-block {
+    height: auto;
+}
+
+.sm-restaurant__info-section .text-block .more-text {
+    display: none;
 }
 
 .sm-restaurant__info-section .showhide-btns {
@@ -4182,19 +4190,101 @@ footer.footer {
     top: -9px;
 }
 
+.aboutus-page .aboutus-slider__slide>a {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.aboutus-page .aboutus-slider__slide>a:hover {
+    opacity: .95;
+}
+
+.aboutus-slider__slide a.vertabus-link {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.aboutus-slider__slide a.vertabus-link span {
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.aboutus-slider__slide a.vertabus-link span {
+    z-index: 2;
+}
+
+.aboutus-slider__slide a.vertabus-link:hover span {
+    color: #000;
+    position: relative;
+}
+
+.aboutus-slider__slide a.vertabus-link:after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 1;
+    left: 0;
+}
+
+.aboutus-slider__slide a.vertabus-link:hover:after {
+    top: 0;
+}
+
+.abus-textsect.lastpic p.title {
+    font-size: 36px;
+}
+
+.abus-ooiu .preference-sect .preference__box {
+    margin-bottom: 65px;
+}
+
+.sm-restaurant .vert-text {
+    margin-top: 25px;
+}
+
+.sm-restaurant__info-section .cont-box a {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
 
 
 
 
 
+.sm-restaurant .phone-titlepage {
+    display: none;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #323335;
+}
 
+.smak-rest-page .carousel-gallery,
+.boutiques-page .carousel-gallery {
+    padding-bottom: 60px;
+}
 
-
-
-
-
-
-
+.smak-rest-page .carousel-gallery .abstoptitle {
+    font-size: 80px;
+}
 
 
 .header__phone a,

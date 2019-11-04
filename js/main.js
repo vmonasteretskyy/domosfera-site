@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    $('.restoran-body').hover(function(){
-        $(this).children('.restoran-dark').children('.restoran-desc').css({"height": "35%"}, {"margin-bottom": "60px"});
-        $(this).children('.restoran-dark').children('.new_slidelink').css({"height": "20%"}, {"margin-bottom": "30px"} );
-        $(this).children('.restoran-dark').css({"background": "rgba(0, 0, 0, 0.5)"});             
+    $('.restoran-body').hover(function () {
+        $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "35%" }, { "margin-bottom": "60px" });
+        $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "20%" }, { "margin-bottom": "30px" });
+        $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
     },
-    function(){
-        $(this).children('.restoran-dark').children('.restoran-desc').css({"height": "0"});
-        $(this).children('.restoran-dark').children('.new_slidelink').css({"height": "0"});
-        $(this).children('.restoran-dark').css({"background": "rgba(0, 0, 0, 0.3)"});          
-    });
+        function () {
+            $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
+            $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
+            $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.3)" });
+        });
 });
 
 
@@ -79,8 +79,8 @@ $(document).ready(function () {
         arrows: false,
         fade: true,
         asNavFor: '.outlet-min-sliders'
-      });
-      $('.outlet-min-sliders').slick({
+    });
+    $('.outlet-min-sliders').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.outlet-sliders',
@@ -92,26 +92,26 @@ $(document).ready(function () {
         focusOnSelect: true,
         prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-trending-neutral"></span></button>',
         nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-trending-neutral"></span></button>',
-      });
-      
+    });
 
-      $('.show-btn a').click(function(){
+
+    $('.show-btn a').click(function () {
         $('.more-text').show(300);
         $('.shadow-text').hide(300);
         $('.show-btn').css("display", "none");
         $('.hide-btn').css("display", "block");
-      });
-      $('.hide-btn a').click(function(){
+    });
+    $('.hide-btn a').click(function () {
         $('.more-text').hide(300);
         $('.shadow-text').show(300);
         $('.show-btn').css("display", "block");
         $('.hide-btn').css("display", "none");
-      });
+    });
 
 });
 
 $(document).ready(function () {
-    $('.card-header button').click(function(){
+    $('.card-header button').click(function () {
         $('.card-header').removeClass('active');
         $(this).parents().addClass('active');
 
@@ -123,19 +123,19 @@ $(document).ready(function () {
 function openDesc(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
-  
+
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("outlet-single-text");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
+
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
+
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
@@ -144,19 +144,19 @@ function openDesc(evt, cityName) {
 function openFloor(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
-  
+
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("floor-block");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
+
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("floorlink");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
+
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
