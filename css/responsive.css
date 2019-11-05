@@ -502,6 +502,10 @@
         padding-top: 55px;
     }
 
+    .aftcarous-text {
+        padding: 0 15px;
+    }
+
     /* 1024 */
     .salons-section .salons__select-choosen {
         font-size: 22px;
@@ -547,6 +551,17 @@
         object-fit: initial;
         object-position: initial;
     }
+
+    /* -gallery fix */
+    .j-gallery-preview-content {
+        background-size: 100% !important;
+    }
+
+    .j-gallery-screen-icon {
+        display: none !important;
+    }
+
+    /* - */
 }
 
 /* --- */
@@ -918,6 +933,7 @@
 }
 
 @media(max-width:767.8px) {
+
 
     .header__phone,
     .header__worktime,
@@ -1737,19 +1753,113 @@
         margin-bottom: 60px;
     }
 
-    /* \///// */
+    .legend-page .legends-section,
+    .video-page .top-video {
+        position: relative;
+    }
 
+    .legend-page .word-legends {
+        font-size: 80px;
+        line-height: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+        margin: 0;
+    }
+
+    .outlet-word,
+    .smak-word,
+    .video-word {
+        font-size: 80px;
+        line-height: 80px;
+        top: -125px;
+    }
+
+    .video-word {
+        top: -60px;
+    }
+
+    .salons-section .salons__topsect {
+        padding-top: 80px;
+    }
+
+    .salons-section .salons__topsect {
+        margin-bottom: 0;
+    }
+
+    .big-bottpage-links .row .col-sm-6:last-child a,
+    .contact-page .bottom-buttons .row .col-sm-6:last-child a,
+    .hub-page .bottom-buttons .row .col-sm-4:nth-child(n+2) a,
+    .legend-page .bottom-buttons .row .col-sm-6:nth-child(2) a {
+        border-left: 2px solid #242526 !important;
+    }
+
+
+    /* \///// */
+    .salons-section .bigtitle-page,
+    .smak-word,
+    .video-word {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+
+    .abus-textsect p.title,
+    .aboutus-slider__slide .text-box .title,
+    .absbox-title h1,
+    .hub-page .top-head h3,
+    .mainslider-slidetopbox .title,
+    .legend-page.salons-section h3,
+    .outlet-single .left-block h3,
+    .video-page .top-video h3 {
+        font-size: 42px;
+        line-height: normal;
+    }
+
+    .abus-ooiu .preference-sect h3,
+    .carousel-gallery .galltitle,
+    .social-missions-boxes .title.show-phone,
+    .bands-bottslidersect.news h3,
+    .contact-page .adress__title,
+    .tabform-cont .title,
+    h3,
+    .body-news-content .content-single h2 {
+        font-size: 36px;
+        line-height: normal;
+    }
+
+    .hub-page .hub-long-slider .title {
+        font-size: 28px;
+    }
+
+    /* 24 */
+    /* 18 */
+    .video-page .body-video h4 {
+        font-size: 18px;
+    }
+
+    .carousel-gallery .galltitle,
+    .bands-bottslidersect.news h3 {
+        text-align: center;
+    }
 }
 
 /* ---- */
+@media(max-width:400.8px) {
+    .legend-page .word-legends {
+        font-size: 65px;
+        top: -70px;
+    }
+}
+
 @media(max-width:480.8px) {
     .salons__content-blocks>.row>.col-lg-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
     }
-
-
 
     .aboutus-slider .slick-prev.slick-arrow,
     .aboutus-slider .slick-next.slick-arrow {
@@ -1758,7 +1868,6 @@
     }
 
     .aboutus-slider__slide .text-box .title {
-        font-size: 28px;
         margin-bottom: 20px;
     }
 
@@ -1779,6 +1888,10 @@
 
     .salons__content-blocks .show-morebtn a {
         height: 66px;
+    }
+
+    .aboutus-slider__slide .text-box .title {
+        font-size: 42px;
     }
 }
 

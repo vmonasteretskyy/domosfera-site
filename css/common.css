@@ -4336,9 +4336,6 @@ footer.footer {
     margin-bottom: 100px;
 }
 
-/* .outlet.salons-section .outlet-items .outlet-item {
-    margin-bottom: 60px;
-} */
 
 main.smak-rest-page {
     padding-bottom: 60px;
@@ -4365,6 +4362,72 @@ main.smak-rest-page {
 .smak-rest-page .carousel-gallery .abstoptitle {
     font-size: 80px;
 }
+
+.big-bottpage-links .row .col-sm-6 a,
+.contact-page .bottom-buttons .row .col-sm-6 a,
+.legend-page .bottom-buttons .row .col-sm-6:first-child a {
+    border-right: 2px solid #242526 !important;
+}
+
+.big-bottpage-links .row .col-sm-6:last-child a,
+.contact-page .bottom-buttons .row .col-sm-6:last-child a {
+    border-left: 0px solid #242526 !important;
+}
+
+.hub-page .bottom-buttons .row .col-sm-4 a {
+    border-right: 2px solid #242526 !important;
+}
+
+.hub-page .bottom-buttons .row .col-sm-4:nth-child(n+2) a,
+.legend-page .bottom-buttons .row .col-sm-6:nth-child(2) a {
+    border-left: 0px solid #242526 !important;
+}
+
+
+
+
+
+
+
+/* buttons */
+
+
+.big-bottpage-links.anybtns .col a {
+    border-top: 2px solid #242526 !important;
+    border-bottom: 2px solid #242526 !important;
+    border-right: 2px solid #242526 !important;
+    border-left: 0px solid #242526 !important;
+}
+
+.big-bottpage-links.anybtns .col:first-child a {
+    border-left: 2px solid #242526 !important;
+}
+
+@media(max-width:575.8px) {
+    .big-bottpage-links.anybtns .col a {
+        border-left: 2px solid #242526 !important;
+    }
+
+    .big-bottpage-links.anybtns .col {
+        flex-basis: initial;
+        margin-bottom: 10px;
+    }
+
+    .big-bottpage-links.anybtns .col:last-child {
+        margin-bottom: 0;
+    }
+
+    .big-bottpage-links.anybtns .col a {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 70px;
+        font-size: 16px;
+    }
+}
+
+/* - */
+
+
 
 
 .header__phone a,
