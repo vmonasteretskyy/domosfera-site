@@ -531,39 +531,22 @@
         padding-left: 0;
     }
 
-    /* .menu-section .nav-col ul li .submenu {
-    height: auto;
-}
-
-.menu-section.showmenu {
-    padding-left: 0;
-}
-
-.menu-section .nav-col ul li a:hover {
-    padding-left: 0;
-}
-
-*/
-    .menu-section .nav-col ul li a:hover:before,
-    .menu-section {
-        /* display: none; */
+    .soc-mission .soc-mission__top {
+        height: auto;
+        min-height: initial;
     }
 
-    /* .menu-section {
-        transition: initial;
-        -webkit-transition: initial;
-        -moz-transition: initial;
-        -ms-transition: initial;
-        -o-transition: initial;
-        width: 100%;
-        min-height: 100vh;
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-    } */
+    .soc-mission__top .absbox-title {
+        top: 100px;
 
+    }
+
+    .soc-mission__top>img {
+        width: 100%;
+        height: auto;
+        object-fit: initial;
+        object-position: initial;
+    }
 }
 
 /* --- */
@@ -1154,6 +1137,14 @@
         display: none;
     }
 
+    .absbox-title h1 {
+        margin-bottom: 30px;
+    }
+
+    .soc-mission__top .absbox-title {
+        top: 50px;
+    }
+
     /* 767 */
     .carousel-gallery .abstoptitle {
         font-size: 120px;
@@ -1613,6 +1604,128 @@
     .sm-restaurant .vert-text {
         margin-top: 5px;
     }
+
+    .carousel-gallery .abstoptitle {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .preference-sect .col-lg-4.col-md-6 .preference__box {
+        margin-bottom: 0px;
+    }
+
+    .carousel-gallery-adaptive .slick-arrow {
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+
+    .soc-mission .soc-mission__top {
+        height: calc(100vh - 100px);
+        min-height: 480px;
+    }
+
+    .soc-mission__top>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .soc-mission__top .absbox-title {
+        top: 100px;
+    }
+
+    .cosmiss-textsect .title {
+        display: none;
+    }
+
+    .social-missions-boxes .title.show-phone {
+        display: block;
+    }
+
+    .carousel-gallery-adaptive .slick-arrow {
+        width: 25px;
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    p.aftcarous-text {
+        padding: 0 15px;
+    }
+
+    .hub-page .card-header {
+        padding: 30px 0 30px 25px;
+    }
+
+    .hub-page .card-header button {
+        font-size: 28px;
+    }
+
+    .hub-page .hub-long-slider,
+    .hub-form.contact-form {
+        margin: 60px 0;
+    }
+
+    .hub-page .bottom-buttons .row .col-sm-4 a,
+    .legend-page .bottom-buttons .row .col-sm-6 a,
+    .show-morebtn a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .news-page .body-news .news-item a {
+        font-size: 18px;
+    }
+
+    main.smak-rest-page {
+        padding-bottom: 0;
+    }
+
+    .hub-page.rent-page.salons-section {
+        padding-bottom: 0;
+    }
+
+    /* - */
+    .rent-form.contact-form {
+        margin: 60px 0;
+    }
+
+    .bands-bottslidersect.news,
+    .news-page .body-news {
+        margin-top: 0;
+    }
+
+    .social-missions-boxes .socmiss__leftpic,
+    .social-missions-boxes .socmiss__rightpic {
+        margin-bottom: 70px;
+    }
+
+    .salons-section,
+    .big-bottpage-links,
+    .hub-page .carousel-gallery,
+    .news-page.news-single .carousel-gallery {
+        padding-bottom: 60px;
+    }
+
+    .carousel-gallery.legends-gall {
+        padding-bottom: 120px;
+    }
+
+    .legend-page .legends-item,
+    .news-page.salons-section .salons__topsect,
+    .outlet.salons-section .outlet-items,
+    .video-page .body-video .video-item {
+        margin-bottom: 60px;
+    }
+
+    .social-missions-boxes {
+        padding-top: 60px;
+    }
+
+    .hub-page .hub-meneger .row {
+        padding: 60px 0;
+    }
 }
 
 /* ---- */
@@ -1664,6 +1777,10 @@
     .salons__content-blocks .salon-sect,
     .salons-section .salons__content-blocks .salon-sect__picbox-img {
         height: 300px;
+    }
+
+    .salons__content-blocks .show-morebtn a text {
+        padding: 0 11%;
     }
 }
 

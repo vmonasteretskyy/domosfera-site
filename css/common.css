@@ -1377,7 +1377,7 @@ section {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-    z-index: -1;
+    z-index: 1;
 }
 
 .salons-section .salons__select-choosen>span.rotatearr {
@@ -2418,7 +2418,7 @@ header.header {
 }
 
 #brand-modal .modal-body {
-    padding: 20px 30px 20px 20px;
+    padding: 30px 30px 30px 30px;
 }
 
 .modalbrand-list li {
@@ -3508,7 +3508,7 @@ footer {
     bottom: 0;
     left: 0;
     position: absolute;
-    background: linear-gradient(to top, #fff, transparent);
+    background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
     width: 100%;
     display: block;
 }
@@ -3654,6 +3654,7 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.35px;
     color: #bbbdc1;
+    font-style: italic;
 }
 
 .socmiss-slider-nav.slick-slider {
@@ -4155,8 +4156,10 @@ footer.footer {
     border-top: 1px solid #e8e8e8;
 }
 
-.salons-section {
-    padding-bottom: 70px;
+
+
+.legend-page.salons-section {
+    padding-bottom: 0;
 }
 
 .header__navbtn {
@@ -4265,7 +4268,79 @@ footer.footer {
     display: block;
 }
 
+.social-missions-boxes .title.show-phone {
+    display: none;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    margin: 0 0 40px 0;
+}
 
+#brand-modal.modal .modal-dialog {
+    max-width: 550px;
+}
+
+#brand-modal.modal .modal-dialog .modal-content {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+}
+
+.modalbrand-list li {
+    margin-bottom: 10px;
+}
+
+.cosmiss-textsect .showhide-text span,
+.sm-restaurant__info-section .showhide-btns span {
+    opacity: 1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.cosmiss-textsect .showhide-text:hover span,
+.sm-restaurant__info-section .showhide-btns:hover span {
+    opacity: .7;
+}
+
+.bands-bottslidersect.news {
+    margin-top: 68px;
+}
+
+.carousel-gallery-adaptive .slick-arrow {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+}
+
+
+.brands-section .brands {
+    margin-bottom: 60px;
+}
+
+.news-page.salons-section .salons__topsect {
+    margin-bottom: 100px;
+}
+
+.outlet.salons-section .outlet-items {
+    margin-bottom: 100px;
+}
+
+.outlet.salons-section .outlet-items .outlet-item {
+    margin-bottom: 60px;
+}
+
+main.smak-rest-page {
+    padding-bottom: 60px;
+}
 
 
 
