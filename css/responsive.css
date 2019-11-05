@@ -1726,6 +1726,12 @@
     .hub-page .hub-meneger .row {
         padding: 60px 0;
     }
+
+    .salons__content.salons__content-blocks .show-morebtn a,
+    .salons__content .show-morebtn a {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* ---- */
