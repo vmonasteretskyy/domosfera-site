@@ -81,14 +81,14 @@ $(document).ready(function () {
 
     // salons page
 
-    $('.salons-section .salons__select-choosen text').click(function () {
+    $('.salons-section .salons__select-choosen').click(function () {
         $('.salons-section .salons__select ul').slideToggle();
-        $(this).next('span').toggleClass('rotatearr')
+        // $(this).next('span').addClass('rotatearr')
     });
 
     $(document).click(function (event) {
         if (!$(event.target).is(".salons-section .salons__select-choosen,.salons__select-choosen text, .salons__select, .salons-section .salons__select ul, .salons-section .salons__select ul li")) {
-            $(".salons-section .salons__select ul").slideUp();
+            // $(".salons-section .salons__select ul").slideUp();
             $('.salons__select-choosen span').removeClass('rotatearr');
         }
     });
