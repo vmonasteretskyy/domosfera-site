@@ -2857,6 +2857,12 @@
     .slider-modal .modal-body.outlet-single .outlet-min-sliders{
         margin-left: 0px;
     }
+    /* rent */
+    .rent-page .word-plan{
+        font-size: 70px;
+        margin-top: -30px;
+        margin-left: -15px;
+    }
 }
 @media (max-width: 320.8px){
     /* legend */
@@ -2875,12 +2881,6 @@
         width: 80px;
     }
     .rent-page .word-brends {
-        left: 5px;
-        margin-top: -594px;
-        font-size: 70px;
-    }
-    .rent-page .word-plan{
-        font-size: 70px;
-        margin-top: -30px;
+        top: -8px;
     }
 }
