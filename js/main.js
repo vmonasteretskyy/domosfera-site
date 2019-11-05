@@ -1,14 +1,15 @@
+// Hover long slider -----------------------------------------------------------------------------------------------------
 $(document).ready(function () {
     $('.restoran-body').hover(function () {
         $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "35%" }, { "margin-bottom": "60px" });
         $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "20%" }, { "margin-bottom": "30px" });
         $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.7)" });
     },
-        function () {
-            $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
-            $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
-            $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
-        });
+    function () {
+        $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
+        $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
+        $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
+    });
 });
 
 
@@ -50,11 +51,11 @@ $(document).ready(function () {
     }
 
     // news slider arrow
-    $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 100);
-    $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 75);
+    $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 10);
+    $('.restoran .slick-prev.slick-arrow').css('right', leftmarg + 25);
     if ($(window).width() < 1300) {
-        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 80);
-        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg - 60);
+        $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 0);
+        $('.restoran .slick-prev.slick-arrow').css('right', leftmarg + 30);
     }
     if ($(window).width() < 1025) {
         $('.restoran .slick-next.slick-arrow').css('right', leftmarg - 20);
@@ -122,7 +123,7 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-trending-neutral"></span></button>',
     });
 
-
+// Show more text ------------------------------------------------------------------------------------------------------------
     $('.show-btn a').click(function () {
         $('.more-text').show(300);
         $('.shadow-text').hide(300);
@@ -135,7 +136,7 @@ $(document).ready(function () {
         $('.show-btn').css("display", "block");
         $('.hide-btn').css("display", "none");
     });
-
+// Slider in modal ----------------------------------------------------------------------------------------------------------
     $('.hub-long-slider .restoran-body .new_slidelink a').click(function () {
         $('.outlet-sliders.hub-modals').slick({
             slidesToShow: 1,
@@ -162,13 +163,14 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+// Acordeon fix ------------------------------------------------------------------------------------
     $('.card').click(function () {
         $('.card').not($(this)).children('.card-header').removeClass('active');
         $(this).children('.card-header').toggleClass('active');
     });
 
-
-    $('.outlet-sliders .outlet-slider img').click(function () {
+// Open gallery --------------------------------------------------------------------------------------
+    $('.outlet-sliders.open-gell .outlet-slider img').click(function () {
         $('#gallery').fadeIn();
     });
     $('#gallery span.mdi').click(function () {
@@ -176,7 +178,7 @@ $(document).ready(function () {
     });
 });
 
-
+// Tabs--------------------------------------------------------------------------------------
 function openDesc(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
