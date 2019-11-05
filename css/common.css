@@ -4333,10 +4333,9 @@ footer.footer {
 .outlet.salons-section .outlet-items {
     margin-bottom: 100px;
 }
-
-.outlet.salons-section .outlet-items .outlet-item {
+/* .outlet.salons-section .outlet-items .outlet-item {
     margin-bottom: 60px;
-}
+} */
 
 main.smak-rest-page {
     padding-bottom: 60px;

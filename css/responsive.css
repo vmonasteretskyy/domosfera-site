@@ -1732,6 +1732,10 @@
         margin-left: 0;
         margin-right: 0;
     }
+
+    .outlet.salons-section .outlet-items .outlet-item {
+        margin-bottom: 60px;
+    }
 }
 
 /* ---- */
