@@ -162,70 +162,59 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-<<<<<<< HEAD
-    $('.card-header button').click(function () {
-        $('.card-header').removeClass('active');
-        $(this).parents().addClass('active');
-=======
-    // $('.accordion button').click(function(){
-    //     $('.card-header').removeClass('active');
-    //     $(this).parents().addClass('active');
-    // });
-
     $('.card').click(function () {
         $('.card').not($(this)).children('.card-header').removeClass('active');
         $(this).children('.card-header').toggleClass('active');
     });
->>>>>>> f82009bdf832bd7883b7fd3ac8e6f9eb09e28d3a
 
 
-        $('.outlet-sliders .outlet-slider img').click(function () {
-            $('#gallery').fadeIn();
-        });
-        $('#gallery span.mdi').click(function () {
-            $('#gallery').fadeOut();
-        });
+    $('.outlet-sliders .outlet-slider img').click(function () {
+        $('#gallery').fadeIn();
     });
+    $('#gallery span.mdi').click(function () {
+        $('#gallery').fadeOut();
+    });
+});
 
 
-    function openDesc(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+function openDesc(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("outlet-single-text");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("outlet-single-text");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
 
-    function openFloor(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("floor-block");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("floorlink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function openFloor(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("floor-block");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("floorlink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
