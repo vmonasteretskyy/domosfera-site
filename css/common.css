@@ -2658,6 +2658,8 @@ header.header {
 .contact-form .tabform-cont {
     margin-top: 15px;
     padding-top: 50px;
+    animation: fadeEffect 2s;
+    -webkit-animation: fadeEffect 2s;
 }
 
 .tabform-cont .title {
@@ -4333,6 +4335,7 @@ footer.footer {
 .outlet.salons-section .outlet-items {
     margin-bottom: 100px;
 }
+
 /* .outlet.salons-section .outlet-items .outlet-item {
     margin-bottom: 60px;
 } */
@@ -4341,6 +4344,9 @@ main.smak-rest-page {
     padding-bottom: 60px;
 }
 
+.outlet-slider.slick-slide.slick-active {
+    cursor: pointer;
+}
 
 
 .sm-restaurant .phone-titlepage {
