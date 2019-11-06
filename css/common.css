@@ -4508,10 +4508,17 @@ main.smak-rest-page {
 
 
 
+.carousel.newcar .carousel-item img {
+    transform: scale(.9);
+    transition: .3s;
+    height: 100%;
+    object-fit: cover;
+}
 
+.carousel.newcar .carousel-item.active img {
+    transform: scale(1);
 
-
-
+}
 
 
 

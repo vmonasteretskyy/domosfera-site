@@ -646,7 +646,8 @@ window.addEventListener("orientationchange", function () {
 (function ($) {
     $('.carousel.newcar').carousel({
         indicators: true,
-        dist: -50,
+        dist: 0,
+        shift: -100,
         onCycleTo: function (ele) {
             $('.num span.current-newcarslide').html($(ele).index() + 1);
             $('.carousel.newcar .carousel-item.active img').click(function () {
@@ -655,6 +656,7 @@ window.addEventListener("orientationchange", function () {
         }
 
     });
+
 
 })(jQuery);
 
