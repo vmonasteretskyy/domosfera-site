@@ -1161,6 +1161,16 @@
         top: 50px;
     }
 
+
+    .aboutus .aboutus__box,
+    .aboutus.two-two .row .col-lg-6:nth-last-child(-n+3) .aboutus__box {
+        margin-bottom: 30px !important;
+    }
+
+    .aboutus.two-two .row .col-lg-6:last-child .aboutus__box {
+        margin-bottom: 0 !important;
+    }
+
     /* 767 */
     .carousel-gallery .abstoptitle {
         font-size: 120px;
