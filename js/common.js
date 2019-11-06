@@ -351,21 +351,20 @@ $(document).ready(function () {
         });
 
     }
-    (function ($) {
+    // (function ($) {
+    //     $('.carousel.newcar').carousel({
+    //         indicators: true,
+    //         dist: -50,
+    //         onCycleTo: function (ele) {
+    //             $('.num span.current-newcarslide').html($(ele).index() + 1);
+    //             $('.carousel.newcar .carousel-item.active img').click(function () {
+    //                 $('#gallery').addClass('showgall');
+    //             });
+    //         }
 
-        // Plugin initialization
-        $('.carousel.newcar').carousel({
-            indicators: true,
-            dist: -50,
-            onCycleTo: function (ele) {
-                $('.num span.current-newcarslide').html($(ele).index() + 1);
-                $('.carousel.newcar .carousel-item.active').click(function () {
-                    $('#gallery').addClass('showgall');
-                });
-            }
-        });
+    //     });
 
-    })(jQuery); // end of jQuery name space
+    // })(jQuery);
     var totalItems = $('.carousel-item').length;
     $('.num span.total-newcarslide').html(totalItems);
 
@@ -394,7 +393,7 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"></button>'
     });
 
-    $('.carousel.newcar .carousel-item.active, .carousel-gallery-adaptive .slick-slide img').click(function () {
+    $('.carousel.newcar .carousel-item.active img, .carousel-gallery-adaptive .slick-slide img').click(function () {
         $('#gallery').addClass('showgall');
     });
     $('#gallery span.mdi').click(function () {
@@ -637,3 +636,28 @@ if ($('*').is('#gallery')) {
 window.addEventListener("orientationchange", function () {
     location.reload();
 }, false);
+
+
+
+
+
+
+
+(function ($) {
+    $('.carousel.newcar').carousel({
+        indicators: true,
+        dist: -50,
+        onCycleTo: function (ele) {
+            $('.num span.current-newcarslide').html($(ele).index() + 1);
+            $('.carousel.newcar .carousel-item.active img').click(function () {
+                $('#gallery').addClass('showgall');
+            });
+        }
+
+    });
+
+})(jQuery);
+
+
+
+
