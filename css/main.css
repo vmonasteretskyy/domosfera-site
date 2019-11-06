@@ -886,6 +886,27 @@
     width: 100%;
     display: block;
 }
+.outlet-single .right-block .outlet-single-text table td{
+    border: 1px solid #afb0b3;
+}
+.outlet-single .right-block .outlet-single-text table{
+    width: 100%;
+}
+.outlet-single .right-block .outlet-single-text table tr td{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #242526;
+    padding: 10px 0 10px 20px;
+    width: 35%;
+}
+.outlet-single .right-block .outlet-single-text table tr td:nth-child(2){
+    width: 65%;
+}
 
 .outlet-single button.slick-prev,
 .outlet-single button.slick-next{
@@ -909,12 +930,13 @@
     align-items: center;
 }
 .outlet-modal .modal-body{
-    text-align: center;
+    text-align: left;
     background: #fff;
 }
 .outlet-modal .modal-body h3{
+    margin-top: 20px;
     font-family: Gilroy;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -924,7 +946,7 @@
     margin-bottom: 20px;
 }
 .outlet-modal .modal-body .warrior{
-    text-align: center;
+    text-align: left;
     background: #ffe8e8;
     padding: 10px 35px 10px 20px;
     margin-top: 10px;
@@ -942,8 +964,11 @@
     color: #b73434;
     margin: 0;
 }
+.outlet-modal .modal-body{
+    padding: 10px 30px;
+}
 .outlet-modal .modal-body .rent-form.contact-form{
-    margin: 10px 0;
+    margin: 10px 0 30px;
 }
 .outlet-modal .modal-body .rent-form.contact-form .contform-check{
     text-align: left;
@@ -1279,8 +1304,8 @@
 .modal .video-body iframe{
     width: 100%;
 }
-.modal .modal-dialog{
-    max-width: 75%;
+.video-modal.modal .modal-dialog{
+    max-width: 1120px;
     width: 100%;
 }
 
@@ -1918,6 +1943,10 @@
 .slider-modal .modal.show{
     background-color: rgba(12, 13, 13, .97);
 }
+.slider-modal .modal .modal-dialog{
+    max-width: 75%;
+    width: 100%;
+}
 
 /* -----------------------------------------------------------------------------------rent------------------------------------------------------------- */
 .rent-page .top-rent{
@@ -2244,6 +2273,10 @@
 .rent-modal .video-body img{
     width: 100%;
 }
+.img-modal.modal .modal-dialog{
+    max-width: 1120px;
+    width: 100%;
+}
 
 @media (max-width: 1440.8px){
     /* legend */
@@ -2253,7 +2286,13 @@
         margin-top: -140px;
     }
 }
-
+@media (max-width: 1400.8px){
+    .video-modal.modal .modal-dialog,
+    .img-modal.modal .modal-dialog{
+        max-width: 800px;
+        width: 100%;
+    }
+}
 
 @media (max-width: 1300.8px) {
     .smak-word {
@@ -2349,6 +2388,13 @@
     .outlet-word {
         margin-left: -430px;
     }
+    /* outlet-single */
+    .outlet-single .right-block .outlet-single-text table tr td,
+    .outlet-single .right-block .outlet-single-text table tr td:nth-child(2){
+        width: 50%;
+        padding: 8px 0 8px 10px;
+    }
+
     /* legends */
     .legend-page .word-legends{
         font-size: 150px;
@@ -2670,6 +2716,9 @@
     .outlet-modal.modal .modal-dialog{
         max-width: 98%;
     }
+    .outlet-modal .modal-body{
+        padding: 10px 10px;
+    }
     /* news */
     .news-page .salons__select-choosen,
     .news-page .body-news .news-item{
@@ -2830,6 +2879,9 @@
     }
     .outlet-single .outlet-min-sliders {
         width: 95%;
+    }
+    .outlet-modal .modal-body h3{
+        font-size: 16px;
     }
     /* news */
     .news-page .news-word{

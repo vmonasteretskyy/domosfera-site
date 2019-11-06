@@ -137,7 +137,9 @@ $(document).ready(function () {
         $('.hide-btn').css("display", "none");
     });
 // Slider in modal ----------------------------------------------------------------------------------------------------------
-    $('.hub-long-slider .restoran-body .new_slidelink a').click(function () {
+    $('.modal').on('shown.bs.modal', function () {
+        $('.outlet-sliders.hub-modals').fadeIn();
+        $('.outlet-sliders.hub-modals').slick('reinit');
         $('.outlet-sliders.hub-modals').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -152,7 +154,6 @@ $(document).ready(function () {
             dots: false,
             arrows: true,
             infinite: true,
-            // centerMode: true,
             variableWidth: true,
             focusOnSelect: true,
             prevArrow: '<button type="button" class="slick-prev"><span class="mdi mdi-trending-neutral"></span></button>',
