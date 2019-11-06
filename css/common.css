@@ -3821,7 +3821,14 @@ footer {
     z-index: 10;
     width: 100%;
     left: 0;
-    display: none;
+    opacity: 0;
+    z-index: -2;
+
+}
+
+#gallery.showgall {
+    opacity: 1;
+    z-index: 15;
 }
 
 #gallery span.mdi {
@@ -4397,6 +4404,8 @@ main.smak-rest-page {
     height: auto;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
+    height: 400px;
+    overflow: hidden;
 }
 
 .carousel.newcar .carousel-item.active {
@@ -4450,6 +4459,43 @@ main.smak-rest-page {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
+.carousel-container .num {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: #323335;
+    text-align: right;
+    bottom: -48px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 61%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* buttons */
 

@@ -5,11 +5,11 @@ $(document).ready(function () {
         $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "20%" }, { "margin-bottom": "30px" });
         $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.7)" });
     },
-    function () {
-        $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
-        $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
-        $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
-    });
+        function () {
+            $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
+            $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
+            $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
+        });
 });
 
 
@@ -123,7 +123,7 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><span class="mdi mdi-trending-neutral"></span></button>',
     });
 
-// Show more text ------------------------------------------------------------------------------------------------------------
+    // Show more text ------------------------------------------------------------------------------------------------------------
     $('.show-btn a').click(function () {
         $('.more-text').show(300);
         $('.shadow-text').hide(300);
@@ -136,7 +136,7 @@ $(document).ready(function () {
         $('.show-btn').css("display", "block");
         $('.hide-btn').css("display", "none");
     });
-// Slider in modal ----------------------------------------------------------------------------------------------------------
+    // Slider in modal ----------------------------------------------------------------------------------------------------------
     $('.modal').on('shown.bs.modal', function () {
         $('.outlet-sliders.hub-modals').fadeIn();
         $('.outlet-sliders.hub-modals').slick('reinit');
@@ -164,18 +164,18 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-// Acordeon fix ------------------------------------------------------------------------------------
+    // Acordeon fix ------------------------------------------------------------------------------------
     $('.card').click(function () {
         $('.card').not($(this)).children('.card-header').removeClass('active');
         $(this).children('.card-header').toggleClass('active');
     });
 
-// Open gallery --------------------------------------------------------------------------------------
+    // Open gallery --------------------------------------------------------------------------------------
     $('.outlet-sliders.open-gell .outlet-slider img').click(function () {
-        $('#gallery').fadeIn();
+        $('#gallery').addClass('showgall');
     });
     $('#gallery span.mdi').click(function () {
-        $('#gallery').fadeOut();
+        $('#gallery').removeClass('showgall');
     });
 });
 
