@@ -4383,11 +4383,73 @@ main.smak-rest-page {
     border-left: 0px solid #242526 !important;
 }
 
+/* - */
+.carousel-container {
+    position: relative;
+}
 
+.carousel.newcar {
+    overflow: initial;
+}
 
+.carousel.newcar .carousel-item {
+    width: 61%;
+    height: auto;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
 
+.carousel.newcar .carousel-item.active {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
 
+.carousel.newcar .indicators {
+    width: 61%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    height: 3px;
+    bottom: -28px;
+}
 
+.carousel.newcar .indicators .indicator-item {
+    margin: 0 1.5px 0 1.5px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    width: 35px;
+    height: 3px;
+    background-color: #e4e4e4;
+}
+
+.carousel.newcar .indicators .indicator-item.active {
+    background-color: #242526;
+}
+
+.left.left-newarr {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.right.right-newarr {
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
 
 /* buttons */
 

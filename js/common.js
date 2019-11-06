@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // animation init
-    new WOW().init();
+    // new WOW().init();
     // formstyler
     $(function () {
         $('.footer__checkfield input, select, .contform-check input').styler();
@@ -384,18 +384,61 @@ $(document).ready(function () {
         $('.menu-section').removeClass('showmenu');
     });
 
-    // in one line
-    // function topicLining(heiLine) {
-    //     var highest = 0;
-    //     jQuery(heiLine).each(function () {
-    //         var currentHei = jQuery(this).height();
-    //         if (currentHei > highest) {
-    //             highest = currentHei;
-    //         }
-    //     });
-    //     jQuery(heiLine).height(highest);
-    // }
+
+
 });
+
+
+// new carousel
+$(document).ready(function () {
+    (function ($) {
+
+
+
+
+
+
+
+        // Plugin initialization
+        $('.carousel.newcar').carousel({
+            indicators: true,
+
+        });
+
+
+
+
+
+    })(jQuery); // end of jQuery name space
+
+    // move next carousel
+    $('.moveNextCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+    });
+
+    // move prev carousel
+    $('.movePrevCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // fix left arrow
 $(window).scroll(function () {
