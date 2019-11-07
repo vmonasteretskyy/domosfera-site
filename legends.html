@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
-    <link rel="stylesheet" href="css/feature-carousel.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -147,33 +147,37 @@
             </div>
         </section>
 
-        <section class="carousel-gallery legends-gall">
+        <section class="carousel-gallery abusua">
             <span class="abstoptitle">Gallery</span>
             <div class="container">
                 <p class="galltitle">Фотогалерея</p>
             </div>
             <div class="carousel-container">
-
-                <div id="carousel">
-                    <div class="carousel-feature">
-                        <img class="carousel-image" alt="Image Caption" src="image/carousel-pic.png">
-                    </div>
-                    <div class="carousel-feature">
-                        <img class="carousel-image" alt="Image Caption" src="image/carousel-pic.png">
-                    </div>
-                    <div class="carousel-feature">
-                        <img class="carousel-image" alt="Image Caption" src="image/carousel-pic.png">
-                    </div>
-                    <div class="carousel-feature">
-                        <img class="carousel-image" alt="Image Caption" src="image/carousel-pic.png">
-                    </div>
-                    <div class="carousel-feature">
-                        <img class="carousel-image" alt="Image Caption" src="image/carousel-pic.png">
-                    </div>
+                <div class="carousel newcar">
+                    <a class="carousel-item" href="#one!"><img src="image/carousel-pic.png"></a>
+                    <a class="carousel-item" href="#two!"><img src="image/carousel-pic.png"></a>
+                    <a class="carousel-item" href="#three!"><img src="image/carousel-pic.png"></a>
+                    <a class="carousel-item" href="#four!"><img src="image/carousel-pic.png"></a>
+                    <a class="carousel-item" href="#five!"><img src="image/carousel-pic.png"></a>
+                </div>
+                <div class="left left-newarr">
+                    <a href="Previo"
+                        class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
+                        <img src="image/carousel-arrowleft.png" alt="prev">
+                    </a>
                 </div>
 
-                <div id="carousel-left"><img src="image/carousel-arrowleft.png" /></div>
-                <div id="carousel-right"><img src="image/carousel-arrowright.png" /></div>
+                <div class="right right-newarr">
+                    <a href="Siguiente"
+                        class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+                        <img src="image/carousel-arrowright.png" alt="prev">
+                    </a>
+                </div>
+                <div class="num">
+                    <span class="current-newcarslide"></span>
+                    /
+                    <span class="total-newcarslide"></span>
+                </div>
             </div>
             <div class="carousel-gallery-adaptive">
                 <div>
@@ -299,25 +303,17 @@
             </div>
         </section>
 
-
-
-        <section class="bottom-buttons">
+        <section class="big-bottpage-links anybtns">
             <div class="row no-gutters">
-                <div class="col-sm-6">
+                <div class="col">
                     <a href="#" class="transit03">Оренда</a>
                 </div>
-                <div class="col-sm-6">
-                    <a href="#" class="transit03">Відео</a>
+                <div class="col">
+                    <a href="#" class="transit03">ВІДЕО</a>
                 </div>
             </div>
         </section>
     </main>
-
-
-
-
-
-
 
     <footer class="footer">
         <div class="container">
@@ -403,17 +399,15 @@
         </div>
     </footer>
 
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/jquery.featureCarousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/jgallery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>

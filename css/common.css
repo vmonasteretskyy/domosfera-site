@@ -4366,9 +4366,6 @@ main.smak-rest-page {
     padding-bottom: 60px;
 }
 
-.smak-rest-page .carousel-gallery .abstoptitle {
-    font-size: 80px;
-}
 
 .big-bottpage-links .row .col-sm-6 a,
 .contact-page .bottom-buttons .row .col-sm-6 a,
@@ -4520,14 +4517,27 @@ main.smak-rest-page {
 
 }
 
+.cosmiss-slidersect .slick-arrow {
+    border: none;
+    outline: none;
+}
 
+.salons-section.paddbott {
+    padding-bottom: 60px;
+}
 
+.salons-section.paddbott .salons__topsect {
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
 
+.salons-section.paddbott .bigtitle-page {
+    line-height: 100px;
+}
 
-
-
-
-
+.salons-section.paddbott .bigtitle-page {
+    top: -45px;
+}
 
 
 /* buttons */

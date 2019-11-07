@@ -535,6 +535,10 @@
         padding-left: 0;
     }
 
+    .menu-section .nav-col ul li a:hover:before {
+        display: none;
+    }
+
     .soc-mission .soc-mission__top {
         height: auto;
         min-height: initial;
@@ -550,6 +554,10 @@
         height: auto;
         object-fit: initial;
         object-position: initial;
+    }
+
+    .carousel-gallery .abstoptitle {
+        top: -15px;
     }
 
     /* -gallery fix */
@@ -1517,6 +1525,10 @@
 /* FIXED */
 
 @media(max-width: 575.8px) {
+    .news-page .news-word {
+        top: -10px;
+    }
+
     .mainslider__sidebarsect {
         display: none;
     }
@@ -1798,6 +1810,19 @@
         margin-bottom: 0;
     }
 
+    .restoran.salons-section .restoran-top.salons__topsect {
+        margin-bottom: 20px;
+    }
+
+    .restoran-sliders.restoran-adapt .restoran-slider {
+        margin-bottom: 60px;
+        padding-left: 0 !important;
+    }
+
+    .smak-rest-page .carousel-gallery .abstoptitle {
+        top: -5px;
+    }
+
     .big-bottpage-links .row .col-sm-6:last-child a,
     .contact-page .bottom-buttons .row .col-sm-6:last-child a,
     .hub-page .bottom-buttons .row .col-sm-4:nth-child(n+2) a,
@@ -1861,6 +1886,10 @@
     .legend-page .word-legends {
         font-size: 65px;
         top: -70px;
+    }
+
+    .news-page .news-word {
+        top: -10px;
     }
 }
 
