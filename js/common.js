@@ -414,9 +414,9 @@ $(document).ready(function () {
 
             var tl = new TimelineMax({ pause: true });
             tl.add("start") // add timeline label
-                .fromTo(title, .8, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-                .fromTo(text, .8, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-                .fromTo(btn, .8, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(title, 1, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(text, 1, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(btn, 1, { y: '0px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
                 .fromTo(boxslide, .7, { y: '30px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
 
             // Create the Scene and trigger when visible
@@ -424,7 +424,7 @@ $(document).ready(function () {
                 triggerElement: elem,
                 offset: 0, /* offset the trigger Npx below scene's top */
                 triggerHook: 0.7, // show, when scrolled 10% into view
-
+                reverse: true
             })
                 .setTween(tl)
                 .addTo(scrollMagicController);
