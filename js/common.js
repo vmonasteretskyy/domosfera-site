@@ -423,7 +423,7 @@ $(document).ready(function () {
             var scene = new ScrollScene({
                 triggerElement: elem,
                 offset: 0, /* offset the trigger Npx below scene's top */
-                triggerHook: 0.7, // show, when scrolled 10% into view
+                triggerHook: 0.8, // show, when scrolled 10% into view
                 reverse: true
             })
                 .setTween(tl)
