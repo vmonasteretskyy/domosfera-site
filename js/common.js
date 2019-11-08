@@ -412,6 +412,32 @@ $(document).ready(function () {
         });
     });
 
+    // mask
+    if ($('*').is('#contform')) {
+        $('.emailhubform').inputmask({
+            mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+            placeholder: "",
+            greedy: false,
+
+            onBeforePaste: function (pastedValue, opts) {
+                pastedValue = pastedValue.toLowerCase();
+                return pastedValue.replace("mailto:", "");
+            },
+
+            definitions: {
+                '*': {
+                    validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                    casing: "lower"
+                }
+            }
+        });
+
+
+        $("#phone, #kont-osoba, #ksthours, #phone-hub, #kont-osoba-hub, .numberonly, .hourhub").inputmask({ "mask": "9", "repeat": 15 });
+        $("#area").inputmask({ "mask": "9", "repeat": 15 });
+    }
+
+
 });
 
 
