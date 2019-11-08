@@ -409,15 +409,13 @@ $(document).ready(function () {
             // Create Animations
             var title = $(elem).find('.title-animate'),
                 text = $(elem).find('.text-animate, .pic-animate'),
-                btn = $(elem).find('.box-animate'),
-                boxslide = $(elem).find('.boxslide-animate');
+                boxslide = $(elem).find('.box-animate');
 
             var tl = new TimelineMax({ pause: true });
             tl.add("start") // add timeline label
-                .fromTo(title, 1, { y: '0px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-                .fromTo(text, 1, { y: '0px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-                .fromTo(btn, 1, { y: '0px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
-                .fromTo(boxslide, .7, { y: '30px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(title, .7, { y: '20px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(text, .7, { y: '30px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
+                .fromTo(boxslide, .7, { y: '60px', opacity: 0, delay: 0.3 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
 
             // Create the Scene and trigger when visible
             var scene = new ScrollScene({

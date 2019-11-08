@@ -4535,10 +4535,39 @@ main.smak-rest-page {
     line-height: 100px;
 }
 
-.salons-section.paddbott .bigtitle-page {
-    top: -45px;
+.box-animate,
+.title-animate,
+.text-animate,
+.pic-animate {
+    opacity: 0;
 }
 
+.salons-section.paddbott .bigtitle-page.bbtitle {
+    top: 40px;
+}
+
+.salons-section .salons__select {
+    z-index: 2;
+}
+
+.restoran-top.salons__topsect .col-md-5.col-sm-12.col-12 {
+    position: relative;
+    z-index: 2;
+}
+
+.salons__topsect .top-video .video-word {
+    top: -20px;
+}
+
+.salons__topsect.vid-padd {
+    margin-bottom: 100px;
+}
+
+.salons__topsect.vid-padd .top-video .col-lg-4.offset-lg-4.col-md-6.col-sm-6.col-12,
+.outlet-top.salons__topsect .col-lg-4.col-md-4.col-sm-6.col-12 {
+    position: relative;
+    z-index: 2;
+}
 
 /* buttons */
 

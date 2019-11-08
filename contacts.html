@@ -123,18 +123,20 @@
         </div>
 
         <div class="contact-page">
-            <h1 class="bigtitle-page">Контакти</h1>
+            <div data-scrollmagic>
+                <h1 class="bigtitle-page title-animate">Контакти</h1>
+            </div>
             <section class="map">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="mapbox">
+                        <div class="col-xl-7 col-lg-7" data-scrollmagic>
+                            <div class="mapbox box-animate">
                                 <div class="mapshadow"></div>
                                 <div id="map"></div>
                             </div>
                         </div>
-                        <div class="col-xl-4 offset-xl-1 col-lg-5">
-                            <ul class="no-style righttlist">
+                        <div class="col-xl-4 offset-xl-1 col-lg-5" data-scrollmagic>
+                            <ul class="no-style righttlist box-animate">
                                 <li>
                                     <span class="mdi mdi-home-outline"></span><span class="title">Адреса</span>
                                     <p>м.Київ, Столичне шосе, 101, Україна, 03045</p>
@@ -160,8 +162,8 @@
             <section class="adress-sect" id="scrollto">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="adress__box">
+                        <div class="col-lg-4 col-md-6" data-scrollmagic>
+                            <div class="adress__box box-animate">
                                 <p class="adress__title">ТЦ Домосфера</p>
                                 <p class="adress__subtitle">Адміністраторы</p>
                                 <ul class="no-style">
@@ -178,8 +180,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="adress__box">
+                        <div class="col-lg-4 col-md-6" data-scrollmagic>
+                            <div class="adress__box box-animate">
                                 <p class="adress__title">Головний офіс</p>
                                 <p class="adress__subtitle">Відділ оренди</p>
                                 <ul class="no-style">
@@ -227,8 +229,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="adress__box">
+                        <div class="col-lg-4 col-md-6" data-scrollmagic>
+                            <div class="adress__box box-animate">
                                 <p class="adress__title">Domosfera Hub</p>
                                 <p class="adress__subtitle">Івент-менеджери</p>
                                 <ul class="no-style">
@@ -280,10 +282,10 @@
                 </div>
             </section>
             <section class="contact-form">
-                <div class="container">
-                    <span class="tabform tabbtn1 active">Запит на оренду площі</span>
-                    <span class="tabform tabbtn2">Запит на оренду Domosfera HUB</span>
-                    <div class="tabform-cont tabform-content1">
+                <div class="container" data-scrollmagic>
+                    <span class="tabform tabbtn1 active title-animate">Запит на оренду площі</span>
+                    <span class="tabform tabbtn2 title-animate">Запит на оренду Domosfera HUB</span>
+                    <div class="tabform-cont tabform-content1 box-animate">
                         <p class="title">Відправити запит на оренду площі</p>
                         <form action="" id="contform" class="contform">
                             <div class="row form-group">
@@ -355,7 +357,7 @@
                         </form>
 
                     </div>
-                    <div class="tabform-cont tabform-content2">
+                    <div class="tabform-cont tabform-content2 box-animate">
                         <p class="title">Запит на оренду Domosfera HUB</p>
                         <form action="" id="contform2" class="contform">
                             <div class="row form-group">
@@ -543,7 +545,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <!-- animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+    <!-- general -->
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
     <script async defer

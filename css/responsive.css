@@ -557,7 +557,7 @@
     }
 
     .carousel-gallery .abstoptitle {
-        top: -15px;
+        top: -12px;
     }
 
     /* -gallery fix */
@@ -913,6 +913,13 @@
         right: 20px;
     }
 
+    .salons-section .bigtitle-page.bbtitle {
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 140px;
+    }
+
     /* 991 */
     .soc-mission .soc-calproj-arrow p {
         font-size: 24px;
@@ -942,6 +949,15 @@
 
 @media(max-width:767.8px) {
 
+    .restoran.salons-section .restoran-top.salons__topsect {
+        position: relative;
+        z-index: 2;
+    }
+
+    .outlet-single .left-block {
+        position: relative;
+        z-index: 2;
+    }
 
     .header__phone,
     .header__worktime,
@@ -1169,7 +1185,6 @@
         top: 50px;
     }
 
-
     .aboutus .aboutus__box,
     .aboutus.two-two .row .col-lg-6:nth-last-child(-n+3) .aboutus__box {
         margin-bottom: 30px !important;
@@ -1177,6 +1192,14 @@
 
     .aboutus.two-two .row .col-lg-6:last-child .aboutus__box {
         margin-bottom: 0 !important;
+    }
+
+    .contact-page .bigtitle-page {
+        left: 0;
+    }
+
+    .salons__topsect .top-video .video-word {
+        top: -60px;
     }
 
     /* 767 */
@@ -1724,6 +1747,14 @@
         padding-bottom: 0;
     }
 
+    .preference-sect .col-lg-4.col-md-6 .preference__box {
+        margin-bottom: 40px;
+    }
+
+    .salons-section.paddbott .bigtitle-page.bbtitle {
+        top: -35px;
+    }
+
     /* - */
     .rent-form.contact-form {
         margin: 60px 0;
@@ -1830,8 +1861,24 @@
         border-left: 2px solid #242526 !important;
     }
 
+    .body-news-content {
+        padding-top: 20px;
+    }
 
-    /* \///// */
+    .salons__topsect.vid-padd {
+        margin-bottom: 0px;
+    }
+
+    /* 575 */
+    .salons-section .bigtitle-page.bbtitle {
+        font-size: 100px;
+    }
+
+    .info.rent-infoinfo {
+        padding: 30px 0 50px 0;
+    }
+
+
     .salons-section .bigtitle-page,
     .smak-word,
     .video-word {
@@ -1839,7 +1886,6 @@
         right: 0;
         text-align: center;
     }
-
 
     .abus-textsect p.title,
     .aboutus-slider__slide .text-box .title,
@@ -1869,8 +1915,6 @@
         font-size: 28px;
     }
 
-    /* 24 */
-    /* 18 */
     .video-page .body-video h4 {
         font-size: 18px;
     }
@@ -1881,7 +1925,6 @@
     }
 }
 
-/* ---- */
 @media(max-width:400.8px) {
     .legend-page .word-legends {
         font-size: 65px;
@@ -1890,6 +1933,10 @@
 
     .news-page .news-word {
         top: -10px;
+    }
+
+    .salons-section .bigtitle-page.bbtitle {
+        font-size: 70px;
     }
 }
 
@@ -1910,7 +1957,6 @@
         margin-bottom: 20px;
     }
 
-    /* FIX */
     .salons__content-blocks .show-morebtn {
         height: auto;
         margin-bottom: 20px;
@@ -1989,16 +2035,9 @@
         font-size: 9px;
     }
 
-
 }
 
 
-
-
-
-
-
-/* height */
 @media(max-width: 600.8px) {
     .news .slick-next.slick-arrow {
         right: 10px !important;
