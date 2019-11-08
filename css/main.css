@@ -12,7 +12,6 @@
 
 .restoran-top {
     padding-top: 50px;
-    /* height: 80px; */
 }
 
 .smak-word {
@@ -720,7 +719,6 @@
 
 .outlet-single .right-block .price-block ul:nth-child(2) li {
     padding: 3px 0;
-
 }
 
 .outlet-single .right-block .price-block ul li.discount {
@@ -1330,7 +1328,6 @@
     -o-border-radius: 50%;
 }
 
-
 /* ================================================================================ video ======================================================================== */
 .video-page .row {
     padding-left: -10px;
@@ -1924,7 +1921,6 @@
 
 .download-button a .flip.footerbtn .download .back {
     color: #242526;
-    /* background-color: rgb(255, 255, 255); */
     -webkit-transform: rotateX(90deg) translateZ(29px);
     -moz-transform: rotateX(90deg) translateZ(29px);
     -o-transform: rotateX(90deg) translateZ(29px);

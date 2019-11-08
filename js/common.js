@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    // animation init
-    // new WOW().init();
-    // formstyler
     $(function () {
         $('.footer__checkfield input, select, .contform-check input').styler();
     });
@@ -70,25 +67,15 @@ $(document).ready(function () {
     $('.header__searchbtn form .close-headsearch').click(function () {
         $('.header__searchbtn form').removeClass('openheadsearch');
     })
-    // $(document).mouseup(function (e) { // событие клика по веб-документу
-    //     var div = $(".header__searchbtn form"); // тут указываем ID элемента
-    //     if (!div.is(e.target) // если клик был не по нашему блоку
-    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    //         div.removeClass('openheadsearch'); // скрываем его
-    //     }
-    // });
-
 
     // salons page
 
     $('.salons-section .salons__select-choosen').click(function () {
         $('.salons-section .salons__select ul').slideToggle();
-        // $(this).next('span').addClass('rotatearr')
     });
 
     $(document).click(function (event) {
         if (!$(event.target).is(".salons-section .salons__select-choosen,.salons__select-choosen text, .salons__select, .salons-section .salons__select ul, .salons-section .salons__select ul li")) {
-            // $(".salons-section .salons__select ul").slideUp();
             $('.salons__select-choosen span').removeClass('rotatearr');
         }
     });
@@ -142,12 +129,6 @@ $(document).ready(function () {
         $('.brands-section .brands__filter ul li').not($(this)).removeClass('active');
         $(this).addClass('active');
     });
-
-    // burger
-
-    // $('.burgermenu').click(function () {
-    //     $(this).toggleClass('openburger');
-    // });
 
     // contact fotm tab
     $('.tabform').click(function () {
@@ -431,21 +412,7 @@ $(document).ready(function () {
         });
     });
 
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
 
 
 
@@ -661,12 +628,6 @@ if ($('*').is('#gallery')) {
 window.addEventListener("orientationchange", function () {
     location.reload();
 }, false);
-
-
-
-
-
-
 
 (function ($) {
     $('.carousel.newcar').carousel({

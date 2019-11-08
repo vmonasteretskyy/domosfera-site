@@ -4,7 +4,6 @@
     }
 }
 
-/* FIXED */
 @media (max-width: 1400.8px) {
 
     .mainslider-slide .pagingInfo,
@@ -72,7 +71,6 @@
     }
 }
 
-/* --- */
 @media (max-width: 1300.8px) {
     header.header {
         height: 75px;
@@ -218,7 +216,6 @@
         left: 5%;
     }
 
-    /* --1300 */
     .news,
     .aboutus,
     .ourservices,
@@ -329,7 +326,6 @@
         margin-top: 10px;
     }
 
-    /* 1199 */
     .salons-section .salon-sect__contbox a.title,
     .abus-textsect p.title {
         font-size: 32px;
@@ -462,7 +458,6 @@
         display: none;
     }
 
-    /* carousel */
     .carousel-gallery-adaptive.slick-slider {
         display: block;
     }
@@ -506,13 +501,11 @@
         padding: 0 15px;
     }
 
-    /* 1024 */
     .salons-section .salons__select-choosen {
         font-size: 22px;
     }
 }
 
-/* FIXED  */
 @media(max-width:1024.8px) {
 
     .mainslider,
@@ -560,7 +553,6 @@
         top: -12px;
     }
 
-    /* -gallery fix */
     .j-gallery-preview-content {
         background-size: 100% !important;
     }
@@ -569,10 +561,8 @@
         display: none !important;
     }
 
-    /* - */
 }
 
-/* --- */
 @media (max-width: 992.8px) {
 
     .news-page .salons__select-choosen,
@@ -920,7 +910,6 @@
         font-size: 140px;
     }
 
-    /* 991 */
     .soc-mission .soc-calproj-arrow p {
         font-size: 24px;
     }
@@ -1202,7 +1191,6 @@
         top: -60px;
     }
 
-    /* 767 */
     .carousel-gallery .abstoptitle {
         font-size: 120px;
         line-height: 120px;
@@ -1517,7 +1505,6 @@
         text-align: center;
     }
 
-    /* 575 */
     .salons-section .salons__select-choosen {
         font-size: 18px;
     }
@@ -1544,8 +1531,6 @@
         -webkit-animation: none;
     }
 }
-
-/* FIXED */
 
 @media(max-width: 575.8px) {
     .news-page .news-word {
@@ -1755,7 +1740,6 @@
         top: -35px;
     }
 
-    /* - */
     .rent-form.contact-form {
         margin: 60px 0;
     }
@@ -1869,7 +1853,6 @@
         margin-bottom: 0px;
     }
 
-    /* 575 */
     .salons-section .bigtitle-page.bbtitle {
         font-size: 100px;
     }
@@ -1877,7 +1860,6 @@
     .info.rent-infoinfo {
         padding: 30px 0 50px 0;
     }
-
 
     .salons-section .bigtitle-page,
     .smak-word,

@@ -975,8 +975,6 @@ footer .footer__subscribe>div {
     height: 100%;
 }
 
-
-
 .mainslider__slideload span {
     -webkit-animation-name: change;
     -webkit-animation-duration: 8s;
@@ -1185,7 +1183,6 @@ footer .footer__subscribe>div {
     padding-left: 90px;
 }
 
-/* --- */
 .news {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1527,10 +1524,6 @@ section {
     display: inline-block;
 }
 
-
-
-
-
 .bigtitle-page {
     position: absolute;
     font-size: 200px;
@@ -1601,7 +1594,6 @@ section {
     position: absolute;
     bottom: 0;
 }
-
 
 .flip.mainslider-link {
     position: absolute;
@@ -1691,7 +1683,6 @@ section {
     width: 67px;
     height: 57px;
     line-height: 57px;
-    /* margin-top: .5px; */
 }
 
 .flip.footerbtn a .front {
@@ -1706,7 +1697,6 @@ section {
 
 .flip.footerbtn a .back {
     color: #fff;
-    /* background-color: rgb(255, 255, 255); */
     -webkit-transform: rotateX(90deg) translateZ(29px);
     -moz-transform: rotateX(90deg) translateZ(29px);
     -o-transform: rotateX(90deg) translateZ(29px);
@@ -1768,7 +1758,6 @@ section {
 
 .salons-section .salon-sect__contbox .phone-list {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .salons-section .salon-sect__contbox .phonebox {
@@ -1832,8 +1821,6 @@ section {
     padding: 25px 0 0 15px;
 }
 
-
-
 .whitehoverborder {
     border: 5px solid rgba(255, 255, 255, 0);
     box-sizing: border-box;
@@ -1843,7 +1830,6 @@ section {
     position: absolute;
     top: 20px;
     left: 20px;
-    /* border: 5px solid #fff; */
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -1854,70 +1840,6 @@ section {
 .salon-sect__picbox>a:hover .whitehoverborder {
     border: 5px solid rgba(255, 255, 255, 1);
 }
-
-
-
-/* .whitehoverborder:after,
-.whitehoverborder:before {
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.whitehoverborder {
-    transition: color 0.25s;
-    -webkit-transition: color 0.25s;
-    -moz-transition: color 0.25s;
-    -ms-transition: color 0.25s;
-    -o-transition: color 0.25s;
-}
-
-.whitehoverborder:after,
-.whitehoverborder:before {
-    border: 5px solid transparent;
-    width: 0;
-    height: 0;
-}
-
-.whitehoverborder:after {
-    bottom: 0;
-    right: 0;
-}
-
-.whitehoverborder:before {
-    top: 0;
-    left: 0;
-}
-
-.salon-sect__picbox>a:hover .whitehoverborder {
-    color: #fff;
-}
-
-.salon-sect__picbox>a:hover .whitehoverborder:after,
-.salon-sect__picbox>a:hover .whitehoverborder:before {
-    width: 100%;
-    height: 100%;
-}
-
-.salon-sect__picbox>a:hover .whitehoverborder:before {
-    border-top-color: #fff;
-    border-right-color: #fff;
-    transition:
-        width 0.25s ease-out,
-        height 0.25s ease-out 0.25s;
-}
-
-
-.salon-sect__picbox>a:hover .whitehoverborder:after {
-    border-bottom-color: #fff;
-    border-left-color: #fff;
-    transition:
-        border-color 0s ease-out 0.5s,
-        width 0.25s ease-out 0.5s,
-        height 0.25s ease-out 0.75s;
-} */
 
 .salon-sect__picbox a>span img {
     margin-left: 10px;
@@ -1985,8 +1907,6 @@ section {
     position: relative;
 }
 
-
-
 .salons__content-blocks .whitehoverborder,
 .salons-section .salons__content-blocks .salon-sect__picbox .flornumber span,
 .salons__content-blocks .salon-sect__contbox,
@@ -1994,13 +1914,10 @@ section {
     display: none;
 }
 
-
-
 .salons-section .salons__content-blocks .salon-sect__picbox .flornumber {
     height: auto;
     width: auto;
 }
-
 
 .shadow-blockcat,
 .salons-section .salons__content-blocks .salon-sect__picbox a>span {
@@ -2116,8 +2033,6 @@ section {
 }
 
 .hovershowdescr {
-    /*display: none;
-    */
     height: 0;
     overflow-y: hidden;
     transition: .5s;
@@ -2125,7 +2040,6 @@ section {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-
 }
 
 .salons__content-blocks .show-hover-catblock {
@@ -2179,10 +2093,6 @@ section {
     padding: 0 22%;
     line-height: normal;
     letter-spacing: 0.6px;
-}
-
-header.header {
-    /* overflow: hidden; */
 }
 
 .header__searchbtn form {
@@ -2326,7 +2236,6 @@ header.header {
     background-color: #000000;
     color: #fff;
 }
-
 
 .brands-section .brands__filter ul li:first-child {
     width: 50px;
@@ -2568,7 +2477,6 @@ header.header {
     padding-bottom: 55px;
     background-image: url(../image/contactpic1.png);
     background-size: cover;
-
     height: 790px;
 }
 
@@ -2697,8 +2605,6 @@ header.header {
     height: 50px;
 }
 
-
-
 .controls input[type="text"]:focus,
 .controls input[type="text"]:hover,
 .controls input[type="email"]:focus,
@@ -2791,7 +2697,6 @@ header.header {
     width: 200px;
     height: 53px;
 }
-
 
 .cont-formsbm .flip>div .front,
 .cont-formsbm .flip>div .back {
@@ -3221,7 +3126,6 @@ header.header {
     height: 240px;
     overflow: hidden;
     margin-top: 40px;
-
 }
 
 .sm-restaurant__info-section .text-block.havt {
@@ -3236,7 +3140,6 @@ header.header {
 
 .sm-restaurant__info-section .white-shadow {
     height: 85px;
-    /* background-image: linear-gradient(to top, #ffffff, transparent); */
     bottom: 0;
     z-index: 1;
     position: absolute;
@@ -3406,10 +3309,6 @@ header.header {
 
 .bands-bottslider .slick-dots .slick-active button {
     background-color: #242526;
-}
-
-footer {
-    /* border-top: 1px solid #e8e8e8; */
 }
 
 .soc-mission .soc-mission__top {
@@ -3823,7 +3722,6 @@ footer {
     left: 0;
     opacity: 0;
     z-index: -2;
-
 }
 
 #gallery.showgall {
@@ -3899,7 +3797,6 @@ p.aftcarous-text {
     padding-bottom: 100px;
 }
 
-/* =-- */
 .transit03 {
     transition: .3s;
     -webkit-transition: .3s;
@@ -4039,8 +3936,6 @@ p.aftcarous-text {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-    /* margin-top: -5px;
-padding-top: 5px; */
 }
 
 .menu-section .nav-col ul li .submenu li {
@@ -4099,10 +3994,6 @@ padding-top: 5px; */
     margin-top: -14px;
 }
 
-
-
-
-/* FIX */
 .preloader-section {
     position: fixed;
     left: 0;
@@ -4125,7 +4016,6 @@ padding-top: 5px; */
     animation-delay: 3s;
     animation-fill-mode: forwards;
     height: auto;
-
 }
 
 @keyframes draw-zoom {
@@ -4154,7 +4044,6 @@ padding-top: 5px; */
     color: #323235;
     opacity: .7;
     text-decoration: none;
-
 }
 
 .aboutus__box a:hover {
@@ -4330,7 +4219,6 @@ footer.footer {
     padding: 0;
 }
 
-
 .brands-section .brands {
     margin-bottom: 60px;
 }
@@ -4343,7 +4231,6 @@ footer.footer {
     margin-bottom: 100px;
 }
 
-
 main.smak-rest-page {
     padding-bottom: 60px;
 }
@@ -4351,7 +4238,6 @@ main.smak-rest-page {
 .outlet-slider.slick-slide.slick-active {
     cursor: pointer;
 }
-
 
 .sm-restaurant .phone-titlepage {
     display: none;
@@ -4365,7 +4251,6 @@ main.smak-rest-page {
 .boutiques-page .carousel-gallery {
     padding-bottom: 60px;
 }
-
 
 .big-bottpage-links .row .col-sm-6 a,
 .contact-page .bottom-buttons .row .col-sm-6 a,
@@ -4387,7 +4272,6 @@ main.smak-rest-page {
     border-left: 0px solid #242526 !important;
 }
 
-/* - */
 .carousel-container {
     position: relative;
 }
@@ -4496,14 +4380,11 @@ main.smak-rest-page {
     display: none;
 }
 
-
 .carousel.newcar .carousel-item>img {
     width: 100%;
     position: relative;
     z-index: 1;
 }
-
-
 
 .carousel.newcar .carousel-item img {
     transform: scale(.9);
@@ -4571,7 +4452,6 @@ main.smak-rest-page {
 
 /* buttons */
 
-
 .big-bottpage-links.anybtns .col a {
     border-top: 2px solid #242526 !important;
     border-bottom: 2px solid #242526 !important;
@@ -4604,11 +4484,6 @@ main.smak-rest-page {
         font-size: 16px;
     }
 }
-
-/* - */
-
-
-
 
 .header__phone a,
 .header__searchbtn span,
@@ -4656,13 +4531,6 @@ footer.footer {
 
 
 
-
-
-
-
-
-
-
-.ScrollSceneIndicators {
+/* .ScrollSceneIndicators {
     z-index: 9999999 !important;
-}
+} */
