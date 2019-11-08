@@ -2360,6 +2360,18 @@
     margin-bottom: 30px;
 }
 
+.outlet-item a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.outlet-item a:hover {
+    color: #fff;
+}
+
 .rent-page .info h3 {
     width: 51%;
     font-size: 24px;
