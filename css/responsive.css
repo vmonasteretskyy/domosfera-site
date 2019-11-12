@@ -508,6 +508,16 @@
 
 @media(max-width:1024.8px) {
 
+    .restoran-sliders.restoran-adapt .restoran-body .restoran-desc,
+    .restoran.salons-section.sp-f .restoran-body .new_slidelink,
+    .rh-n .restoran-body .new_slidelink {
+        display: none;
+    }
+
+    .header__worktime .weekend-text {
+        display: none;
+    }
+
     .mainslider,
     section,
     .aboutus,
@@ -561,6 +571,41 @@
         display: none !important;
     }
 
+    .restoran.salons-section.sp-f .restoran-body .new_slidelink a:before,
+    .restoran.salons-section.sp-f .restoran-body .new_slidelink a:after,
+    .rh-n .restoran-body .new_slidelink a:before,
+    .rh-n .restoran-body .new_slidelink a:after {
+        width: 100%;
+    }
+
+    .restoran.salons-section.sp-f .restoran-sliders.restoran-adapt .new_slidelink span,
+    .rh-n .restoran-sliders.restoran-adapt .new_slidelink span {
+        padding-left: calc(100% - 125px);
+    }
+
+    .flip .back {
+        display: none !important;
+    }
+
+    .flip .front,
+    .flip:hover .front,
+    .flip .download,
+    .flip>* {
+        transform: initial !important;
+        -webkit-transform: initial !important;
+        -moz-transform: initial !important;
+        -ms-transform: initial !important;
+        -o-transform: initial !important;
+        transform-style: initial !important;
+    }
+
+    .flip {
+        background-color: #242526 !important;
+    }
+
+    .allnews-link .flip {
+        background-color: #fff !important;
+    }
 }
 
 @media (max-width: 992.8px) {
@@ -934,6 +979,14 @@
     .contact-page .map {
         margin-bottom: 60px;
     }
+
+    .mainslider-slidetopbox .title {
+        margin-left: 20px;
+    }
+
+    .mainslider-slidetopbox .dark-box {
+        padding-left: 20px;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -1210,6 +1263,42 @@
 }
 
 @media(max-width: 575.8px) {
+    .restoran-sliders.restoran-adapt .restoran-slider:last-child {
+        margin-bottom: 0;
+    }
+
+    .smak-rest-page .carousel-gallery,
+    .hub-page .carousel-gallery,
+    .news-page.news-single .carousel-gallery,
+    .carousel-gallery,
+    .smak-rest-page .carousel-gallery,
+    .boutiques-page .carousel-gallery {
+        padding-top: 65px;
+    }
+
+    .smak-rest-page .carousel-gallery .abstoptitle,
+    .carousel-gallery .abstoptitle {
+        top: 0;
+    }
+
+    #brand-modal .modal-body {
+        padding: 30px 30px 30px 30px;
+    }
+
+    #brand-modal p.title {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .modalbrand-list li a {
+        font-size: 18px;
+    }
+
+    .modalbrand-list li {
+        margin-bottom: 10px;
+    }
+
+
     .fixed-leftsocial {
         display: none;
     }
@@ -1533,6 +1622,10 @@
 }
 
 @media(max-width: 575.8px) {
+    .hub-page .card-header button {
+        align-items: center;
+    }
+
     .news-page .news-word {
         top: -10px;
     }
@@ -1905,6 +1998,10 @@
     .bands-bottslidersect.news h3 {
         text-align: center;
     }
+
+    .restoran-slider.filter-this.slick-slide {
+        padding-left: 0 !important;
+    }
 }
 
 @media(max-width:400.8px) {
@@ -2015,6 +2112,14 @@
 
     .controls label {
         font-size: 9px;
+    }
+
+    .hub-page .top-head .download-button a {
+        overflow: initial;
+    }
+
+    .hub-page.restoran.salons-section .download-button a .flip {
+        margin-left: -30px;
     }
 
 }

@@ -3,12 +3,10 @@ $(document).ready(function () {
     $('.restoran-body').hover(function () {
         $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "35%" }, { "margin-bottom": "60px" });
         $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "20%" }, { "margin-bottom": "30px" });
-        $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.7)" });
     },
         function () {
             $(this).children('.restoran-dark').children('.restoran-desc').css({ "height": "0" });
             $(this).children('.restoran-dark').children('.new_slidelink').css({ "height": "0" });
-            $(this).children('.restoran-dark').css({ "background": "rgba(0, 0, 0, 0.5)" });
         });
 });
 

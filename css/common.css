@@ -2783,9 +2783,9 @@ section {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6));
     z-index: 1;
     background-size: 100% 100%;
+    background: linear-gradient(to top, rgba(39, 40, 41, .92), rgba(39, 40, 41, .6));
 }
 
 .aboutus-slider__slide .text-box {
@@ -4108,13 +4108,13 @@ footer.footer {
     padding: 10px 0;
 }
 
-.aboutus-slider__slide a.vertabus-link span {
+/* .aboutus-slider__slide a.vertabus-link span {
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
-}
+} */
 
 .aboutus-slider__slide a.vertabus-link span {
     z-index: 2;
@@ -4177,7 +4177,7 @@ footer.footer {
 }
 
 #brand-modal.modal .modal-dialog {
-    max-width: 550px;
+    max-width: 560px;
 }
 
 #brand-modal.modal .modal-dialog .modal-content {
@@ -4190,7 +4190,7 @@ footer.footer {
 }
 
 .modalbrand-list li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .cosmiss-textsect .showhide-text span,
@@ -4286,7 +4286,7 @@ main.smak-rest-page {
     height: auto;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
-    height: 400px;
+    height: 464px;
     overflow: hidden;
     opacity: .2 !important;
     transition: opacity .5s;
@@ -4331,11 +4331,6 @@ main.smak-rest-page {
     position: absolute;
     top: 50%;
     left: 13%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     z-index: 2;
 }
 
@@ -4343,11 +4338,6 @@ main.smak-rest-page {
     position: absolute;
     top: 50%;
     right: 13%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     z-index: 2;
 }
 
@@ -4529,8 +4519,276 @@ footer.footer {
     position: relative;
 }
 
+/* 12.11 */
+.restoran.salons-section.sp-f {
+    padding-bottom: 60px;
+}
+
+.restoran.salons-section.sp-f .restoran-body .restoran-dark,
+.rh-n .restoran-body .restoran-dark {
+    background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+}
+
+.restoran.salons-section.sp-f .restoran-body:hover .restoran-dark,
+.rh-n .restoran-body:hover .restoran-dark {
+    background: rgb(45, 46, 47, .9);
+}
+
+.restoran.salons-section.sp-f .restoran-body .floor,
+.rh-n .restoran-body .floor {
+    font-size: 8px;
+    text-transform: uppercase;
+
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink a .link,
+.rh-n .restoran-body .new_slidelink a .link {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+}
 
 
-/* .ScrollSceneIndicators {
-    z-index: 9999999 !important;
-} */
+.restoran.salons-section.sp-f .restoran-body .new_slidelink a,
+.rh-n .restoran-body .new_slidelink a {
+    position: relative;
+    display: flex;
+    height: 35px;
+    /* align-items: center; */
+}
+
+.rh-n .restoran-body .new_slidelink a {
+    align-items: center;
+}
+
+.restoran.salons-section.sp-f .slick-slide .restoran-body img,
+.rh-n .slick-slide .restoran-body img {
+    padding-left: 132px;
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink a:before,
+.rh-n .restoran-body .new_slidelink a:before {
+    content: "";
+    display: inline-block !important;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink a:after,
+.rh-n .restoran-body .new_slidelink a:after {
+    content: "";
+    display: inline-block !important;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink,
+.rh-n .restoran-body .new_slidelink {
+    padding-top: 30px;
+    width: calc(100% - 60px);
+}
+
+.restoran.salons-section.sp-f .slick-slide .restoran-body img,
+.rh-n .slick-slide .restoran-body img {
+    padding-top: 0;
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink a span,
+.rh-n .restoran-body .new_slidelink a span {
+    display: inline-flex;
+}
+
+.outlet-item .outlet-item-bot ul li.red {
+    color: #b73434 !important;
+}
+
+.hub-page.restoran.salons-section .download-button a .flip.footerbtn .download .back {
+    top: 0;
+    transform: rotateX(90deg) translateZ(32px);
+}
+
+.hub-page .top-head .download-button a {
+    overflow: hidden;
+}
+
+.hub-page.restoran.salons-section .download-button a .flip {
+    height: 70px;
+}
+
+.hub-page.restoran.salons-section .download-button a .flip .download {
+    height: 70px;
+}
+
+.hub-page.restoran.salons-section .download-button a .flip.footerbtn .download .front,
+.hub-page.restoran.salons-section .download-button a .flip.footerbtn .download .back {
+    top: 0;
+    height: 70px;
+}
+
+.hub-page.restoran.salons-section .download-button a .flip.footerbtn .download .back {
+    transform: rotateX(90deg) translateZ(35px);
+}
+
+.carousel-gallery .carousel-container {
+    height: 464px;
+    padding-top: 30px;
+}
+
+.carousel.newcar {
+    height: 464px;
+}
+
+.carousel.newcar .indicators {
+    bottom: -20px;
+    z-index: 3;
+}
+
+p.aftcarous-text {
+    margin-top: 90px;
+}
+
+.carousel-container .num {
+    bottom: -68px;
+}
+
+.video-page .body-video .video-img a .play-stl {
+    width: 70px;
+    height: 70px;
+    padding: 0 !important;
+}
+
+.video-page .body-video .video-img a .play-stl:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news-page .body-news .news-item a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+}
+
+
+.news-page .body-news .news-item a:hover {
+    opacity: .7;
+}
+
+
+.aboutus-page .aboutus-slider__slide>a:hover+a:after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+}
+
+.aboutus-page .aboutus-slider__slide>a:hover+a.vertabus-link,
+.aboutus-page .aboutus-slider__slide>a:hover+a.vertabus-link span {
+    color: #000 !important;
+}
+
+.aboutus-slider__slide a.vertabus-link span {
+    position: relative;
+}
+
+.hub-page .card-header button .mdi {
+    writing-mode: initial !important;
+    -webkit-writing-mode: initial !important;
+    -ms-writing-mode: initial !important;
+    line-height: 1;
+}
+
+.hub-page .card-header button .mdi:before {
+    line-height: 12px;
+}
+
+.aboutus__box a .aboutus__boxpic {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.aboutus__box a:hover .aboutus__boxpic {
+    opacity: .7;
+}
+
+.smak-rest-page .carousel-gallery {
+    padding-bottom: 70px;
+}
+
+.news-page .body-news .news-item a span {
+    margin-top: -4px;
+}
+
+#brand-modal p.title {
+    color: #323335;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+
+#brand-modal.modal .modal-dialog .modal-content {
+    height: 420px;
+    overflow: hidden;
+
+}
+
+.no-style.modalbrand-list.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 320px;
+    overflow: scroll;
+}
+
+.modalbrand-list li a {
+    color: #323335;
+    font-size: 22px;
+}
+
+#brand-modal .modal-body {
+    padding: 55px 30px 30px 69px;
+}
+
+.no-style.modalbrand-list.row::-webkit-scrollbar {
+    width: 6px;
+}
+
+.no-style.modalbrand-list.row::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+
+.no-style.modalbrand-list.row::-webkit-scrollbar-thumb {
+    background-color: #d2d2d2;
+    outline: 1px solid #d2d2d2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
