@@ -4785,10 +4785,52 @@ p.aftcarous-text {
 
 .no-style.modalbrand-list.row::-webkit-scrollbar-thumb {
     background-color: #d2d2d2;
-    outline: 1px solid #d2d2d2;
+    /*outline: 1px solid #d2d2d2;*/
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.hub-page .card-header.active button .mdi {
+    vertical-align: 3px;
+    display: inline-block;
+}
+
+.hub-page .card-header button span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hub-page .card-header button {
+    align-items: center !important;
+}
+
+
+.hub-page .card-header button svg {
+    width: 24px;
+    transform: rotate(180deg);
+    transition: .3s;
+    fill: #afb0b3;
+    height: 24px;
+    margin-left: 45px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+
+.hub-page .card-header button span {
+    margin-top: -7px;
+}
+
+.hub-page .card-header.active button svg {
+    fill: #323335;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
 }
