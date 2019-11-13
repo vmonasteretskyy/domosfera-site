@@ -4814,7 +4814,7 @@ p.aftcarous-text {
     transition: .3s;
     fill: #afb0b3;
     height: 24px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
     -webkit-transition: .3s;
     -moz-transition: .3s;
     -ms-transition: .3s;
@@ -4833,4 +4833,9 @@ p.aftcarous-text {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+}
+
+.hub-page .card-header button span {
+    max-width: calc(100% - 40px);
+    padding-right: 45px;
 }
