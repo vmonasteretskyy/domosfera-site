@@ -4282,7 +4282,8 @@ main.smak-rest-page {
 }
 
 .carousel.newcar .carousel-item {
-    width: 60.75%;
+    /* width: 60.75%; */
+    width: 820px;
     height: auto;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);

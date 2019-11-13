@@ -231,6 +231,14 @@
     footer.footer {
         padding-left: 70px;
     }
+
+    .right.right-newarr {
+        right: 9%;
+    }
+
+    .left.left-newarr {
+        left: 9%;
+    }
 }
 
 @media(max-width:1199.8px) {
@@ -338,9 +346,25 @@
     .abus-ooiu .preference__box .title {
         font-size: 18px;
     }
+
+    .right.right-newarr {
+        right: 5%;
+    }
+
+    .left.left-newarr {
+        left: 5%;
+    }
 }
 
 @media(max-width:1140px) {
+    .right.right-newarr {
+        right: 3%;
+    }
+
+    .left.left-newarr {
+        left: 3%;
+    }
+
     .mainslider .slick-dots {
         display: none !important;
     }
