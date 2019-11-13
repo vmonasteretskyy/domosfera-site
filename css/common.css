@@ -4526,7 +4526,7 @@ footer.footer {
 
 .restoran.salons-section.sp-f .restoran-body .restoran-dark,
 .rh-n .restoran-body .restoran-dark {
-    background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(69, 70, 71, .85), rgba(0, 0, 0, 0));
 }
 
 .restoran.salons-section.sp-f .restoran-body:hover .restoran-dark,
@@ -4838,4 +4838,13 @@ p.aftcarous-text {
 .hub-page .card-header button span {
     max-width: calc(100% - 40px);
     padding-right: 45px;
+}
+
+.restoran-sliders .restoran-body h3 {
+    margin-bottom: 0;
+}
+
+.restoran.salons-section.sp-f .restoran-body .new_slidelink,
+.rh-n .restoran-body .new_slidelink {
+    padding-top: 22px;
 }
