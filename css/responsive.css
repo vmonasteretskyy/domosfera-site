@@ -1263,6 +1263,7 @@
 }
 
 @media(max-width: 575.8px) {
+
     .restoran-sliders.restoran-adapt .restoran-slider:last-child {
         margin-bottom: 0;
     }
