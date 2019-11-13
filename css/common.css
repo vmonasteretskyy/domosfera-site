@@ -4282,11 +4282,11 @@ main.smak-rest-page {
 }
 
 .carousel.newcar .carousel-item {
-    width: 61%;
+    width: 60.75%;
     height: auto;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
-    height: 464px;
+    height: 461px;
     overflow: hidden;
     opacity: .2 !important;
     transition: opacity .5s;
